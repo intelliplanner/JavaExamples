@@ -21,13 +21,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Add .nojekyll
-        run: touch src/main/resources/static/.nojekyll
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build static Java file browser
+        run: node node_runner/buildPages.js
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: src/main/resources/static
+          path: target/github-pages
 
   deploy:
     environment:

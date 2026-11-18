@@ -166,6 +166,7 @@
     let activeFile = null;
     let expandedDirs = new Set();
     let searchTerm = "";
+    let staticFilesMode = false;
 
     function filterTree(nodes, term) {
       if (!term) return nodes;
@@ -182,13 +183,28 @@
     }
 
     async function loadFiles() {
-      const [treeResponse, versionsResponse] = await Promise.all([
-        fetch("/api/tree"),
-        fetch("/api/java-versions")
-      ]);
-      tree = await treeResponse.json();
-      const versions = await versionsResponse.json();
-      renderVersionOptions(versions);
+      const staticTreeResponse = await fetch(new URL("data/tree.json", document.baseURI));
+      if (staticTreeResponse.ok) {
+        staticFilesMode = true;
+        tree = await staticTreeResponse.json();
+        runButton.disabled = true;
+        runButton.title = "Java execution requires the Node.js server.";
+        javaVersionSelect.disabled = true;
+        renderVersionOptions([]);
+      } else {
+        const [treeResponse, versionsResponse] = await Promise.all([
+          fetch("/api/tree"),
+          fetch("/api/java-versions")
+        ]);
+        if (!treeResponse.ok || !versionsResponse.ok) {
+          throw new Error("Unable to load Java files from the server.");
+        }
+        tree = await treeResponse.json();
+        const versions = await versionsResponse.json();
+        renderVersionOptions(versions);
+      }
+
+      expandDirectories(tree);
       renderTree();
       if (tree.length) {
         const firstFile = findFirstFile(tree);
@@ -196,6 +212,15 @@
           selectFile(firstFile);
         }
       }
+    }
+
+    function expandDirectories(nodes) {
+      nodes.forEach((node) => {
+        if (node.type === "directory") {
+          expandedDirs.add(node.name);
+          expandDirectories(node.children || []);
+        }
+      });
     }
 
     function renderVersionOptions(versions) {
@@ -274,7 +299,14 @@
       activeFile = file;
       selectedFile.textContent = file;
       renderTree();
-      const response = await fetch(`/api/file?path=${encodeURIComponent(file)}`);
+      const fileUrl = staticFilesMode
+        ? `java/${file.split("/").map(encodeURIComponent).join("/")}`
+        : `/api/file?path=${encodeURIComponent(file)}`;
+      const response = await fetch(fileUrl);
+      if (!response.ok) {
+        viewer.srcdoc = `<pre>Unable to load source file (${response.status}).</pre>`;
+        return;
+      }
       const content = await response.text();
       viewer.srcdoc = `<pre style="margin:0;padding:16px;font-family:Consolas,monospace;white-space:pre-wrap;">${escapeHtml(content)}</pre>`;
     }
