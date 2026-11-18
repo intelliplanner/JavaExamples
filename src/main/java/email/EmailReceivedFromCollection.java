@@ -13,7 +13,7 @@ public class EmailReceivedFromCollection {
     private static final String PORT = "993";
 //    private static final String USERNAME = "amit.kumar03uneecops@gmail.com";
 //    private static final String APP_PASSWORD = "vchglpspnefmvvcu"; // App password, not normal password
-   private static final String USERNAME = "vicky.gupta5343@gmail.com";
+   private static final String USERNAME = "";
     private static final String APP_PASSWORD = "";
     public static void main(String[] args) {
         searchEmail(HOST, PORT, USERNAME, APP_PASSWORD);
