@@ -1,0 +1,5 @@
+/.settings
+/logs
+/bin
+/target
+node_runner/node_modules

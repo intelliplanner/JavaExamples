@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java File Explorer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    .app {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      height: 100vh;
+    }
+    .sidebar {
+      background: #111827;
+      color: white;
+      padding: 16px;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    .sidebar .search {
+      margin: 8px 0 12px 0;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .sidebar .search input {
+      flex: 1;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #374151;
+      background: #0f1724;
+      color: #f9fafb;
+    }
+    .sidebar .search button {
+      padding: 6px 8px;
+      border-radius: 6px;
+      border: none;
+      background: #374151;
+      color: #f9fafb;
+      cursor: pointer;
+    }
+    .tree {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .tree li {
+      list-style: none;
+    }
+    .tree-node {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      word-break: break-all;
+      color: #f9fafb;
+    }
+    .tree-node:hover {
+      background: #1f2937;
+    }
+    .tree-node.active {
+      background: #2563eb;
+    }
+    .tree-node.folder {
+      font-weight: 600;
+    }
+    .tree-children {
+      margin-left: 14px;
+      padding-left: 10px;
+      border-left: 1px solid #374151;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .toggle {
+      width: 16px;
+      text-align: center;
+      color: #9ca3af;
+      user-select: none;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      gap: 12px;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .toolbar select {
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+    }
+    .toolbar button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+    .viewer {
+      flex: 1;
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background: white;
+    }
+    .status {
+      font-size: 14px;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>Java files</h2>
+      <div class="search">
+        <input id="searchInput" placeholder="Search by class name" aria-label="Search by class name" />
+        <button id="clearSearch" title="Clear search">✕</button>
+      </div>
+      <ul id="fileList" class="tree"></ul>
+    </aside>
+    <section class="main">
+      <div class="toolbar">
+        <div id="selectedFile" class="status">Select a file</div>
+        <div>
+          <select id="javaVersionSelect"></select>
+          <button id="runButton">Run selected file</button>
+        </div>
+      </div>
+      <iframe id="viewer" class="viewer" title="Java source preview"></iframe>
+    </section>
+  </div>
+
+  <script>
+    const fileList = document.getElementById("fileList");
+    const viewer = document.getElementById("viewer");
+    const selectedFile = document.getElementById("selectedFile");
+    const runButton = document.getElementById("runButton");
+    const javaVersionSelect = document.getElementById("javaVersionSelect");
+    const searchInput = document.getElementById("searchInput");
+    const clearSearch = document.getElementById("clearSearch");
+    let tree = [];
+    let activeFile = null;
+    let expandedDirs = new Set();
+    let searchTerm = "";
+
+    function filterTree(nodes, term) {
+      if (!term) return nodes;
+      const lower = term.toLowerCase();
+      return nodes.reduce((acc, node) => {
+        if (node.type === "file") {
+          if (node.name.toLowerCase().includes(lower)) acc.push(node);
+        } else {
+          const children = filterTree(node.children || [], term);
+          if (children.length) acc.push(Object.assign({}, node, { children }));
+        }
+        return acc;
+      }, []);
+    }
+
+    async function loadFiles() {
+      const [treeResponse, versionsResponse] = await Promise.all([
+        fetch("/api/tree"),
+        fetch("/api/java-versions")
+      ]);
+      tree = await treeResponse.json();
+      const versions = await versionsResponse.json();
+      renderVersionOptions(versions);
+      renderTree();
+      if (tree.length) {
+        const firstFile = findFirstFile(tree);
+        if (firstFile) {
+          selectFile(firstFile);
+        }
+      }
+    }
+
+    function renderVersionOptions(versions) {
+      javaVersionSelect.innerHTML = "";
+      versions.forEach((version) => {
+        const option = document.createElement("option");
+        option.value = version.value;
+        option.textContent = version.label;
+        javaVersionSelect.appendChild(option);
+      });
+    }
+
+    function findFirstFile(nodes) {
+      for (const node of nodes) {
+        if (node.type === "file") {
+          return node.path;
+        }
+        const found = findFirstFile(node.children || []);
+        if (found) {
+          return found;
+        }
+      }
+      return null;
+    }
+
+    function renderTree() {
+      fileList.innerHTML = "";
+      const nodesToRender = filterTree(tree, searchTerm);
+      const renderNodes = (nodes) => {
+        const fragment = document.createDocumentFragment();
+        nodes.forEach((node) => {
+          const item = document.createElement("li");
+          if (node.type === "directory") {
+            const dirLabel = document.createElement("div");
+            dirLabel.className = "tree-node folder";
+            const toggle = document.createElement("span");
+            toggle.className = "toggle";
+            toggle.textContent = expandedDirs.has(node.name) ? "▾" : "▸";
+            const label = document.createElement("span");
+            label.textContent = node.name;
+            dirLabel.appendChild(toggle);
+            dirLabel.appendChild(label);
+            dirLabel.addEventListener("click", () => {
+              if (expandedDirs.has(node.name)) {
+                expandedDirs.delete(node.name);
+              } else {
+                expandedDirs.add(node.name);
+              }
+              renderTree();
+            });
+            item.appendChild(dirLabel);
+            if (expandedDirs.has(node.name) && node.children?.length) {
+              const childList = document.createElement("ul");
+              childList.className = "tree-children";
+              childList.appendChild(renderNodes(node.children));
+              item.appendChild(childList);
+            }
+          } else {
+            const fileLabel = document.createElement("div");
+            fileLabel.className = "tree-node file";
+            if (activeFile === node.path) {
+              fileLabel.classList.add("active");
+            }
+            fileLabel.textContent = node.name;
+            fileLabel.addEventListener("click", () => selectFile(node.path));
+            item.appendChild(fileLabel);
+          }
+          fragment.appendChild(item);
+        });
+        return fragment;
+      };
+      fileList.appendChild(renderNodes(nodesToRender));
+    }
+
+    async function selectFile(file) {
+      activeFile = file;
+      selectedFile.textContent = file;
+      renderTree();
+      const response = await fetch(`/api/file?path=${encodeURIComponent(file)}`);
+      const content = await response.text();
+      viewer.srcdoc = `<pre style="margin:0;padding:16px;font-family:Consolas,monospace;white-space:pre-wrap;">${escapeHtml(content)}</pre>`;
+    }
+
+    function escapeHtml(text) {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;");
+    }
+
+    runButton.addEventListener("click", async () => {
+      if (!activeFile) {
+        return;
+      }
+      const result = await fetch(`/run?class=${encodeURIComponent(activeFile)}&javaVersion=${encodeURIComponent(javaVersionSelect.value)}`);
+      const output = await result.text();
+      viewer.srcdoc = `<pre style="margin:0;padding:16px;font-family:Consolas,monospace;white-space:pre-wrap;">${escapeHtml(output)}</pre>`;
+    });
+
+    // Search input handling
+    searchInput.addEventListener("input", () => {
+      searchTerm = searchInput.value.trim();
+      renderTree();
+      const filtered = filterTree(tree, searchTerm);
+      const first = findFirstFile(filtered);
+      if (first) selectFile(first);
+    });
+
+    clearSearch.addEventListener("click", () => {
+      searchInput.value = "";
+      searchTerm = "";
+      renderTree();
+      if (tree.length) {
+        const firstFile = findFirstFile(tree);
+        if (firstFile) selectFile(firstFile);
+      }
+    });
+
+    loadFiles();
+  </script>
+</body>
+</html>
