@@ -1,28 +1,20 @@
 package InterviewQuestions.Paytm.systemdesign.lift_call;
 
-/**
- * Encapsulates internal request behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates internal request behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class InternalRequest {
 	private int destinationFloor;
 
-	/**
- * Creates a configured internal request instance for the represented workflow.
- */
+	/** Purpose: Creates a internal request instance. */
 	public InternalRequest(int destinationFloor) {
 		this.destinationFloor = destinationFloor;
 	}
 
-	/**
- * Retrieves or locates get destination floor data needed for decision-making.
- */
+	/** Purpose: Retrieves get destination floor data. */
 	public int getDestinationFloor() {
 		return destinationFloor;
 	}
 
-	/**
- * Updates set destination floor while keeping domain data consistent.
- */
+	/** Purpose: Updates set destination floor data. */
 	public void setDestinationFloor(int destinationFloor) {
 		this.destinationFloor = destinationFloor;
 	}

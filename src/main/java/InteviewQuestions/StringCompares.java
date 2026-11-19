@@ -1,9 +1,8 @@
 package InteviewQuestions;
 
-/**
- * Encapsulates string compares behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates string compares behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class StringCompares {
+		
 		public static void main(String args1[])
 	    {
 		   System.out.println("===========Integer============");

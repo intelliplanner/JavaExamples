@@ -5,6 +5,7 @@ package inteviewQuestion.Wipro;
 // 2 3
 // 4 5 6
 // 7 8 9 10
+/** Purpose: Encapsulates pattern a behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class PatternA {
 
 		public static void main(String[] args) {

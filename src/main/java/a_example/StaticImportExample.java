@@ -6,9 +6,8 @@ import static java.lang.System.*;
  * @author IPSSI
  */
 public class StaticImportExample {
-	/**
- * Performs the test operation required by the represented example.
- */
+	
+	/** Purpose: Performs the test operation. */
 	static void test() {
 		out.print("Hello");
 	}

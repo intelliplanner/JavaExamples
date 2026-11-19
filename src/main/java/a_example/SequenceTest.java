@@ -1,8 +1,6 @@
 package a_example;
 
-/**
- * Encapsulates sequence test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates sequence test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class SequenceTest {
 	static {
 		// System.out.print("A ");
@@ -14,9 +12,7 @@ public class SequenceTest {
 		System.out.println("Inside Init Block. ");
 	}
 
-	/**
- * Creates a configured sequence test instance for the represented workflow.
- */
+	/** Purpose: Creates a sequence test instance. */
 	SequenceTest() {
 		System.out.println("Inside Constructor Block. ");
 	}
@@ -26,9 +22,7 @@ public class SequenceTest {
 		new SequenceTest().go();
 	}
 
-	/**
- * Performs the go operation required by the represented example.
- */
+	/** Purpose: Performs the go operation. */
 	private void go() {
 		System.out.print("Inside Go Block.");
 	}

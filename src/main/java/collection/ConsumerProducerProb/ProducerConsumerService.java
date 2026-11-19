@@ -3,9 +3,7 @@ package collection.ConsumerProducerProb;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-/**
- * Encapsulates producer consumer service behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates producer consumer service behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ProducerConsumerService {
 
 		public static void main(String[] args) {

@@ -1,11 +1,8 @@
 package company.toTheNew;
 
-
-
-	/**
- * Encapsulates to the new2 behavior for the represented company or real-world workflow.
- */
+	/** Purpose: Encapsulates to the new2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 	public class ToTheNew2 {
+	    	    
 	    	    public static void main(String[] args) {
 	        Thread t1 = new Thread(new Task());
 	        Thread t2 = new Thread(new Task());
@@ -16,13 +13,10 @@ package company.toTheNew;
 	    }
 	}
 
-	/**
- * Encapsulates task behavior for the represented company or real-world workflow.
- */
+	/** Purpose: Encapsulates task behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 	class Task implements Runnable{
-	    /**
- * Executes run processing and coordinates the required workflow.
- */
+	    
+	    /** Purpose: Executes the run workflow. */
 	    public void run(){
 	        synchronized (this)
 	        {
@@ -36,5 +30,4 @@ package company.toTheNew;
 	        }
 	    }
 	}
-
 

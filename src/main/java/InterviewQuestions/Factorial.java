@@ -5,20 +5,15 @@
  */
 package InterviewQuestions;
 
-/**
- *
- * @author Vicky
- */
+/** Purpose: Encapsulates factorial behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Factorial {
-   
+
         public static void main(String str[]){
         Factorial obj = new Factorial();
         obj.getFactorial(5);
     } 
 
-    /**
- * Retrieves or locates get factorial data needed for decision-making.
- */
+    /** Purpose: Retrieves get factorial data. */
     private void getFactorial(int i) {
         int fact = 1 ; 
         for (int j = 1; j <= i; j++) {

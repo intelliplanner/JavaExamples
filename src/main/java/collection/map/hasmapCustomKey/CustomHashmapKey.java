@@ -1,39 +1,31 @@
 package collection.map.hasmapCustomKey;
 
-/**
- * Encapsulates custom hashmap key behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates custom hashmap key behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class CustomHashmapKey {
 	int rollno;
 	String name;
 
-	/**
- * Creates a configured custom hashmap key instance for the represented workflow.
- */
+	/** Purpose: Creates a custom hashmap key instance. */
 	public CustomHashmapKey(int rollno, String name) {
 		this.rollno = rollno;
 		this.name = name;
 	}
 
-	/**
- * Provides a readable representation for reporting or diagnostics.
- */
+	/** Purpose: Provides a readable object representation. */
 	public String toString() {
 		return rollno + ", " + name;
 	}
 
 	@Override
-	/**
- * Verifies hash code conditions before processing continues.
- */
+	
+	/** Purpose: Validates hash code conditions. */
 	public int hashCode() {
 		return this.rollno;
 	}
 
 	@Override
-	/**
- * Supports reliable object comparison and collection lookup.
- */
+	
+	/** Purpose: Supports reliable object comparison. */
 	public boolean equals(Object o) {
 		if (this == o)
 			return true;

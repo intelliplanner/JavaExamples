@@ -1,11 +1,5 @@
 package SapIntegration;
 
-
-
-/**
- *
- * @author joe666
- */
 //public class SapIntegration {
 //	private String redirectUrl = "http://localhost:8080/LocTracker/SingereniDashBoardData.jsp";
 //	TPRecord tprecord;

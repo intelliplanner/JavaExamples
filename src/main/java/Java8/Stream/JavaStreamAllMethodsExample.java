@@ -17,10 +17,9 @@ import org.apache.poi.util.SystemOutLogger;
 
 import collection.Comparable.Employee;
 
-/**
- * Encapsulates java stream all methods example behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates java stream all methods example behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class JavaStreamAllMethodsExample {
+		
 		public static void main(String[] args) {
 //		allMatchMethod();
 		anyMatchMethod();
@@ -38,10 +37,8 @@ public class JavaStreamAllMethodsExample {
 //		departmentwiseHighestSalary();
 //		findUnMatchedStringfromList();
 	}
-	
-	/**
- * Performs the departmentwise highest salary operation required by the represented example.
- */
+
+	/** Purpose: Performs the departmentwise highest salary operation. */
 	private static void departmentwiseHighestSalary() {
 		List< Java8.Stream.Employee> li =new ArrayList<>();
 		li.add(new Java8.Stream.Employee(1, "vicky", "Dev", 1200));
@@ -55,9 +52,7 @@ public class JavaStreamAllMethodsExample {
 	     hs.entrySet().forEach(System.out::println);		
 	}
 
-	/**
- * Performs the print list of employee operation required by the represented example.
- */
+	/** Purpose: Performs the print list of employee operation. */
 	private static void printListOfEmployee() {
 		List<Employee> empList =IntStream.rangeClosed(1, 10)
 //				.peek(i->System.out.println(i))
@@ -65,9 +60,7 @@ public class JavaStreamAllMethodsExample {
 		empList.forEach(s -> System.out.println(s.getName()+", " +s.getAge()));
 	}
 
-	/**
- * Performs the list filter example mphasis operation required by the represented example.
- */
+	/** Purpose: Performs the list filter example mphasis operation. */
 	private static void listFilterExampleMphasis() {
 		List<Integer> arr1 = Arrays.asList(43, 54, 46, 56);
 		List<Integer> arr2 = Arrays.asList(43, 54, 55, 46);
@@ -79,9 +72,7 @@ public class JavaStreamAllMethodsExample {
 		Stream.concat(arr1.stream(), arr2.stream()).distinct().forEach(System.out::println);
 	}
 
-	/**
- * Performs the list filter example mphasis2 operation required by the represented example.
- */
+	/** Purpose: Performs the list filter example mphasis2 operation. */
 	private static void listFilterExampleMphasis2() {
 		Stream<Integer> arr1 = Stream.of(43, 54, 46, 56);
 		Stream<Integer> arr2 = Stream.of(43, 54, 55, 46);
@@ -94,9 +85,7 @@ public class JavaStreamAllMethodsExample {
 		Stream.concat(arr1, arr2).distinct().forEach(System.out::println);
 	}
 
-	/**
- * Performs the averaging double operation required by the represented example.
- */
+	/** Purpose: Performs the averaging double operation. */
 	private static void averagingDouble() {
 		// averagingDouble
 
@@ -116,9 +105,7 @@ public class JavaStreamAllMethodsExample {
 		System.out.println(data);
 	}
 
-	/**
- * Performs the optional find any method operation required by the represented example.
- */
+	/** Purpose: Performs the optional find any method operation. */
 	private static void optionalFindAnyMethod() {
 		// 1st
 		Stream<String> st1 = Stream.of("STRING", "IS", "AN", "OBJECT");
@@ -141,9 +128,7 @@ public class JavaStreamAllMethodsExample {
 		}
 	}
 
-	/**
- * Performs the concat method operation required by the represented example.
- */
+	/** Purpose: Performs the concat method operation. */
 	private static void concatMethod() {
 		// 1st
 		Stream<String> st1 = Stream.of("STRING", "IS", "AN", "OBJECT");
@@ -176,9 +161,7 @@ public class JavaStreamAllMethodsExample {
 		IntStream.concat(intStream1, intStream2).distinct().forEach(s -> System.out.println("4th: " + s));
 	}
 
-	/**
- * Performs the any match method operation required by the represented example.
- */
+	/** Purpose: Performs the any match method operation. */
 	private static void anyMatchMethod() {
 		boolean status = false;
 		// 1st
@@ -187,9 +170,7 @@ public class JavaStreamAllMethodsExample {
 		System.out.println("1st: " + status);
 	}
 
-	/**
- * Performs the any match s tring data type method operation required by the represented example.
- */
+	/** Purpose: Performs the any match s tring data type method operation. */
 	private static void anyMatchSTringDataTypeMethod() {
 		boolean status = false;
 		// 1st
@@ -198,9 +179,7 @@ public class JavaStreamAllMethodsExample {
 		System.out.println("1st: " + status);
 	}
 
-	/**
- * Performs the all match method operation required by the represented example.
- */
+	/** Purpose: Performs the all match method operation. */
 	private static void allMatchMethod() {
 		boolean status = false;
 		// 1st
@@ -231,9 +210,7 @@ public class JavaStreamAllMethodsExample {
 		System.out.println("5th: " + status);
 	}
 
-	/**
- * Retrieves or locates find char data needed for decision-making.
- */
+	/** Purpose: Retrieves find char data. */
 	private static void findChar() {
 		// String[] str = ["1","1","0","0","1","0","0","1","1"];
 		// Stream<String> str2 = Stream.of("1", "1", "1", "0", "1");
@@ -247,17 +224,13 @@ public class JavaStreamAllMethodsExample {
 //		System.out.println(list2);
 	}
 
-	/**
- * Retrieves or locates find first char at upper case data needed for decision-making.
- */
+	/** Purpose: Retrieves find first char at upper case data. */
 	private static void findFirstCharAtUpperCase() {
 		Stream<String> st = Stream.of("Abc", "Boy", "qwerty");
 		st.filter(s -> Character.isUpperCase(s.charAt(0))).collect(Collectors.toList()).forEach(System.out::println);
 	}
 
-	/**
- * Retrieves or locates find un matched stringfrom list data needed for decision-making.
- */
+	/** Purpose: Retrieves find un matched stringfrom list data. */
 	private static void findUnMatchedStringfromList(){
 		List<String> l1 = Arrays.asList("ABC","BCD","PNC");
 		List<String> l2 = Arrays.asList("ABC","BCD","BNT");

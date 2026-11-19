@@ -3,8 +3,9 @@ package arrayExample;
 //Given an array of integers, update the index with multiplication of previous and next integers,
 //e.g. Input: 2 , 3, 4, 5, 6
 //     Output: 2*3, 2*4, 3*5, 4*6, 5*6
+/** Purpose: Encapsulates array example1 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ArrayExample1 {
-	
+
 		public static void main(String []args) {
 		int arr[] = {2,3,4,5,6};
 		int arr2[] = new int[arr.length];

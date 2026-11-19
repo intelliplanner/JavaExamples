@@ -3,58 +3,45 @@ package Generic;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Encapsulates shape behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates shape behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 abstract class Shape{
-	/**
- * Performs the draw operation required by the represented example.
- */
+	
+	/** Purpose: Performs the draw operation. */
 	abstract void draw();
 }
 
-/**
- * Encapsulates rectangle behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates rectangle behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class Rectangle extends Shape{
 
 	@Override
-	/**
- * Performs the draw operation required by the represented example.
- */
+	
+	/** Purpose: Performs the draw operation. */
 	void draw() {
 		System.out.println("Rectangle");
 	}
 }
 
-/**
- * Encapsulates circle behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates circle behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class Circle extends Shape{
 
 	@Override
-	/**
- * Performs the draw operation required by the represented example.
- */
+	
+	/** Purpose: Performs the draw operation. */
 	void draw() {
 		System.out.println("Circle");
 	}
 }
 
-/**
- * Encapsulates generic test class behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates generic test class behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class GenericTestClass {
 
-	/**
- * Performs the draw shapes operation required by the represented example.
- */
+	/** Purpose: Performs the draw shapes operation. */
 	public void drawShapes(List<? extends Shape> lists) {
 		for(Shape s: lists) {
 			System.out.println(s);
 		}
 	}
-	
+
 		public static void main(String[] args) {
 		List<Integer> list1 = new ArrayList<Integer>();
 		list1.add(10);

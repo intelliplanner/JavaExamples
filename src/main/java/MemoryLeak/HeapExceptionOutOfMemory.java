@@ -6,16 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-/**
- * Encapsulates heap exception out of memory behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates heap exception out of memory behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class HeapExceptionOutOfMemory {
 
-	/**
-	 * @author Crunchify.com
-	 * @throws Exception
-	 * 
-	 */
 	public static void main(String[] args) {
 		// HeapExceptionOutOfMemory memoryTest = new HeapExceptionOutOfMemory();
 		// memoryTest.generateOOM();
@@ -33,9 +26,7 @@ public class HeapExceptionOutOfMemory {
 		}
 	}
 
-	/**
- * Performs the generate oom operation required by the represented example.
- */
+	/** Purpose: Performs the generate oom operation. */
 	public void generateOOM() throws Exception {
 		int iteratorValue = 20;
 		System.out.println("\n=================> OOM test started..\n");

@@ -2,10 +2,9 @@ package arrayExample;
 
 import java.util.Arrays;
 
-/**
- * Encapsulates find sum behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates find sum behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class FindSum {
+		
 		public static void main(String[] args) {
 		int[] arr = {9,3,5,7,8,6,1};
 		
@@ -28,6 +27,7 @@ public class FindSum {
 //		}
 //	}
 	
+	/** Purpose: Retrieves find sum equal to given input data. */
 	private static void FindSumEqualToGivenInput(int[] arr) {
 //		int[] arr = {9,3,5,7,8,6,1}; {1,2,3,5,6,7,8,9} = {1,9}{3,7}
 		Arrays.sort(arr);
@@ -45,7 +45,6 @@ public class FindSum {
 				i++;
 			}
 		}
-		
-		
+
 	}
 }

@@ -2,16 +2,9 @@ package immutable;
 
 import java.util.Date;
 
-/**
- * Always remember that your instance variables will be either mutable or
- * immutable. Identify them and return new objects with copied content for all
- * mutable objects. Immutable variables can be returned safely without extra
- * effort.
- */
-
+/** Purpose: Encapsulates test immutable2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class TestImmutable2 {
-	
-	
+
 		public static void main(String[] args) {
 		MutableClass2 mc2 = new MutableClass2();
 		mc2.setName("Vicky");
@@ -22,9 +15,7 @@ class TestImmutable2 {
 		
 	}
 
-	/**
- * Performs the try modification operation required by the represented example.
- */
+	/** Purpose: Performs the try modification operation. */
 	private static void tryModification(Integer immutableField1, String immutableField2, Date mutableField) {
 		immutableField1 = 10000;
 		immutableField2 = "test changed";

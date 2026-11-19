@@ -1,8 +1,6 @@
 package com.ipssi.beans;
 
-/**
- * Encapsulates excel bean behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates excel bean behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ExcelBean {
 		private String column1;
 		private String column2;

@@ -1,8 +1,7 @@
 package DesignPattern.Observer2;
 
 public interface Observer {
-	 /**
- * Updates update while keeping domain data consistent.
- */
+	 
+	 /** Purpose: Updates update data. */
 	 void update(String weather);
 }

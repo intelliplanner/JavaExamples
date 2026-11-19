@@ -1,9 +1,8 @@
 package InteviewQuestions;
 
-/**
- * Encapsulates mainclass behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates mainclass behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Mainclass {
+		
 		public static void main(String[] args) {
 		Employee e1=new Employee("virendra");
 //		Employee e2=new Employee("virendra");
@@ -11,9 +10,7 @@ public class Mainclass {
 		Employee e3 = e1;
 		System.out.println(e1==e2);
 		System.out.println(e1.equals(e2));
-		
-		
-		
+
 		System.out.println(e1==e3);
 		System.out.println(e1.equals(e3));
 //		

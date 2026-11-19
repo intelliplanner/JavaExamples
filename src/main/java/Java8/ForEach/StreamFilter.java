@@ -7,19 +7,16 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates stream filter behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates stream filter behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class StreamFilter {
+		
 		public static void main(String args[]) {
 		convertListToMap();
 		// ListFilterUsinfStream();
 
 	}
 
-	/**
- * Performs the list filter usinf stream operation required by the represented example.
- */
+	/** Purpose: Performs the list filter usinf stream operation. */
 	private static void ListFilterUsinfStream() {
 		List<Integer> intList = new ArrayList<Integer>();
 		intList.add(21);
@@ -46,9 +43,7 @@ public class StreamFilter {
 		testList.stream().filter(p -> p % 2 == 0).collect(Collectors.toList()).forEach(System.out::println);
 	}
 
-	/**
- * Performs the convert list to map operation required by the represented example.
- */
+	/** Purpose: Performs the convert list to map operation. */
 	private static void convertListToMap() {
 		List<Integer> intList = new ArrayList<Integer>();
 		intList.add(21);

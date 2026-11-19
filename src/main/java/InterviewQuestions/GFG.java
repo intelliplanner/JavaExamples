@@ -4,14 +4,13 @@ package InterviewQuestions;
 //positive missing number 
 import java.util.*; 
 
-/**
- * Encapsulates gfg behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates gfg behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 class GFG 
 { 
 
 //Function to find the smallest 
 //positive missing number 
+/** Purpose: Retrieves find missing positive data. */
 static int findMissingPositive(int arr[], int n) 
 { 
  int m = 1;  // Default smallest Positive Integer  // Store values in set which are  // greater than variable m 
@@ -39,6 +38,7 @@ static int findMissingPositive(int arr[], int n)
 } 
 
 //Driver code 
+
 public static void main(String[] args)  
 { 
  int arr[] = { 2, 3, -7, 6, 8, 1, -10, 15 }; 

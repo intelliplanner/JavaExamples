@@ -2,12 +2,11 @@ package Java8.Java8Example;
 
 interface Test {
 //	void t();
+	 /** Purpose: Performs the say operation. */
 	 public String say(String name);  
 }
 
-/**
- * Encapsulates lamda expression behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates lamda expression behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class LamdaExpression {
 
 		public static void main(String[] args) {

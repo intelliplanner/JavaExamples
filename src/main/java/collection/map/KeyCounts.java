@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Encapsulates key counts behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates key counts behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class KeyCounts {
 
 		public static void main(String args[]){

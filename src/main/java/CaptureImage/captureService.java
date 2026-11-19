@@ -3,10 +3,9 @@ package CaptureImage;
 import java.io.IOException;
 import java.net.ServerSocket;
 
-/**
- * Encapsulates capture service behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates capture service behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class captureService {
+		   		   
 		   		   public static void main(String[] args) {
 		      try {
 		         int i = 1;

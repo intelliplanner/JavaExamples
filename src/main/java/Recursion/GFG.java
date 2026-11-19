@@ -1,12 +1,9 @@
 package Recursion;
 
-/**
- * Encapsulates gfg behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates gfg behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class GFG {
-	/**
- * Performs the print fun operation required by the represented example.
- */
+	
+	/** Purpose: Performs the print fun operation. */
 	static void printFun(int test) 
     { 
         if (test < 1) { 
@@ -19,7 +16,7 @@ public class GFG {
 			return;
 		} 
     } 
-  
+
         public static void main(String[] args) 
     { 
         int test = 3; 

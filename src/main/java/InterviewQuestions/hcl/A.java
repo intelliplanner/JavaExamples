@@ -1,25 +1,19 @@
 package InterviewQuestions.hcl;
 
-/**
- * Encapsulates a behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates a behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class A {
-	/**
- * Creates a configured a instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a a instance. */
 	A(){
 		System.out.println("A()");
 	}
-	/**
- * Creates a configured a instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a a instance. */
 	A(String str) {
 		System.out.println(str);
 	}
-	
-	/**
- * Performs the test operation required by the represented example.
- */
+
+	/** Purpose: Performs the test operation. */
 	private Object test() {
 		return null;
 	}

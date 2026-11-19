@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-
 //java 9
+/** Purpose: Encapsulates immutable collection behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ImmutableCollection {
 
 		public static void main(String[] args) {
@@ -14,9 +14,7 @@ public class ImmutableCollection {
 		ImmutableCollectionMap();
 	}
 
-	/**
- * Performs the immutable collection map operation required by the represented example.
- */
+	/** Purpose: Performs the immutable collection map operation. */
 	private static void ImmutableCollectionMap() {
 //		Map<String, String> names = Map.ofEntries(
 //                Map.entry("1", "Lokesh"),
@@ -29,9 +27,7 @@ public class ImmutableCollection {
         //names.put("2", "Ravi");
 	}
 
-	/**
- * Performs the immutable collection set operation required by the represented example.
- */
+	/** Purpose: Performs the immutable collection set operation. */
 	private static void ImmutableCollectionSet() {
 
 //        Set<String> names = Set.of("Lokesh", "Amit", "John");
@@ -48,9 +44,7 @@ public class ImmutableCollection {
         //Set<String> names3 = Set.of("Lokesh", "Amit", "John", "Amit");
 	}
 
-	/**
- * Performs the immutable collection list operation required by the represented example.
- */
+	/** Purpose: Performs the immutable collection list operation. */
 	private static void ImmutableCollectionList() {
 //		List<String> names = List.of("Lokesh", "Amit", "John");
 //        

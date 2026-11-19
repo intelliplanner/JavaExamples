@@ -2,11 +2,9 @@ package JavaAnnotations;
 
 import java.util.*;
 
-/**
- * Encapsulates test annotation2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates test annotation2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class TestAnnotation2 {
-	
+
 	 	 public static void main(String args[]){
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("sonoo");

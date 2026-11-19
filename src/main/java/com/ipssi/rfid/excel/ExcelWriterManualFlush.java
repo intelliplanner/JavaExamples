@@ -1,6 +1,5 @@
 package com.ipssi.rfid.excel;
 
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -15,13 +14,11 @@ import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
 import com.ipssi.beans.ExcelBean;
 
-
-/**
- * Encapsulates excel writer manual flush behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates excel writer manual flush behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ExcelWriterManualFlush {
 
 	// using manual flush and default window size 100
+	/** Purpose: Performs the write to excel manual flush operation. */
 	public void writeToExcelManualFlush(String fileName, List<ExcelBean> exceldata) {
 		SXSSFWorkbook wb = null;
 		FileOutputStream fos = null;

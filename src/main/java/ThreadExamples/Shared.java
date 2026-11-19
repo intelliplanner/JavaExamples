@@ -1,13 +1,10 @@
 package ThreadExamples;
 
-/**
- * Encapsulates shared behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates shared behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class Shared {
 	int count=0;
-	/**
- * Performs the print operation required by the represented example.
- */
+	
+	/** Purpose: Performs the print operation. */
 	public void print() {
 		for (int i = 0; i < 10; i++) {
 			System.out.println(i);

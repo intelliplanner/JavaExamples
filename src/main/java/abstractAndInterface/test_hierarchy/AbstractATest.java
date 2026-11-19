@@ -1,14 +1,11 @@
 package abstractAndInterface.test_hierarchy;
 
-/**
- * Encapsulates abstract a test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates abstract a test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class AbstractATest extends AbstractA{
 
 	@Override
-	/**
- * Performs the test abstract operation required by the represented example.
- */
+	
+	/** Purpose: Performs the test abstract operation. */
 	void testAbstract() {
 		
 	}

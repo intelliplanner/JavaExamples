@@ -8,15 +8,11 @@ package ThreadExamples.Bank;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author IPSSI
- */
+/** Purpose: Encapsulates ui bank behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class UIBank {
     int amt=1000;
-    /**
- * Performs the with drawal operation required by the represented example.
- */
+    
+    /** Purpose: Performs the with drawal operation. */
     synchronized void withDrawal(int amt){
         System.out.println("Withdraw Amt Started");
         if(this.amt<amt){
@@ -29,9 +25,8 @@ public class UIBank {
             System.out.println("Withdraw Amt Completed:"+amt);
         }
     }
-    /**
- * Performs the deposit operation required by the represented example.
- */
+    
+    /** Purpose: Performs the deposit operation. */
     synchronized void deposit(int amt){
         System.out.println("Deposit Amt");
         this.amt += amt;

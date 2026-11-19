@@ -2,8 +2,7 @@ package functionInterFace;
 
 @FunctionalInterface
 public interface Controller {
-	/**
- * Performs the show msg operation required by the represented example.
- */
+	
+	/** Purpose: Performs the show msg operation. */
 	void ShowMsg(int a , int b);
 }

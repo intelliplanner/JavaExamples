@@ -1,9 +1,6 @@
 package inteviewQuestion.Wipro;
 
-/**
- * Encapsulates wipro_25 jan2025 behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates wipro_25 jan2025 behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Wipro_25Jan2025 {
-
 
 }

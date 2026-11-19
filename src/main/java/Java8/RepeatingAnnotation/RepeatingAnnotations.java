@@ -17,15 +17,12 @@ import java.lang.annotation.RetentionPolicy;
 @Color(name = "red")
 @Color(name = "blue")
 @Color(name = "green")
-/**
- * Encapsulates shirt behavior for the represented example workflow.
- */
+
+/** Purpose: Encapsulates shirt behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 class Shirt {
 }
 
-/**
- * Encapsulates repeating annotations behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates repeating annotations behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class RepeatingAnnotations {
 
 		public static void main(String[] args) {
@@ -35,6 +32,4 @@ public class RepeatingAnnotations {
 		}
 	}
 
-	
-	
 }

@@ -3,15 +3,14 @@ package collection.map;
 import java.util.Map;
 import java.util.TreeMap;
 
-/**
- * Encapsulates tree map implementation behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates tree map implementation behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class TreeMapImplementation { 
 	  
     // Declaring a TreeMap 
     static TreeMap<Integer, String> tree_map; 
   
     // Function to create TreeMap 
+    /** Purpose: Performs the create operation. */
     static void create() 
     { 
         // Creating an empty TreeMap 
@@ -20,6 +19,7 @@ public class TreeMapImplementation {
     } 
   
     // Function to Insert values in the TreeMap 
+    /** Purpose: Adds insert data. */
     static void insert() 
     { 
         // Mapping string values to int keys 
@@ -33,6 +33,7 @@ public class TreeMapImplementation {
     } 
   
     // Function to search a key in TreeMap 
+    /** Purpose: Performs the search operation. */
     static void search(int key) 
     { 
         // Checking for the key 
@@ -40,6 +41,7 @@ public class TreeMapImplementation {
     } 
   
     // Function to search a value in TreeMap 
+    /** Purpose: Performs the search operation. */
     static void search(String value) 
     { 
         // Checking for the value 
@@ -47,6 +49,7 @@ public class TreeMapImplementation {
     } 
   
     // Function to display the elements in TreeMap 
+    /** Purpose: Performs the display operation. */
     static void display() 
     { 
         // Displaying the TreeMap 
@@ -55,6 +58,7 @@ public class TreeMapImplementation {
     } 
   
     // Function to traverse TreeMap 
+    /** Purpose: Performs the traverse operation. */
     static void traverse() 
     { 
         System.out.println("\nTraversing the TreeMap:"); 
@@ -63,6 +67,7 @@ public class TreeMapImplementation {
     } 
   
     // Driver code 
+    
     public static void main(String[] args) 
     { 
         // Creating the TreeMap 

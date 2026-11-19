@@ -9,14 +9,12 @@ If the superclass method declares an exception, subclass overridden method can d
 exception but cannot declare parent exception.*/
 
 class Parent {
-	/**
- * Performs the sap operation required by the represented example.
- */
+	
+	/** Purpose: Performs the sap operation. */
 	void sap() throws CustomException{
 		System.out.println("test 1");
 	}
-	
-	
+
 //	void test2() {
 //		System.out.println("test 2");
 //	}
@@ -28,9 +26,7 @@ class Parent {
 	
 }
 
-/**
- * Encapsulates exception overide example behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates exception overide example behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ExceptionOverideExample extends Parent {
 //	void sap() {
 //		try {
@@ -43,11 +39,11 @@ public class ExceptionOverideExample extends Parent {
 //		System.out.println("test 1");
 //	}
 	
+	/** Purpose: Performs the test3 operation. */
 	void test3() {
 		System.out.println("test 3");
 	}
-	
-	
+
 		public static void main(String[] args) {
 		ExceptionOverideExample obj = new  ExceptionOverideExample();
 //		obj.sap();

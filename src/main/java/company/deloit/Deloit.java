@@ -1,12 +1,10 @@
 package company.deloit;
 
-
 import java.util.*;
 
-/**
- * Encapsulates deloit behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates deloit behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Deloit {
+        
         public static void main(String s[]) {
         int[] warehouseIds = {1,4,5,2,3,7,8};
         int[] parentWarehouseIds = {0,3,3,1,1,5,7};
@@ -15,9 +13,7 @@ public class Deloit {
         System.out.println(li);
     }
 
-    /**
- * Retrieves or locates find effeted warehouses data needed for decision-making.
- */
+    /** Purpose: Retrieves find effeted warehouses data. */
     public static List<Integer> findEffetedWarehouses(int[] warehouseIds, int[] parentWarehouseIds, int closeWId) {
         List<Integer> result = new ArrayList<>();//        {4,5,7,8}
         HashMap<Integer,List<Integer>> map= new HashMap<>();

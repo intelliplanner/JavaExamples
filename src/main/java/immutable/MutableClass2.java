@@ -1,29 +1,21 @@
 package immutable;
 
-/**
- * Encapsulates mutable class2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates mutable class2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class MutableClass2 implements Cloneable {
 
-	/**
- * Performs the clone operation required by the represented example.
- */
+	/** Purpose: Performs the clone operation. */
 	public Object clone()throws CloneNotSupportedException{  
 		return super.clone();  
 		}  
 		  
 	String name;
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}

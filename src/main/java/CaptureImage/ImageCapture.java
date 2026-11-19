@@ -20,6 +20,7 @@ import org.opencv.videoio.VideoCapture;
 //import javafx.embed.swing.SwingFXUtils;
 //import javafx.scene.image.WritableImage;
 
+/** Purpose: Encapsulates image capture behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ImageCapture {
 
 	static {
@@ -57,9 +58,7 @@ public class ImageCapture {
 		}
 	}
 
-	/**
- * Performs the open rtsp operation required by the represented example.
- */
+	/** Purpose: Performs the open rtsp operation. */
 	public byte[] openRTSP(boolean isOpened, VideoCapture capturedVideo, Mat cameraMat) throws Exception {
 		InputStream is = null;
 		byte[] data = null;
@@ -91,9 +90,7 @@ public class ImageCapture {
 		return data;
 	}
 
-	/**
- * Adds insert image db information required by the workflow.
- */
+	/** Purpose: Adds insert image db data. */
 	private void insertImageDB(int i, byte[] data) {
 		Connection conn = null;
 		PreparedStatement ps=null;
@@ -122,10 +119,8 @@ public class ImageCapture {
 
 		}
 	}
-	
-	/**
- * Performs the safe long to int operation required by the represented example.
- */
+
+	/** Purpose: Performs the safe long to int operation. */
 	public int safeLongToInt(long l) {
 	    if (l < Integer.MIN_VALUE || l > Integer.MAX_VALUE) {
 	        throw new IllegalArgumentException

@@ -6,10 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * Encapsulates test behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates test behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Test {
+		
 		public static void main(String[] arg) {
 		List<Integer> l1= Arrays.asList(1,2,3,4,5);
 		List<Integer> l2 = Arrays.asList(11,12,13,14,15);
@@ -20,9 +19,7 @@ public class Test {
 		System.out.println(l3);
 	}
 
-	/**
- * Performs the test1 operation required by the represented example.
- */
+	/** Purpose: Performs the test1 operation. */
 	private static void test1(int a, int b) {
 		
 	}

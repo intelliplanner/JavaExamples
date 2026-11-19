@@ -5,9 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates consecutive ones count behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates consecutive ones count behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ConsecutiveOnesCount {
 	/*
 	 * Long num = 1100111011 count consecutive one's Output = 3
@@ -20,16 +18,12 @@ public class ConsecutiveOnesCount {
 		ConsecutiveOnesCountTest();
 	}
 
-	/**
- * Performs the consecutive ones count test operation required by the represented example.
- */
+	/** Purpose: Performs the consecutive ones count test operation. */
 	private static void ConsecutiveOnesCountTest() {
 		
 	}
 
-	/**
- * Performs the exmple operation required by the represented example.
- */
+	/** Purpose: Performs the exmple operation. */
 	private static void exmple() {
 		Long num = 1100111011l;
 		String str = Long.toString(num); // O(1)

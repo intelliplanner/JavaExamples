@@ -4,9 +4,7 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates grow99 behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates grow99 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Grow99 {
 
 public static void main(String[] str)

@@ -3,52 +3,38 @@ package collection;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Encapsulates test behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates test behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class Test {
 	String name;
 	String subject;
 	int age;
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
- * Retrieves or locates get subject data needed for decision-making.
- */
+	/** Purpose: Retrieves get subject data. */
 	public String getSubject() {
 		return subject;
 	}
 
-	/**
- * Updates set subject while keeping domain data consistent.
- */
+	/** Purpose: Updates set subject data. */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
-	/**
- * Retrieves or locates get age data needed for decision-making.
- */
+	/** Purpose: Retrieves get age data. */
 	public int getAge() {
 		return age;
 	}
 
-	/**
- * Updates set age while keeping domain data consistent.
- */
+	/** Purpose: Updates set age data. */
 	public void setAge(int age) {
 		this.age = age;
 	}

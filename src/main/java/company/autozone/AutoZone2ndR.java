@@ -4,17 +4,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.StringJoiner;
 
-/**
- * Encapsulates auto zone2nd r behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates auto zone2nd r behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class AutoZone2ndR {
+		
 		public static void main(String str[]) {
 		palidromePrime();
 	}
 
-	/**
- * Performs the palidrome prime operation required by the represented example.
- */
+	/** Purpose: Performs the palidrome prime operation. */
 	private static void palidromePrime() {
 //		List<Integer> n  =  Arrays.asList(1,3,5,6,7,10);
 //		IntStream.rangeClosed(1, 100).filter(i -> i/)
@@ -43,17 +40,10 @@ public class AutoZone2ndR {
 						}
 						
 					}
-					
-					
-				
-				
-				
+
 				}
-				
-								
+
 			}
-			
-			
-			
+
 	}
 }

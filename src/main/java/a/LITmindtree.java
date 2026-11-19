@@ -6,10 +6,9 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates li tmindtree behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates li tmindtree behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class LITmindtree {
+        
         public static void main(String[] arg){
         String str = "Virendra Pallavi";
 

@@ -1,16 +1,13 @@
 package DesignPattern.Observer2;
 
 public interface Subject {
-    /**
- * Adds add observer information required by the workflow.
- */
+    
+    /** Purpose: Adds add observer data. */
     void addObserver(Observer observer);
-    /**
- * Removes remove observer data so only valid workflow entries remain.
- */
+    
+    /** Purpose: Removes remove observer data. */
     void removeObserver(Observer observer);
-    /**
- * Performs the notify observers operation required by the represented example.
- */
+    
+    /** Purpose: Performs the notify observers operation. */
     void notifyObservers();
 }

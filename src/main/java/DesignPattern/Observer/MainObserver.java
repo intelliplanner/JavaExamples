@@ -1,8 +1,6 @@
 package DesignPattern.Observer;
 
-/**
- * Encapsulates main observer behavior for a reusable object-interaction design.
- */
+/** Purpose: Encapsulates main observer behavior; it demonstrates reusable object interaction. Owner: Virendra Gupta. */
 public class MainObserver {
 
 		public static void main(String[] args) {

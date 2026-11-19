@@ -3,9 +3,7 @@ package Java8.ForEach;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Encapsulates for each loop behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates for each loop behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class ForEachLoop {
 
 		public static void main(String[] args) {
@@ -26,21 +24,15 @@ public class ForEachLoop {
 	        
 	        System.out.println("------------4. Iterating by Lamda Expressin---------------");  
 	        gamesList.stream().forEachOrdered(game->System.out.println(game));
-	        
-	        
+
 	        System.out.println("------------5. Iterating by passing method reference---------------");
 	        gamesList.stream().forEachOrdered(System.out::println);
-	        
-	        
+
 	        System.out.println("------------6. Iterating by  Lamda Expressin---------------");
 	        gamesList.forEach(
 	        		n->{System.out.println(n);}
 	        		
 	        		);
-	        
-	        
-	        
-	        
-	        
+
 	}
 }

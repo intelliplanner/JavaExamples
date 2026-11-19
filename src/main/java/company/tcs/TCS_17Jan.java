@@ -1,8 +1,6 @@
 package company.tcs;
 
-/**
- * Encapsulates tcs_17 jan behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates tcs_17 jan behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class TCS_17Jan {
 
         public static void main(String[] at) {

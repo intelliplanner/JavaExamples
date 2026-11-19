@@ -2,9 +2,7 @@ package a_example;
 
 import java.util.Scanner;
 
-/**
- * Encapsulates parking calculater behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates parking calculater behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ParkingCalculater {
 
 		public static void main(String str[]) {

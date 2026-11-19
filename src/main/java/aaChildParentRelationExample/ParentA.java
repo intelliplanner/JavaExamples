@@ -1,8 +1,6 @@
 package aaChildParentRelationExample;
 
-/**
- * Encapsulates parent a behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates parent a behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ParentA {
 	int i = 10;
 	
@@ -10,27 +8,22 @@ public class ParentA {
 //		System.out.println("Class A constructor");
 //	}
 	
+	/** Purpose: Performs the test operation. */
 	void test() {
 		System.out.println("A test()");
 	}
 
-	/**
- * Performs the m1 operation required by the represented example.
- */
+	/** Purpose: Performs the m1 operation. */
 	void m1() {
 		System.out.println("A m1()");
 	}
 
-	/**
- * Performs the print operation required by the represented example.
- */
+	/** Purpose: Performs the print operation. */
 	static void print() {
 		System.out.println("A print()");
 	}
 
-	/**
- * Performs the private method operation required by the represented example.
- */
+	/** Purpose: Performs the private method operation. */
 	private void privateMethod() {
 		System.out.println("A privateMethod");
 	}

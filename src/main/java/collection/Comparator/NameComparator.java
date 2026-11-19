@@ -2,14 +2,10 @@ package collection.Comparator;
 
 import java.util.Comparator;
 
-/**
- * Encapsulates name comparator behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates name comparator behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class NameComparator implements Comparator<Student> {
 
-	/**
- * Performs the compare operation required by the represented example.
- */
+	/** Purpose: Performs the compare operation. */
 	public int compare(Student o1, Student o2) {
 		return o1.name.compareTo(o2.name);
 	}

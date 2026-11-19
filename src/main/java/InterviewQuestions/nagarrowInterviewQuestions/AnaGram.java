@@ -7,15 +7,14 @@ import java.util.List;
 //two given strings are anagram of each other or not. An anagram of a string is another string
 //that contains same characters, only the order of characters can be different. 
 //For example, abcd and dabc are anagram of each other.
+/** Purpose: Encapsulates ana gram behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class AnaGram {
 
 		public static void main(String[] args) {
 		isss("TRIANGLE","INTEGRAL");
 	}
 
-	/**
- * Verifies isss conditions before processing continues.
- */
+	/** Purpose: Validates isss conditions. */
 	private static void isss(String string1, String string2) {
 		char[] ch1=string1.toCharArray();
 		char[] ch2=string2.toCharArray();

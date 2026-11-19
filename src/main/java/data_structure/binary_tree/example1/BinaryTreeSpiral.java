@@ -1,12 +1,11 @@
 package data_structure.binary_tree.example1;
 
-/**
- * Encapsulates binary tree spiral behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates binary tree spiral behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 class BinaryTreeSpiral { 
     Node root; 
   
     // Function to print the spiral traversal of tree 
+    /** Purpose: Performs the print spiral operation. */
     void printSpiral(Node node) 
     { 
         int h = height(node); 

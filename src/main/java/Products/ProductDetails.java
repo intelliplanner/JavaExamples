@@ -12,6 +12,7 @@ import java.util.Random;
 //import com.ipssi.gen.utils.DBConnectionPool;
 //import com.ipssi.gen.utils.Misc;
 
+/** Purpose: Encapsulates product details behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ProductDetails {
 
 	private static final DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

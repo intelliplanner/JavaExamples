@@ -5,11 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-
-/**
- * Encapsulates product impl behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates product impl behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ProductImpl {
+		
 		public static void main(String[] args) {
 		List<Product> prodList=new ArrayList<Product>();
 		prodList.add(new Product(1, "Samsung", 20));
@@ -29,8 +27,7 @@ public class ProductImpl {
 		System.out.println("==============Name Sorting==============");
 		java.util.Collections.sort(prodList,new ProductNameComparator());
 		prodList.forEach(prod -> System.out.println(prod.id+", "+prod.name+" ,"+prod.price));
-		
-		
+
 		System.out.println("==============Remove Dublicate==============");
 		
 //		---------- Remove Dublicate----------------

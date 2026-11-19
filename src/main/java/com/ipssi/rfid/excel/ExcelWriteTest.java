@@ -6,10 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.ipssi.beans.ExcelBean;
 
-
-/**
- * Encapsulates excel write test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates excel write test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ExcelWriteTest {
 
 		public static void main(String[] args) {

@@ -1,17 +1,14 @@
 package arrayExample;
 
-
 interface ArrayMultiply{
-	/**
- * Performs the array multiply operation required by the represented example.
- */
+	
+	/** Purpose: Performs the array multiply operation. */
 	void arrayMultiply(int[][] a,int[][] b);
 }
-/**
- * Encapsulates array multiplication behavior for the represented example workflow.
- */
+
+/** Purpose: Encapsulates array multiplication behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ArrayMultiplication {
-	
+
 		public static void main(String[] args) {
 		int e[][] = {{1,1,1},{2,2,2},{3,3,3}};
 		int f[][] = {{1,1,1},{2,2,2},{3,3,3}};

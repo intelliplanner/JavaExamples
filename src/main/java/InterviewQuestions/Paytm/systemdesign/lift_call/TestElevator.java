@@ -1,9 +1,8 @@
 package InterviewQuestions.Paytm.systemdesign.lift_call;
 
-/**
- * Encapsulates test elevator behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates test elevator behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class TestElevator {
+		
 		public static void main(String args[]) {
 		Elevator elevator = new Elevator();
 		

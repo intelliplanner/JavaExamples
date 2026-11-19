@@ -1,8 +1,6 @@
 package a.basic_program;
 
-/**
- * Encapsulates fabonacci series behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates fabonacci series behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class FabonacciSeries {
 
 		public static void main(String[] args) {
@@ -12,9 +10,7 @@ public class FabonacciSeries {
 //		System.out.println(nth_fabonacciNo(n));
 	}
 
-	/**
- * Performs the fabonacci series by for loop operation required by the represented example.
- */
+	/** Purpose: Performs the fabonacci series by for loop operation. */
 	public static void fabonacciSeriesByForLoop(int n) {
 		int a = 0, b = 1;
 		int c = 0;
@@ -30,9 +26,7 @@ public class FabonacciSeries {
 		}
 	}
 
-	/**
- * Performs the fabonacci series operation required by the represented example.
- */
+	/** Purpose: Performs the fabonacci series operation. */
 	private static void fabonacciSeries(int n) {
 		int a = 0;
 		int b = 1;
@@ -49,9 +43,7 @@ public class FabonacciSeries {
 		}
 	}
 
-	/**
- * Performs the nth_fabonacci no operation required by the represented example.
- */
+	/** Purpose: Performs the nth_fabonacci no operation. */
 	static int nth_fabonacciNo(int n) {
 		if (n <= 1)
 			return n;

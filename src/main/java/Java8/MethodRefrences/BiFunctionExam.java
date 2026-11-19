@@ -2,30 +2,24 @@ package Java8.MethodRefrences;
 
 import java.util.function.BiFunction;
 
-/**
- * Encapsulates bi function exam behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates bi function exam behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class BiFunctionExam {
-	
-	/**
- * Adds add information required by the workflow.
- */
+
+	/** Purpose: Adds add data. */
 	static int add(int a,int b) {
 		return a+b;
 	}
-	/**
- * Adds add information required by the workflow.
- */
+	
+	/** Purpose: Adds add data. */
 	static float add(float a,int b) {
 		return a+b;
 	}
-	/**
- * Adds add information required by the workflow.
- */
+	
+	/** Purpose: Adds add data. */
 	static float add(float a,float b) {
 		return a+b;
 	}
-	
+
 		public static void main(String[] args) 
 	{
 		BiFunction<Integer,Integer, Integer>add1 = BiFunctionExam :: add;

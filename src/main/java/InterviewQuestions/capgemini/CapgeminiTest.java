@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 /* Find max occuring integer value from array */
 public class CapgeminiTest { 
+		
 		public static void main(String[] args) {
 		List<Integer> li = Arrays.asList(12, 67, 45, 12, 65, 65, 45, 78, 12, 65);
 		HashMap<Integer, Integer> pair = new HashMap<Integer, Integer>();

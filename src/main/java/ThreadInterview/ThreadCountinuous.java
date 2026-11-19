@@ -1,8 +1,6 @@
 package ThreadInterview;
 
-/**
- * Encapsulates thread countinuous behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates thread countinuous behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class ThreadCountinuous implements Runnable {
 
 	// int noOfThreads = 3;
@@ -11,9 +9,8 @@ public class ThreadCountinuous implements Runnable {
 	static Object obj = new Object();
 
 	@Override
-	/**
- * Executes run processing and coordinates the required workflow.
- */
+	
+	/** Purpose: Executes the run workflow. */
 	public void run() {
 		synchronized (obj) {
 			while (no <= PRINT_NUMBERS_UPTO) {

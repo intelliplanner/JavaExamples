@@ -6,10 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Encapsulates test example2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates test example2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class TestExample2 {
+		
 		public static void main(String args[]) {
 		// 1st
 //		List<String> lst = new ArrayList<String>(Arrays.asList("a", "b", "c"));

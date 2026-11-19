@@ -4,18 +4,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates subset behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates subset behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Subset {
+		
 		public static void main(String agrs[]) {
 		int[] set = { 1, 2, 3, 4, 2 };
 		subsetTest(set);
 	}
 
-	/**
- * Performs the subset test operation required by the represented example.
- */
+	/** Purpose: Performs the subset test operation. */
 	private static void subsetTest(int[] set) {
 		int[] subset1 = new int[5];
 		int[] subset2 = new int[5];

@@ -5,27 +5,22 @@
  */
 package ThreadExamples;
 
-/**
- *
- * @author Vicky
- */
+/** Purpose: Encapsulates trhead service behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class TrheadService implements Runnable{ 
     ClassInterface handler = null;
     boolean isRunning = false;
     Thread mThread = null;
     Object lock = new Object();
     private long refreshRate = 5000;
-    /**
- * Creates a configured trhead service instance for the represented workflow.
- */
+    
+    /** Purpose: Creates a trhead service instance. */
     TrheadService() {
         
     }
 
     @Override
-    /**
- * Executes run processing and coordinates the required workflow.
- */
+    
+    /** Purpose: Executes the run workflow. */
     public void run() {
         System.out.println("Thread is Running");
         int i = 1;
@@ -58,16 +53,12 @@ public class TrheadService implements Runnable{
 	
     }
 
-    /**
- * Updates set handler while keeping domain data consistent.
- */
+    /** Purpose: Updates set handler data. */
     void setHandler(ClassInterface handler) {
         this.handler = handler;
     }
-    
-    /**
- * Executes start processing and coordinates the required workflow.
- */
+
+    /** Purpose: Executes the start workflow. */
     public void start(){
         stop();
         if(mThread == null){
@@ -79,10 +70,8 @@ public class TrheadService implements Runnable{
         }
         
     }
-    
-    /**
- * Performs the stop operation required by the represented example.
- */
+
+    /** Purpose: Performs the stop operation. */
     public void stop() {
         synchronized (lock) {
             try {

@@ -3,9 +3,7 @@ package InterviewQuestions.deloit;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Encapsulates test behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates test behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Test {
 
 		public static void main(String[] args) {
@@ -27,8 +25,7 @@ public class Test {
 				System.out.println(entry.getKey());
 			}
 		}
-		
-		
+
 	}
 
 }

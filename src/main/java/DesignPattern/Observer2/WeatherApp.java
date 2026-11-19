@@ -1,9 +1,8 @@
 package DesignPattern.Observer2;
 
-/**
- * Encapsulates weather app behavior for a reusable object-interaction design.
- */
+/** Purpose: Encapsulates weather app behavior; it demonstrates reusable object interaction. Owner: Virendra Gupta. */
 public class WeatherApp {
+        
         public static void main(String[] args) {
         WeatherStation weatherStation = new WeatherStation();
 

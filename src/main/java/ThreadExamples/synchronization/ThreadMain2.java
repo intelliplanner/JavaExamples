@@ -1,30 +1,24 @@
 package ThreadExamples.synchronization;
 
-/**
- * Encapsulates thread main2 behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates thread main2 behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class ThreadMain2 {
 
 		public static void main(String[] args) {
 		final Table obj=new Table();
 		Thread t1= new Thread() {
-			/**
- * Executes run processing and coordinates the required workflow.
- */
+			
+			/** Purpose: Executes the run workflow. */
 			public void run() {
 				obj.printable(10);
 			}
 		};
 		Thread t2= new Thread() {
-			/**
- * Executes run processing and coordinates the required workflow.
- */
+			
+			/** Purpose: Executes the run workflow. */
 			public void run() {
 				obj.printable(10);
 			}
 		};
-		
-
 
 		t1.start();
 		t2.start();

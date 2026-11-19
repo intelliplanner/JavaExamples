@@ -5,14 +5,10 @@
  */
 package Generic;
 
-/**
- *
- * @author IPSSI
- */
+/** Purpose: Encapsulates generic method test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class GenericMethodTest {
-    /**
- * Performs the print array operation required by the represented example.
- */
+    
+    /** Purpose: Performs the print array operation. */
     public static <E> void printArray(E[] inputArray){
     	int i = 1;
         for(E e:inputArray){
@@ -22,6 +18,7 @@ public class GenericMethodTest {
             i++;
         }
     }
+        
         public static void main(String[] args) {
       Integer[] intArray = { 1, 2, 3, 4, 5 };
       Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };

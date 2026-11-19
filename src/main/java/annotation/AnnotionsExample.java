@@ -6,10 +6,9 @@ package annotation;
  int value3() default 3;
 }
 
-/**
- * Encapsulates annotions example behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates annotions example behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class AnnotionsExample {
+
 public static void main(String s[]) {
 }
 }

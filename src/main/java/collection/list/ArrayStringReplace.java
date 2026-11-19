@@ -1,12 +1,9 @@
 package collection.list;
 
-/**
- * Encapsulates array string replace behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates array string replace behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ArrayStringReplace {
-	/**
- * Performs the replace string operation required by the represented example.
- */
+	
+	/** Purpose: Performs the replace string operation. */
 	private static void replaceString(String paragraph, String replaceStr) {
 		char[] ch = paragraph.toCharArray();
 		StringBuilder sb = new StringBuilder();

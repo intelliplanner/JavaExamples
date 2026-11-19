@@ -1,8 +1,6 @@
 package ThreadExamples.example2;
 
-/**
- * Encapsulates thread synchronization behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates thread synchronization behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class ThreadSynchronization implements Runnable {
 	 int totalcount = 10;
 	 int noOfThreads = 3;
@@ -10,17 +8,14 @@ public class ThreadSynchronization implements Runnable {
 	static Object lock = new Object();
 	int rem = 0;
 
-	/**
- * Creates a configured thread synchronization instance for the represented workflow.
- */
+	/** Purpose: Creates a thread synchronization instance. */
 	ThreadSynchronization(int rem) {
 		this.rem = rem;
 	}
 
 	@Override
-	/**
- * Executes run processing and coordinates the required workflow.
- */
+	
+	/** Purpose: Executes the run workflow. */
 	public void run() {
 		synchronized (lock) {
 			while (number < totalcount-1) {

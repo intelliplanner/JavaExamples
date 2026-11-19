@@ -1,35 +1,26 @@
 package collection.map;
 
-/**
- * Encapsulates employee behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates employee behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class Employee implements Comparable<Employee> {
 
     private Long id;
-    /**
- * Retrieves or locates get id data needed for decision-making.
- */
+    
+    /** Purpose: Retrieves get id data. */
     public Long getId() {
 		return id;
 	}
 
-	/**
- * Updates set id while keeping domain data consistent.
- */
+	/** Purpose: Updates set id data. */
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -38,6 +29,7 @@ public class Employee implements Comparable<Employee> {
 
     // constructor, getters, settersl̥
 
+    /** Purpose: Creates a employee instance. */
     public Employee(Long id, String name) {
 		super();
 		this.id = id;
@@ -46,9 +38,8 @@ public class Employee implements Comparable<Employee> {
 
 	// override equals and hashCode
     @Override
-    /**
- * Performs the compare to operation required by the represented example.
- */
+    
+    /** Purpose: Performs the compare to operation. */
     public int compareTo(Employee employee) {
         return (int)(this.id - employee.getId());
     }

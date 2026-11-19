@@ -1,8 +1,6 @@
 package DesignPattern.Observer;
 
-/**
- * Encapsulates information observer behavior for a reusable object-interaction design.
- */
+/** Purpose: Encapsulates information observer behavior; it demonstrates reusable object interaction. Owner: Virendra Gupta. */
 public class InformationObserver implements Observer{
 
 	static int infoObserverId = 0;
@@ -10,10 +8,8 @@ public class InformationObserver implements Observer{
 	boolean isAvailable=false;
 	
 	private Flipkart grabInfo;
-	
-	/**
- * Creates a configured information observer instance for the represented workflow.
- */
+
+	/** Purpose: Creates a information observer instance. */
 	public InformationObserver(Flipkart grabInfo) {
 		this.grabInfo=grabInfo;
 		this.infoObserverId = ++infoObserverId;
@@ -21,23 +17,18 @@ public class InformationObserver implements Observer{
 		this.grabInfo.addObserver(this);
 	}
 
-	/**
- * Performs the print info operation required by the represented example.
- */
+	/** Purpose: Performs the print info operation. */
 	public void printInfo() {
 		System.out.println("Information Observer [tvPrice=" + this.tvPrice + ", isAvailable=" + this.isAvailable + "]");
 	}
 
 	@Override
-	/**
- * Updates update information while keeping domain data consistent.
- */
+	
+	/** Purpose: Updates update information data. */
 	public void updateInformation(boolean isAvailableTv, double tvPrice) {
 		this.isAvailable=isAvailableTv;
 		this.tvPrice=tvPrice;
 		printInfo();
 	}
-
-	
 
 }

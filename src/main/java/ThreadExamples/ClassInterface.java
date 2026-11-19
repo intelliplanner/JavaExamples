@@ -5,17 +5,11 @@
  */
 package ThreadExamples;
 
-/**
- *
- * @author Vicky
- */
 public interface ClassInterface {
-    /**
- * Performs the print operation required by the represented example.
- */
+    
+    /** Purpose: Performs the print operation. */
     void print(int val);
-    /**
- * Performs the change text operation required by the represented example.
- */
+    
+    /** Purpose: Performs the change text operation. */
     void changeText(String str);
 }

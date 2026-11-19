@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Encapsulates comparotor student behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates comparotor student behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ComparotorStudent {
 
 public static void main(String args[]){  

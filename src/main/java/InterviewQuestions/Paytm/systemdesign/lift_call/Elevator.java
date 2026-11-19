@@ -2,30 +2,19 @@ package InterviewQuestions.Paytm.systemdesign.lift_call;
 
 import java.util.TreeSet;
 
-/**
- * Encapsulates elevator behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates elevator behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 class Elevator {
 	private Direction currentDirection = Direction.UP;
 	private State currentState = State.IDLE;
 	private int currentFloor = 0;
 
-	/**
-	 * jobs which are being processed
-	 */
 	private TreeSet<Request> currentJobs = new TreeSet<>();
-	/**
-	 * up jobs which cannot be processed now so put in pending queue
-	 */
+	
 	private TreeSet<Request> upPendingJobs = new TreeSet<>();
-	/**
-	 * down jobs which cannot be processed now so put in pending queue
-	 */
+	
 	private TreeSet<Request> downPendingJobs = new TreeSet<>();
 
-	/**
- * Executes start elevator processing and coordinates the required workflow.
- */
+	/** Purpose: Executes the start elevator workflow. */
 	public void startElevator() {
 		while (true) {
 
@@ -51,9 +40,7 @@ class Elevator {
 		}
 	}
 
-	/**
- * Verifies check if job conditions before processing continues.
- */
+	/** Purpose: Validates check if job conditions. */
 	public boolean checkIfJob() {
 		if (currentJobs.isEmpty()) {
 			return false;
@@ -62,9 +49,7 @@ class Elevator {
 
 	}
 
-	/**
- * Executes process up request processing and coordinates the required workflow.
- */
+	/** Purpose: Executes the process up request workflow. */
 	private void processUpRequest(Request request) {
 		// The elevator is not on the floor where the person has requested it i.e.
 		// source floor. So first bring it there.
@@ -103,9 +88,7 @@ class Elevator {
 
 	}
 
-	/**
- * Executes process down request processing and coordinates the required workflow.
- */
+	/** Purpose: Executes the process down request workflow. */
 	private void processDownRequest(Request request) {
 
 		int startFloor = currentFloor;
@@ -142,9 +125,7 @@ class Elevator {
 
 	}
 
-	/**
- * Verifies check if new job can be processed conditions before processing continues.
- */
+	/** Purpose: Validates check if new job can be processed conditions. */
 	private boolean checkIfNewJobCanBeProcessed(Request currentRequest) {
 		if (checkIfJob()) {
 			if (currentDirection == Direction.UP) {
@@ -176,9 +157,7 @@ class Elevator {
 
 	}
 
-	/**
- * Adds add pending down jobs to current jobs information required by the workflow.
- */
+	/** Purpose: Adds add pending down jobs to current jobs data. */
 	private void addPendingDownJobsToCurrentJobs() {
 		if (!downPendingJobs.isEmpty()) {
 			currentJobs = downPendingJobs;
@@ -189,9 +168,7 @@ class Elevator {
 
 	}
 
-	/**
- * Adds add pending up jobs to current jobs information required by the workflow.
- */
+	/** Purpose: Adds add pending up jobs to current jobs data. */
 	private void addPendingUpJobsToCurrentJobs() {
 		if (!upPendingJobs.isEmpty()) {
 			currentJobs = upPendingJobs;

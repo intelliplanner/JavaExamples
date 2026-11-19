@@ -6,10 +6,9 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-/**
- * Encapsulates reduce stream behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates reduce stream behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class ReduceStream {
+		
 		public static void main(String[] args) {
 //		test1();
 //		test2();
@@ -19,29 +18,22 @@ public class ReduceStream {
 
 	}
 
-	/**
- * Performs the test6 operation required by the represented example.
- */
+	/** Purpose: Performs the test6 operation. */
 	private static void test6() {
 		// TODO Auto-generated method stub
 
 	}
 
-	/**
- * Performs the test5 operation required by the represented example.
- */
+	/** Purpose: Performs the test5 operation. */
 	private static void test5() {
-		
-		
+
 		int product = IntStream.range(2, 8).reduce((num1, num2) -> num1 * num2).orElse(-1);
 
 		// Displaying the product
 		System.out.println("Test 5 The product is : " + product);
 	}
 
-	/**
- * Performs the test4 operation required by the represented example.
- */
+	/** Purpose: Performs the test4 operation. */
 	private static void test4() {
 		List<Integer> array = Arrays.asList(-2, 0, 4, 6, 8);
 
@@ -52,9 +44,7 @@ public class ReduceStream {
 		System.out.println("The sum of all elements is " + sum);
 	}
 
-	/**
- * Performs the test1 operation required by the represented example.
- */
+	/** Purpose: Performs the test1 operation. */
 	private static void test1() {
 		String[] array = { "Geeks", "for", "Geeks" };
 		Optional<String> String_combine = Arrays.stream(array).reduce((str1, str2) -> str1 + "-" + str2);
@@ -63,9 +53,7 @@ public class ReduceStream {
 		}
 	}
 
-	/**
- * Performs the test2 operation required by the represented example.
- */
+	/** Purpose: Performs the test2 operation. */
 	private static void test2() {
 		List<String> words = Arrays.asList("GFG", "Geeks", "for", "GeeksQuiz", "GeeksforGeeks");
 

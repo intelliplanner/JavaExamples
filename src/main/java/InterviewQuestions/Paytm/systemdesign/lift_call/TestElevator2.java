@@ -1,16 +1,12 @@
 package InterviewQuestions.Paytm.systemdesign.lift_call;
 
-/**
- * Encapsulates test elevator2 behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates test elevator2 behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class TestElevator2 {
+		
 		public static void main(String args[]) {
 
 		Elevator elevator = new Elevator();
 
-		/**
-		 * Thread for starting the elevator
-		 */
 		ProcessJobWorker processJobWorker = new ProcessJobWorker(elevator);
 		Thread t2 = new Thread(processJobWorker);
 		t2.start();

@@ -2,9 +2,7 @@ package InteviewQuestions;
 
 import java.util.Arrays;
 
-/**
- * Encapsulates string question behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates string question behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class StringQuestion {
 	// Remove space without string methods
 
@@ -16,9 +14,7 @@ public class StringQuestion {
 
 	}
 
-	/**
- * Retrieves or locates find last index of string data needed for decision-making.
- */
+	/** Purpose: Retrieves find last index of string data. */
 	private static void findLastIndexOfString() {
 		// String myStr = "Hello planet earth, you are a great planet.";
 		// System.out.println(myStr.lastIndexOf("planet"));
@@ -29,15 +25,10 @@ public class StringQuestion {
 		String str = "This is index of example";
 		int index = str.lastIndexOf('s', 7);
 		System.out.println(index);
-	
-		
-		
+
 	}
 
-	
-	/**
- * Retrieves or locates findrepeter data needed for decision-making.
- */
+	/** Purpose: Retrieves findrepeter data. */
 	static void Findrepeter(){
 	    String s="mmababctamantlslmag";
 	    int distinct = 0 ;
@@ -60,9 +51,8 @@ public class StringQuestion {
 	    }
 
 	}
-	/**
- * Removes remove space data so only valid workflow entries remain.
- */
+	
+	/** Purpose: Removes remove space data. */
 	private static void removeSpace(String str) {
 
 		for (int i = 0; i < str.length(); i++) {

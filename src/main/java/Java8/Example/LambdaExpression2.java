@@ -1,15 +1,12 @@
 package Java8.Example;
 
 interface Test1 {
-	/**
- * Adds add information required by the workflow.
- */
+	
+	/** Purpose: Adds add data. */
 	void add(int a, int b);
 }
 
-/**
- * Encapsulates lambda expression2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates lambda expression2 behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class LambdaExpression2 {
 
 		public static void main(String[] args) {

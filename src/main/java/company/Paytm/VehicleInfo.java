@@ -2,9 +2,7 @@ package company.Paytm;
 
 import java.util.Date;
 
-/**
- * Encapsulates vehicle info behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates vehicle info behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class VehicleInfo {
 	int id;
 	String vehicleType;

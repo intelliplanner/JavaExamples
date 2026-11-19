@@ -2,28 +2,28 @@ package Java8.Example;
 
 interface Sayable{  
     // Default method   
+     /** Purpose: Performs the say operation. */
      default void say(){  
         System.out.println("Hello, this is default method");  
     }  
     // Abstract method  
+    /** Purpose: Performs the say more operation. */
     void sayMore(String msg);  
 }  
-/**
- * Encapsulates default method behavior for the represented example workflow.
- */
+
+/** Purpose: Encapsulates default method behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class DefaultMethod implements Sayable{  
-    /**
- * Performs the say more operation required by the represented example.
- */
+    
+    /** Purpose: Performs the say more operation. */
     public void sayMore(String msg){        // implementing abstract method   
         System.out.println(msg);  
     }  
+        
         public static void main(String[] args) {  
         DefaultMethod dm = new DefaultMethod();  
        // calling default method  
 //        dm.sayMore("Work is worship");  // calling abstract method
-       
-        
+
         dm.say();
         
     }

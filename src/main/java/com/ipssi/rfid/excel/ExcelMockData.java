@@ -9,24 +9,16 @@ import java.util.List;
 
 import com.ipssi.beans.ExcelBean;
 
-
-
-/**
- * Encapsulates excel mock data behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates excel mock data behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ExcelMockData {
 
 	private List<ExcelBean> excelData;
 
-	/**
- * Creates a configured excel mock data instance for the represented workflow.
- */
+	/** Purpose: Creates a excel mock data instance. */
 	public ExcelMockData() {
 	}
 
-	/**
- * Retrieves or locates get excel data data needed for decision-making.
- */
+	/** Purpose: Retrieves get excel data data. */
 	public List<ExcelBean> getExcelData() {
 		if (excelData == null) {
 			populateExcelData();
@@ -34,16 +26,12 @@ public class ExcelMockData {
 		return excelData;
 	}
 
-	/**
- * Updates set excel data while keeping domain data consistent.
- */
+	/** Purpose: Updates set excel data data. */
 	public void setExcelData(List<ExcelBean> excelData) {
 		this.excelData = excelData;
 	}
 
-	/**
- * Performs the populate excel data operation required by the represented example.
- */
+	/** Purpose: Performs the populate excel data operation. */
 	private void populateExcelData() {
 		excelData = new ArrayList<ExcelBean>();
 		Class<ExcelBean> classz = (Class<ExcelBean>) ExcelBean.class;
@@ -64,9 +52,7 @@ public class ExcelMockData {
 		}
 	}
 
-	/**
- * Retrieves or locates get random string data needed for decision-making.
- */
+	/** Purpose: Retrieves get random string data. */
 	private String getRandomString() {
 		SecureRandom random = new SecureRandom();
 		return new BigInteger(130, random).toString(32);

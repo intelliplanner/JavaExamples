@@ -1,15 +1,13 @@
 package access_modifier;
 
-/**
- * Encapsulates test access modifier behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates test access modifier behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class TestAccessModifier {
 	 int i=10;
 }
-/**
- * Encapsulates test behavior for the represented example workflow.
- */
+
+/** Purpose: Encapsulates test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class Test extends TestAccessModifier{
+		
 		public static void main(String args[]) {
 		TestAccessModifier t=new TestAccessModifier();
 		System.out.println(t.i);

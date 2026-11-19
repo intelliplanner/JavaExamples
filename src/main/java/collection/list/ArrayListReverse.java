@@ -6,9 +6,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Encapsulates array list reverse behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates array list reverse behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ArrayListReverse {
 
 		public static void main(String[] args) {
@@ -25,8 +23,7 @@ public class ArrayListReverse {
     {  
         System.out.print(i.next()+"  ");  
     }        
-    
-    
+
     Collections.reverse(list);
     System.out.println("printing list in reverse order....");  
     Iterator i3 = list.iterator();  
@@ -34,9 +31,7 @@ public class ArrayListReverse {
     {  
         System.out.print(i3.next()+"  ");  
     } 
-	
- 
-    
+
     
    Collections.sort(list);  
     System.out.println("printing list in descending order....");  

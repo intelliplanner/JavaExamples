@@ -1,16 +1,13 @@
 package Java8.Stream;
 
-/**
- * Encapsulates employee behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates employee behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class Employee {
 		int id;
 		String name;
 		String deparment;
 		int salary;
-		/**
- * Creates a configured employee instance for the represented workflow.
- */
+		
+		/** Purpose: Creates a employee instance. */
 		public Employee(int id, String name, String deparment, int salary) {
 			super();
 			this.id = id;
@@ -18,58 +15,49 @@ public class Employee {
 			this.deparment = deparment;
 			this.salary = salary;
 		}
-		/**
- * Retrieves or locates get id data needed for decision-making.
- */
+		
+		/** Purpose: Retrieves get id data. */
 		public int getId() {
 			return id;
 		}
-		/**
- * Updates set id while keeping domain data consistent.
- */
+		
+		/** Purpose: Updates set id data. */
 		public void setId(int id) {
 			this.id = id;
 		}
-		/**
- * Retrieves or locates get name data needed for decision-making.
- */
+		
+		/** Purpose: Retrieves get name data. */
 		public String getName() {
 			return name;
 		}
-		/**
- * Updates set name while keeping domain data consistent.
- */
+		
+		/** Purpose: Updates set name data. */
 		public void setName(String name) {
 			this.name = name;
 		}
-		/**
- * Retrieves or locates get deparment data needed for decision-making.
- */
+		
+		/** Purpose: Retrieves get deparment data. */
 		public String getDeparment() {
 			return deparment;
 		}
-		/**
- * Updates set deparment while keeping domain data consistent.
- */
+		
+		/** Purpose: Updates set deparment data. */
 		public void setDeparment(String deparment) {
 			this.deparment = deparment;
 		}
-		/**
- * Retrieves or locates get salary data needed for decision-making.
- */
+		
+		/** Purpose: Retrieves get salary data. */
 		public int getSalary() {
 			return salary;
 		}
-		/**
- * Updates set salary while keeping domain data consistent.
- */
+		
+		/** Purpose: Updates set salary data. */
 		public void setSalary(int salary) {
 			this.salary = salary;
 		}
 		@Override
-		/**
- * Provides a readable representation for reporting or diagnostics.
- */
+		
+		/** Purpose: Provides a readable object representation. */
 		public String toString() {
 			return "Employee [id=" + id + ", name=" + name + ", deparment=" + deparment + ", salary=" + salary + "]";
 		}

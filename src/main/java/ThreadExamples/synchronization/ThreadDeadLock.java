@@ -1,18 +1,15 @@
 package ThreadExamples.synchronization;
 
-
-/**
- * Encapsulates thread dead lock behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates thread dead lock behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class ThreadDeadLock {  
+	  	  
 	  	  public static void main(String[] args) {  
 	    final String resource1 = "ratan jaiswal";  
 	    final String resource2 = "vimal jaiswal";  
 	    // t1 tries to lock resource1 then resource2  
 	    Thread t1 = new Thread() {  
-	      /**
- * Executes run processing and coordinates the required workflow.
- */
+	      
+	      /** Purpose: Executes the run workflow. */
 	      public void run() {  
 	          synchronized (resource1) {
 				  System.out.println("Thread 1: locked resource 1");
@@ -31,9 +28,8 @@ public class ThreadDeadLock {
 	  
 	    // t2 tries to lock resource2 then resource1  
 	    Thread t2 = new Thread() {  
-	      /**
- * Executes run processing and coordinates the required workflow.
- */
+	      
+	      /** Purpose: Executes the run workflow. */
 	      public void run() {  
 	        synchronized (resource2) {  
 	          System.out.println("Thread 2: locked resource 2");  
@@ -46,8 +42,7 @@ public class ThreadDeadLock {
 	        }  
 	      }  
 	    };  
-	  
-	      
+
 	    t1.start();  
 	    t2.start();  
 	  }  

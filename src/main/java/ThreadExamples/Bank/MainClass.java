@@ -5,27 +5,22 @@
  */
 package ThreadExamples.Bank;
 
-/**
- *
- * @author IPSSI
- */
+/** Purpose: Encapsulates main class behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class MainClass {
 
         public static void main(String s[]) {
         final UIBank c = new UIBank();
         new Thread() {
             @Override
-            /**
- * Executes run processing and coordinates the required workflow.
- */
+            
+            /** Purpose: Executes the run workflow. */
             public void run() {
                 c.withDrawal(15000);
             }
         }.start();
         new Thread() {
-            /**
- * Executes run processing and coordinates the required workflow.
- */
+            
+            /** Purpose: Executes the run workflow. */
             public void run() {
                 c.deposit(10000);
             }

@@ -3,10 +3,9 @@ package collection;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-/**
- * Encapsulates obejct class service behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates obejct class service behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ObejctClassService {
+		
 		public static void main(String[] args) {
 		TreeSet<String> al = new TreeSet<String>();
 		al.add("Ravi");

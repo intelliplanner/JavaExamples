@@ -10,10 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Random;
 
-/**
- *
- * @author Vi$ky
- */
+/** Purpose: Encapsulates random no behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class RandomNo {
 
         public static void main(String a[]) {
@@ -34,17 +31,13 @@ public class RandomNo {
         insertRandomNumber(generateRandomNo);
     }
 
-    /**
- * Retrieves or locates get random number data needed for decision-making.
- */
+    /** Purpose: Retrieves get random number data. */
     public static int getRandomNumber(int val) {
         Random t = new Random();
         return t.nextInt(val);
     }
 
-    /**
- * Retrieves or locates get random charactor data needed for decision-making.
- */
+    /** Purpose: Retrieves get random charactor data. */
     public static String getRandomCharactor(int Ascii_Val) {
         if (Ascii_Val < 65) {
             int i = 65 - Ascii_Val;
@@ -54,14 +47,11 @@ public class RandomNo {
             Ascii_Val += i;
         }
 
-
         String aChar = new Character((char) Ascii_Val).toString();// 65-90(A-Z) to 97-122(a-z) range of Charactors
         return aChar;
     }
 
-    /**
- * Adds insert random number information required by the workflow.
- */
+    /** Purpose: Adds insert random number data. */
     public static void insertRandomNumber(String generateRandomNo) {
         Connection conn = null;
         boolean destroyIt = false;
@@ -91,10 +81,8 @@ public class RandomNo {
             }
         }
     }
-    
-     /**
- * Performs the verify random number operation required by the represented example.
- */
+
+     /** Purpose: Performs the verify random number operation. */
      public static void verifyRandomNumber(String generateRandomNo) {
         Connection conn = null;
         boolean destroyIt = false;

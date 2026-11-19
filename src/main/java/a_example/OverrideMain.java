@@ -1,18 +1,16 @@
 package a_example;
 
-/**
- * Encapsulates override main behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates override main behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class OverrideMain {
+		
 		public static void main(String[] args) {
 		System.out.println("parent class main method");
 	}
 }
 
-/**
- * Encapsulates parent behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates parent behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class Parent extends OverrideMain {
+		
 		public static void main(String[] args) {
 		System.out.println("child class main method");
 	}

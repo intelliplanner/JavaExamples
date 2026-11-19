@@ -1,16 +1,14 @@
 package functionInterFace;
 
-/**
- * Encapsulates functional interface example2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates functional interface example2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class FunctionalInterfaceExample2 {
+		
 		public static void main(String s[]) {
 		Controller c = (a,b) -> System.out.println(a+b);
 		c.ShowMsg(10, 20);
 		
 		System.out.println("============================================");
-		
-		
+
 		Controller c1 = (a,b) -> {
 				System.out.println(a-b);
 		};
@@ -18,8 +16,7 @@ public class FunctionalInterfaceExample2 {
 		c1.ShowMsg(20, 10);
 		
 		System.out.println("============================================");
-		
-		
+
 		FunInter f1 = name ->{  
             return "Hello, "+name;  
         };  

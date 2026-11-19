@@ -1,15 +1,9 @@
 package collection.map;
 import java.util.HashMap;
 
-
-/**
- * Encapsulates test hashmap behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates test hashmap behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class TestHashmap {
 
-	/**
-	 * @param args
-	 */
 	private static HashMap<String, Integer> seclDOReleaseTypeMap = new HashMap<String, Integer>();
     private static HashMap<String, Integer> seclDOPriorityTypeMap = new HashMap<String, Integer>();
     private static HashMap<String, String> seclGradeCodeMasterMap = new HashMap<String, String>();
@@ -83,6 +77,7 @@ public class TestHashmap {
         seclDOReleaseTypeMap.put("X AUCTION", 8);
         seclDOReleaseTypeMap.put("XAUCTION", 8);
     }
+		
 		public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //	System.out.println(seclDOReleaseTypeMap.get("XAUCTION"));
@@ -103,8 +98,5 @@ public class TestHashmap {
 		System.out.println(strNew.substring(0, 2));
 		
 	}
-
-		
-	
 
 }

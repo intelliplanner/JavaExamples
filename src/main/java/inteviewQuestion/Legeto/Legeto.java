@@ -1,11 +1,10 @@
 package inteviewQuestion.Legeto;
 
-/**
- * Encapsulates legeto behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates legeto behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Legeto {
 	static int size = 2;
 	static int[] arr = new int[size];
+		
 		public static void main(String[] args) {
 		insertDataintoArray(2);
 		insertDataintoArray(22);
@@ -18,9 +17,7 @@ public class Legeto {
 		insertDataintoArray(29);
 	}
 
-	/**
- * Adds insert datainto array information required by the workflow.
- */
+	/** Purpose: Adds insert datainto array data. */
 	private static void insertDataintoArray(int n ) {
 			if(size > arr.length) {
 				size++;

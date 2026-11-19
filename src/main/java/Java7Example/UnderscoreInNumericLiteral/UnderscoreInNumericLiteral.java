@@ -5,11 +5,9 @@
  */
 package Java7Example.UnderscoreInNumericLiteral;
 
-/**
- *
- * @author IPSSI
- */
+/** Purpose: Encapsulates underscore in numeric literal behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class UnderscoreInNumericLiteral {
+        
         public static void main(String[] args) {  
         // Underscore in integral literal  
         int a = 10_00000;  

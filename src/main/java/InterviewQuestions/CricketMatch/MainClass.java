@@ -5,11 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-/**
- * Encapsulates main class behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates main class behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class MainClass {
+		
 		public static void main(String s[]) {
 		List<Match> matchList = new ArrayList<Match>();
 

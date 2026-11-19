@@ -5,10 +5,9 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- * Encapsulates json examples behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates json examples behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class JsonExamples {
+		
 		public static void main(String s[]) {
 		 String jsonString = "{\n" +
 		            "        \"libraryname\":\"My Library\",\n" +

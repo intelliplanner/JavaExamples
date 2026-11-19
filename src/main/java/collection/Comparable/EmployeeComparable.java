@@ -3,10 +3,9 @@ package collection.Comparable;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- * Encapsulates employee comparable behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates employee comparable behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class EmployeeComparable {
+		
 		public static void main(String[] args) {
 		ArrayList<Employee> es = new ArrayList<Employee>(); 
 		es.add(new Employee(10, 20000, "vicky"));

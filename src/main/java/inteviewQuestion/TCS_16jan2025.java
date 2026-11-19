@@ -1,8 +1,6 @@
 package inteviewQuestion;
 
-/**
- * Encapsulates tcs_16jan2025 behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates tcs_16jan2025 behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class TCS_16jan2025 {
 
         public static void main(String[] at) {

@@ -5,14 +5,10 @@
  */
 package Java7Example.MultipleExceptionExample;
 
-/**
- *
- * @author IPSSI
- */
+/** Purpose: Encapsulates multiple exception example behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class MultipleExceptionExample {
-    /**
- * Performs the test exception operation required by the represented example.
- */
+    
+    /** Purpose: Performs the test exception operation. */
     public static void testException(){
         try{
             int arr[]= new int[10];
@@ -21,7 +17,7 @@ public class MultipleExceptionExample {
             System.out.println(e.getMessage());  
         }   
     }
-    
+
         public static void main(String s[]){
     testException();
     }

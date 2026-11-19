@@ -1,19 +1,16 @@
 package TypeInferenceJava9;
 
-/**
- * Encapsulates box demo behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates box demo behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class BoxDemo {
-	/** This class is a user-defined class that contains one methods cube.*/  
+	  
+	/** Purpose: Adds add box data. */
 	public static <U> void addBox(U u, java.util.List<Box<U>> boxes) {
 		Box<U> box = new Box<>();
 		box.set(u);
 		boxes.add(box);
 	}
 
-	/**
- * Performs the output boxes operation required by the represented example.
- */
+	/** Purpose: Performs the output boxes operation. */
 	public static <U> void outputBoxes(java.util.List<Box<U>> boxes) {
 		int counter = 0;
 		for (Box<U> box : boxes) {

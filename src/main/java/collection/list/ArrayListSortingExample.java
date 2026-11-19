@@ -4,16 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Encapsulates product behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates product behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 class Product{  
     int id;  
     String name;  
     float price;  
-    /**
- * Creates a configured product instance for the represented workflow.
- */
+    
+    /** Purpose: Creates a product instance. */
     public Product(int id, String name, float price) {  
         super();  
         this.id = id;  
@@ -21,10 +18,10 @@ class Product{
         this.price = price;  
     }  
 }  
-/**
- * Encapsulates array list sorting example behavior for collection data management and lookup.
- */
+
+/** Purpose: Encapsulates array list sorting example behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ArrayListSortingExample{  
+        
         public static void main(String[] args) {  
         List<Product> list=new ArrayList<Product>();  
           
@@ -32,8 +29,7 @@ public class ArrayListSortingExample{
         list.add(new Product(1,"HP Laptop",25000f));  
         list.add(new Product(2,"Dell Mouse",150f));  
         list.add(new Product(3,"Keyboard",300f));    
-       
-  
+
         System.out.println("--------------------Before Sorting-------------------");
         for(Product p:list){  
             System.out.println(p.id+" "+p.name+" "+p.price);  
@@ -48,8 +44,7 @@ public class ArrayListSortingExample{
         for(Product p:list){  
             System.out.println(p.id+" "+p.name+" "+p.price);  
         }  
-  
-        
+
         System.out.println("--------------------Sorting on the basis of price...-------------------- ");  
         Collections.sort(list,(p1,p2)->{  
             return p1.price > p2.price ? 1 : p1.price == p2.price ? 0 : -1;  

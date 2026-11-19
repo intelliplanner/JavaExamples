@@ -7,15 +7,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Encapsulates sudoku validate behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates sudoku validate behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class SudokuValidate {
 	static int N = 9;
 
 	// Function to check if all elements
 	// of the board[][] array store
 	// value in the range[1, 9]
+	/** Purpose: Validates isin range conditions. */
 	static boolean isinRange(int[][] board) {
 
 		// Traverse board[][] array
@@ -32,6 +31,7 @@ public class SudokuValidate {
 
 	// Function to check if the solution
 	// of sudoku puzzle is valid or not
+	/** Purpose: Validates is valid sudoku conditions. */
 	static boolean isValidSudoku(int board[][]) { // Check if all elements of board[][] , stores value in the range[1,
 													// 9]
 		if (isinRange(board) == false) {
@@ -120,9 +120,7 @@ public class SudokuValidate {
 		return true;		// If all conditions satisfied
 	}
 
-	/**
- * Performs the parse array from list operation required by the represented example.
- */
+	/** Purpose: Performs the parse array from list operation. */
 	static int[][] parseArrayFromList(ArrayList<ArrayList<Integer>> mainList) {
 		int arr[][] = new int[mainList.size()][mainList.get(0).size()];
 		for (int i = 0; i < mainList.size(); i++) {

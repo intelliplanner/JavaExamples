@@ -5,14 +5,10 @@
  */
 package reflection;
 
-/**
- *
- * @author Vicky
- */
+/** Purpose: Encapsulates test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Test {
-    /**
- * Performs the print val operation required by the represented example.
- */
+    
+    /** Purpose: Performs the print val operation. */
     public int printVal(){
         int val = 2;
         return val;

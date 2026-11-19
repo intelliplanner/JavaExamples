@@ -1,8 +1,6 @@
 package stringExample;
 
-/**
- * Encapsulates string pattern behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates string pattern behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class StringPattern {
 
 		public static void main(String[] args) {

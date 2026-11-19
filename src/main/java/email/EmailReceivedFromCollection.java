@@ -12,9 +12,7 @@ import javax.mail.Session;
 import javax.mail.Store;
 import javax.mail.search.SearchTerm;
 
-/**
- * Encapsulates email received from collection behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates email received from collection behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class EmailReceivedFromCollection {
 
     // Gmail IMAP settings
@@ -29,9 +27,7 @@ public class EmailReceivedFromCollection {
         searchEmail(HOST, PORT, USERNAME, APP_PASSWORD);
     }
 
-    /**
-     * Performs the search email operation required by the represented example.
-     */
+    /** Purpose: Performs the search email operation. */
     public static void searchEmail(String host, String port, String userName, String password) {
         Properties properties = new Properties();
         properties.put("mail.imap.host", host);
@@ -56,6 +52,7 @@ public class EmailReceivedFromCollection {
 
             SearchTerm searchCondition = new SearchTerm() {
                 @Override
+                /** Purpose: Performs the match operation. */
                 public boolean match(Message message) {
                     try {
                         return message.getSubject() != null && message.getSubject().contains("Java");

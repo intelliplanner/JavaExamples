@@ -1,22 +1,17 @@
 package DefaultMethods;
 
-/**
- * Encapsulates operationa behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates operationa behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class Operationa {
 	int data = 50;
 
-	/**
- * Performs the change operation required by the represented example.
- */
+	/** Purpose: Performs the change operation. */
 	void change(int data) {
 		data = data + 100;// changes will be in the local variable only
 		
 //		this.data = data + 100;
 	}
 
-	
-	
+		
 		public static void main(String args[]) {
 		Operationa op = new Operationa();
 

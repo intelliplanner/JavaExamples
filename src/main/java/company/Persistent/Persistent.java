@@ -6,9 +6,7 @@ import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates persistent behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates persistent behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Persistent {
 
 		public static void main(String[] args) {

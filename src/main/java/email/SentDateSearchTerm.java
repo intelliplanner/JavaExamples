@@ -5,32 +5,22 @@ import java.util.Date;
 import javax.mail.Message;
 import javax.mail.search.SearchTerm;
 
-/**
- * Encapsulates sent date search term behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates sent date search term behavior; it handles email search and filtering. Owner: Virendra Gupta. */
 public class SentDateSearchTerm extends SearchTerm {
 
-	/**
-	 * Virendra Gupta
-	 */
 	private static final long serialVersionUID = 1L;
 	Date receivedDate;
 
-	/**
- * Creates a configured sent date search term instance for the represented workflow.
- */
+	/** Purpose: Creates a sent date search term instance. */
 	public SentDateSearchTerm(Date receivedDate) {
 		this.receivedDate = receivedDate;
 	}
 
 	@Override
-	/**
- * Performs the match operation required by the represented example.
- */
+	/** Purpose: Performs the match operation. */
 	public boolean match(Message message) {
 		try {
 			if ( message.getSentDate().after(receivedDate)) {
-//				if (message.getSubject().contains("Job") /*&& message.getSentDate().after(receivedDate)*/) {
 				return true;
 			}
 		} catch (Exception e) {

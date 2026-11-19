@@ -5,17 +5,13 @@ import InterviewQuestions.Paytm.systemdesign.lift_call.ExternalRequest;
 import InterviewQuestions.Paytm.systemdesign.lift_call.InternalRequest;
 import InterviewQuestions.Paytm.systemdesign.lift_call.Request;
 
-/**
- * Encapsulates test elevator behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates test elevator behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class TestElevator {
+		
 		public static void main(String args[]) {
 
 		ElevatorNew elevator = new ElevatorNew();
 
-		/**
-		 * Thread for starting the elevator
-		 */
 		ProcessJobWorker processJobWorker = new ProcessJobWorker(elevator);
 		Thread t2 = new Thread(processJobWorker);
 		t2.start();
@@ -33,9 +29,6 @@ public class TestElevator {
 
 		Request request1 = new Request(ir, er);
 
-		/**
-		 * Pass job to the elevator
-		 */
 		new Thread(new AddJobWorker(elevator, request1)).start();
 
 		try {

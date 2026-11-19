@@ -1,50 +1,36 @@
 package abstractAndInterface.test_hierarchy;
 
 interface Test1 {
-	/**
- * Performs the a operation required by the represented example.
- */
+	
+	/** Purpose: Performs the a operation. */
 	void a();
 
-	/**
- * Performs the b operation required by the represented example.
- */
+	/** Purpose: Performs the b operation. */
 	void b();
 
-	/**
- * Performs the c operation required by the represented example.
- */
+	/** Purpose: Performs the c operation. */
 	void c();
 
-	/**
- * Performs the d operation required by the represented example.
- */
+	/** Purpose: Performs the d operation. */
 	void d();
 }
 
-/**
- * Encapsulates a behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates a behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 abstract class A implements Test1 {
-	
-	/**
- * Performs the test operation required by the represented example.
- */
+
+	/** Purpose: Performs the test operation. */
 	abstract void test();
 	
 	@Override
-	/**
- * Performs the a operation required by the represented example.
- */
+	
+	/** Purpose: Performs the a operation. */
 	public void a() {
 		System.out.println("class A call a()");
 	}
 	
 }
 
-/**
- * Encapsulates test2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates test2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class Test2 extends A {
 
 //	@Override
@@ -52,43 +38,38 @@ class Test2 extends A {
 //		System.out.println("class Test2 call a()");
 //	}
 	@Override
-	/**
- * Performs the b operation required by the represented example.
- */
+	
+	/** Purpose: Performs the b operation. */
 	public void b() {
 		System.out.println("class Test2 call b()");
 	}
 
 	@Override
-	/**
- * Performs the c operation required by the represented example.
- */
+	
+	/** Purpose: Performs the c operation. */
 	public void c() {
 		System.out.println("class Test2 call c()");
 	}
 
 	@Override
-	/**
- * Performs the d operation required by the represented example.
- */
+	
+	/** Purpose: Performs the d operation. */
 	public void d() {
 		System.out.println("class Test2 call d()");
 	}
 
 	@Override
-	/**
- * Performs the test operation required by the represented example.
- */
+	
+	/** Purpose: Performs the test operation. */
 	void test() {
 		// TODO Auto-generated method stub
 		
 	}
 }
 
-/**
- * Encapsulates test5 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates test5 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Test5 {
+		
 		public static void main(String args[]) {
 		Test2 t = new Test2();
 		t.a();

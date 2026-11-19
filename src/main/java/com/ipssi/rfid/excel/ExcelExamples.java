@@ -17,27 +17,19 @@ import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 
-
-/**
- * Encapsulates excel examples behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates excel examples behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ExcelExamples {
 	static String firstHeading =  "Intelliplanner Software System India Pvt. Ltd.";
 	static String secondHeading = "D-83, 2nd  Floor Seoctor-6, Noida-201301 (U.P.)";
 	WritableFont  normalFont = new WritableFont(WritableFont.ARIAL, 12,WritableFont.NO_BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK );
 	WritableFont FirstheadingFont = new WritableFont(WritableFont.ARIAL, 16,WritableFont.BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK ); 
 	WritableFont secondheadingFont = new WritableFont(WritableFont.ARIAL,16,WritableFont.NO_BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK );
-	
-	
-	/**
- * Performs the initialize operation required by the represented example.
- */
+
+	/** Purpose: Performs the initialize operation. */
 	private void initialize(){
 	}
-	
-	/**
- * Retrieves or locates get first heading format data needed for decision-making.
- */
+
+	/** Purpose: Retrieves get first heading format data. */
 	private static WritableCellFormat getFirstHeadingFormat() throws WriteException {
 		WritableFont headingFont = new WritableFont(WritableFont.ARIAL, 20,WritableFont.BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK);
 		WritableCellFormat headingFormat = new WritableCellFormat(headingFont);
@@ -48,9 +40,8 @@ public class ExcelExamples {
 		headingFormat.setBackground(Colour.BLUE_GREY);  
 		return 	headingFormat;
 	}
-	/**
- * Retrieves or locates get normal format data needed for decision-making.
- */
+	
+	/** Purpose: Retrieves get normal format data. */
 	private static WritableCellFormat getNormalFormat() throws WriteException {
 		WritableFont headingFont = new WritableFont(WritableFont.ARIAL, 12,WritableFont.BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK);
 		WritableCellFormat headingFormat = new WritableCellFormat(headingFont);
@@ -61,9 +52,8 @@ public class ExcelExamples {
 		headingFormat.setBackground(Colour.BLUE_GREY);  
 		return 	headingFormat;
 	}
-	/**
- * Retrieves or locates get second heading format data needed for decision-making.
- */
+	
+	/** Purpose: Retrieves get second heading format data. */
 	private static WritableCellFormat getSecondHeadingFormat() throws WriteException {
 		WritableFont headingFont = new WritableFont(WritableFont.ARIAL, 16,WritableFont.NO_BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK);
 		WritableCellFormat headingFormat = new WritableCellFormat(headingFont);
@@ -74,10 +64,8 @@ public class ExcelExamples {
 		headingFormat.setBackground(Colour.BLUE_GREY);  
 		return 	headingFormat;
 	}
-	
-	/**
- * Performs the export excel table operation required by the represented example.
- */
+
+	/** Purpose: Performs the export excel table operation. */
 	public static void exportExcelTable(JTable jTable1,File file) throws IOException{
 		WorkbookSettings ws = new WorkbookSettings();
 		try{
@@ -91,8 +79,7 @@ public class ExcelExamples {
 		workSheet.mergeCells(0, 1, 12, 0);
 		
 		workSheet.mergeCells(0, 4, 5, 0);
-		
-		
+
 //		workSheet.addCell(new jxl.write.Label(0,0,firstHeading,getFirstHeadingFormat()));
 //		workSheet.addCell(new jxl.write.Label(0,1,secondHeading,getSecondHeadingFormat()));
 //		
@@ -102,16 +89,13 @@ public class ExcelExamples {
 //		workSheet.addCell(new jxl.write.Label(6,4,"To",getNormalFormat()));
 //		workSheet.addCell(new jxl.write.Label(7,4,"Details",getNormalFormat()));
 //		workSheet.addCell(new jxl.write.Label(8,4,"Ammount",getNormalFormat()));
-		
-		
-		
+
 		
 		}catch(Exception e){
 			e.printStackTrace();
 		}
 	}
-	
-	
+
 		public static void main(String s[]) {
 		//create WorkbookSettings object
 		WorkbookSettings ws = new WorkbookSettings();
@@ -126,7 +110,6 @@ public class ExcelExamples {
 			workSheet = workbook.createSheet("Expence Report" ,0);
 			SheetSettings sh = workSheet.getSettings();
 
-			
 //			workSheet.mergeCells(0, 0, 0,1);
 			workSheet.mergeCells(0, 0, 12, 0);
 			workSheet.mergeCells(0, 1, 12, 0);

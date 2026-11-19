@@ -1,23 +1,20 @@
 package InnerClass;
 
 interface Test{
-	/**
- * Performs the display operation required by the represented example.
- */
+	
+	/** Purpose: Performs the display operation. */
 	void display();
 }
-/**
- * Encapsulates anonymous inner behavior for the represented example workflow.
- */
+
+/** Purpose: Encapsulates anonymous inner behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class AnonymousInner {
-	
+
 		public static void main(String... args) {
 		Test t = new Test() {
 			
 			@Override
-			/**
- * Performs the display operation required by the represented example.
- */
+			
+			/** Purpose: Performs the display operation. */
 			public void display() {
 				System.out.println("Annonymous Call");
 			}

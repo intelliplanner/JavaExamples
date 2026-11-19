@@ -1,13 +1,10 @@
 package exception;
 
-/**
- * Encapsulates invalid age exception behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates invalid age exception behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class InvalidAgeException  extends Exception  
 {  
-    /**
- * Creates a configured invalid age exception instance for the represented workflow.
- */
+    
+    /** Purpose: Creates a invalid age exception instance. */
     public InvalidAgeException (String str)  
     {  
         // calling the constructor of parent Exception  

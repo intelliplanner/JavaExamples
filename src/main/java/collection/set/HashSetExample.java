@@ -5,22 +5,14 @@
  */
 package collection.set;
 
-/**
- *
- * @author Vicky
- */
 import java.util.*;
 
-/**
- * Encapsulates employee behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates employee behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 class Employee {
 	int id;
 	String name;
 
-	/**
- * Creates a configured employee instance for the represented workflow.
- */
+	/** Purpose: Creates a employee instance. */
 	public Employee(int id, String name) {
 		this.id = id;
 		this.name = name;
@@ -28,9 +20,7 @@ class Employee {
 
 }
 
-/**
- * Encapsulates hash set example behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates hash set example behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 class HashSetExample {
 
 		public static void main(String args[]) {

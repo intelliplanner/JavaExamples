@@ -1,8 +1,6 @@
 package a;
 
-/**
- * Encapsulates employee behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates employee behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Employee implements  Comparable<Employee> {
     int id;
     String name;
@@ -14,9 +12,8 @@ public class Employee implements  Comparable<Employee> {
 //    }
 
     @Override
-    /**
- * Performs the compare to operation required by the represented example.
- */
+    
+    /** Purpose: Performs the compare to operation. */
     public int compareTo(Employee e) {
         return e.name.compareTo(this.name);
     }

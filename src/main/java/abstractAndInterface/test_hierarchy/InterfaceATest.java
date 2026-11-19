@@ -1,14 +1,11 @@
 package abstractAndInterface.test_hierarchy;
 
-/**
- * Encapsulates interface a test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates interface a test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class InterfaceATest implements InterFaceA{
 
 	@Override
-	/**
- * Performs the test1 operation required by the represented example.
- */
+	
+	/** Purpose: Performs the test1 operation. */
 	public void test1() {
 		
 	}

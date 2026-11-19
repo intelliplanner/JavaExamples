@@ -8,15 +8,10 @@ package Java7Example.TryWithResources;
 import java.io.File;
 import java.io.FileOutputStream;
 
-/**
- *
- * @author IPSSI
- */
+/** Purpose: Encapsulates try with resources behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class TryWithResources {
 
-    /**
- * Performs the test exception operation required by the represented example.
- */
+    /** Purpose: Performs the test exception operation. */
     public static void testException() {
         File fs = new File("");
 

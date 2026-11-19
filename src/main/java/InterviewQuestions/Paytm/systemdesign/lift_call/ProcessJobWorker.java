@@ -1,27 +1,20 @@
 package InterviewQuestions.Paytm.systemdesign.lift_call;
 
-/**
- * Encapsulates process job worker behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates process job worker behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ProcessJobWorker implements Runnable {
 
 	private Elevator elevator;
 
-	/**
- * Creates a configured process job worker instance for the represented workflow.
- */
+	/** Purpose: Creates a process job worker instance. */
 	ProcessJobWorker(Elevator elevator) {
 		this.elevator = elevator;
 	}
 
 	@Override
-	/**
- * Executes run processing and coordinates the required workflow.
- */
+	
+	/** Purpose: Executes the run workflow. */
 	public void run() {
-		/**
-		 * start the elevator
-		 */
+		
 		elevator.startElevator();
 	}
 

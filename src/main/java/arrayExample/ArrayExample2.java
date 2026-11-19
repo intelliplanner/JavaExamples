@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/**
- * Encapsulates array example2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates array example2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ArrayExample2 {
+		
 		public static void main(String[] args) {
 		  ArrayList<String> al=new ArrayList<String>();//creating arraylist    
 		  al.add("A");//adding object in arraylist    
@@ -50,6 +49,5 @@ public class ArrayExample2 {
 			}
 		  }
 	}
-	
-	
+
 }

@@ -5,26 +5,18 @@
  */
 package InterviewQuestions;
 
-/**
- *
- * @author IPSSI
- */
-
 //Write a Java Program to reverse a string without using String inbuilt function?
 
-
+/** Purpose: Encapsulates string reverse behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class StringReverse {
+        
         public static void main(String s[]){
 //       reverseStringWithPreFunction();
 //       reverseStringWithoutFunction();
        newReverse();
     }
 
- 
-
-	/**
- * Performs the reverse string with pre function operation required by the represented example.
- */
+	/** Purpose: Performs the reverse string with pre function operation. */
 	private static void reverseStringWithPreFunction() {
         String str = "Reverse";
         StringBuilder str2 = new StringBuilder();
@@ -33,9 +25,7 @@ public class StringReverse {
         System.out.println("str2:   "+str2);
     }
 
-    /**
- * Performs the reverse string without function operation required by the represented example.
- */
+    /** Purpose: Performs the reverse string without function operation. */
     private static void reverseStringWithoutFunction() {
         String str = "Hello";
         char[] ch = str.toCharArray();
@@ -45,10 +35,8 @@ public class StringReverse {
         }
         System.out.println();
     }
-    
-    /**
- * Performs the new reverse operation required by the represented example.
- */
+
+    /** Purpose: Performs the new reverse operation. */
     private static void newReverse() {
     	String str = "Reverse";
     	for (int i = str.length()-1; i >= 0; i--) {

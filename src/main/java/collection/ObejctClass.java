@@ -1,16 +1,12 @@
 package collection;
 
-/**
- * Encapsulates object class behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates object class behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 class ObjectClass {
 
 	public String name;
 	public int id;
 
-	/**
- * Creates a configured object class instance for the represented workflow.
- */
+	/** Purpose: Creates a object class instance. */
 	ObjectClass(String name, int id) {
 
 		this.name = name;
@@ -18,9 +14,8 @@ class ObjectClass {
 	}
 
 	@Override
-	/**
- * Supports reliable object comparison and collection lookup.
- */
+	
+	/** Purpose: Supports reliable object comparison. */
 	public boolean equals(Object obj) {
 
 		// checking if both the object references are
@@ -44,9 +39,8 @@ class ObjectClass {
 	}
 
 	@Override
-	/**
- * Verifies hash code conditions before processing continues.
- */
+	
+	/** Purpose: Validates hash code conditions. */
 	public int hashCode() {
 
 		// We are returning the Geek_id

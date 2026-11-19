@@ -3,51 +3,41 @@ package Java8.MethodRefrences;
 import java.util.function.BiFunction;
 
 interface Arithmetic{
-	 /**
- * Adds add information required by the workflow.
- */
+	 
+	 /** Purpose: Adds add data. */
 	 void add(int a,int b);
 }
 
 interface operation{
-	 /**
- * Performs the multi operation required by the represented example.
- */
+	 
+	 /** Purpose: Performs the multi operation. */
 	 int multi(int a,int b);
 }
 
 interface operationP{
-	 /**
- * Performs the multi operation required by the represented example.
- */
+	 
+	 /** Purpose: Performs the multi operation. */
 	 int multi(int a,int b);
-	 /**
- * Performs the test operation required by the represented example.
- */
+	 
+	 /** Purpose: Performs the test operation. */
 	 static int test() {
 		return 0;
 	}
 }
 
-
-/**
- * Encapsulates static method example1 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates static method example1 behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class StaticMethodExample1 {
-	/**
- * Adds add refrence information required by the workflow.
- */
+	
+	/** Purpose: Adds add refrence data. */
 	public static void addRefrence(int a,int b) {
 		System.out.println(a+b);
 	}
-	
-	/**
- * Performs the multi ref operation required by the represented example.
- */
+
+	/** Purpose: Performs the multi ref operation. */
 	public static int multiRef(int a,int b) {
 		return a*b;
 	}
-	
+
 		public static void main(String[] args) {
 		Arithmetic a = StaticMethodExample1::addRefrence;
 		a.add(10, 20);
@@ -55,6 +45,5 @@ public class StaticMethodExample1 {
 		BiFunction<Integer, Integer, Integer> b =  StaticMethodExample1::multiRef;
 		System.out.println(b.apply(20, 30));
 	}
-	
-	
+
 }

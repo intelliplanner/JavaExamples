@@ -1,8 +1,6 @@
 package a.basic_program;
 
-/**
- * Encapsulates instance block test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates instance block test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class InstanceBlockTest {
 	int speed;
 	{
@@ -13,9 +11,7 @@ public class InstanceBlockTest {
 		System.out.println("static Block call");
 	}
 
-	/**
- * Creates a configured instance block test instance for the represented workflow.
- */
+	/** Purpose: Creates a instance block test instance. */
 	InstanceBlockTest() {
 		System.out.println("contructor Block call, speed:" + speed);
 	}

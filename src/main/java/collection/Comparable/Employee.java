@@ -2,17 +2,13 @@ package collection.Comparable;
 
 import lombok.Data;
 
-
-/**
- * Encapsulates employee behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates employee behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class Employee implements Comparable<Employee> {
 	int age;
 	int salary;
 	String name;
-	/**
- * Creates a configured employee instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a employee instance. */
 	public Employee(int age,int salary,String name){
 		this.age=age;
 		this.salary=salary;
@@ -20,9 +16,8 @@ public class Employee implements Comparable<Employee> {
 	}
 		
 	@Override
-	/**
- * Performs the compare to operation required by the represented example.
- */
+	
+	/** Purpose: Performs the compare to operation. */
 	public int compareTo(Employee emp) {
 		if(age==emp.age) 
 			return 0;
@@ -32,44 +27,32 @@ public class Employee implements Comparable<Employee> {
 			return -1;
 	}
 
-	/**
- * Retrieves or locates get age data needed for decision-making.
- */
+	/** Purpose: Retrieves get age data. */
 	public int getAge() {
 		return age;
 	}
 
-	/**
- * Updates set age while keeping domain data consistent.
- */
+	/** Purpose: Updates set age data. */
 	public void setAge(int age) {
 		this.age = age;
 	}
 
-	/**
- * Retrieves or locates get salary data needed for decision-making.
- */
+	/** Purpose: Retrieves get salary data. */
 	public int getSalary() {
 		return salary;
 	}
 
-	/**
- * Updates set salary while keeping domain data consistent.
- */
+	/** Purpose: Updates set salary data. */
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}

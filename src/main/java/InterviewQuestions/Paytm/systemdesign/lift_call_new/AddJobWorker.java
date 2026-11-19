@@ -2,26 +2,21 @@ package InterviewQuestions.Paytm.systemdesign.lift_call_new;
 
 import InterviewQuestions.Paytm.systemdesign.lift_call.Request;
 
-/**
- * Encapsulates add job worker behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates add job worker behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class AddJobWorker implements Runnable {
 
 	private ElevatorNew elevator;
 	private Request request;
 
-	/**
- * Creates a configured add job worker instance for the represented workflow.
- */
+	/** Purpose: Creates a add job worker instance. */
 	AddJobWorker(ElevatorNew elevator, Request request) {
 		this.elevator = elevator;
 		this.request = request;
 	}
 
 	@Override
-	/**
- * Executes run processing and coordinates the required workflow.
- */
+	
+	/** Purpose: Executes the run workflow. */
 	public void run() {
 
 		try {

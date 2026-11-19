@@ -1,8 +1,6 @@
 package ThreadExamples.synchronization;
 
-/**
- * Encapsulates thread main1 behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates thread main1 behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class ThreadMain1 {
 
 		public static void main(String[] args) {

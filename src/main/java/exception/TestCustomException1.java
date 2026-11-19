@@ -1,12 +1,11 @@
 package exception;
 
-/**
- * Encapsulates test custom exception1 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates test custom exception1 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class TestCustomException1  
 {  
   
     // method to check the age  
+    /** Purpose: Validates validate conditions. */
     static void validate (int age) throws InvalidAgeException{    
        if(age < 18){  
   
@@ -19,6 +18,7 @@ public class TestCustomException1
      }    
   
     // main method  
+    
     public static void main(String args[])  
     {  
         try  

@@ -8,14 +8,10 @@ package collection.ComparableAndComParator;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- *
- * @author IPSSI
- */
+/** Purpose: Encapsulates collection sorting behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class CollectionSorting {
-    /**
- * Orders the relevant records for predictable downstream processing.
- */
+    
+    /** Purpose: Sorts records for predictable business processing. */
     static void sortArrayList1(){
         ArrayList<String> al = new ArrayList<String>(); 
         al.add("Geeks For Geeks"); 
@@ -35,9 +31,8 @@ public class CollectionSorting {
         System.out.println("List after the use of" + 
                            " Collection.sort() :\n" + al); 
     }
-        /**
- * Orders the relevant records for predictable downstream processing.
- */
+        
+        /** Purpose: Sorts records for predictable business processing. */
         static void sortArrayList2(){
         ArrayList<String> al = new ArrayList<String>(); 
         al.add("Geeks For Geeks"); 
@@ -52,15 +47,13 @@ public class CollectionSorting {
                            " Collection.reverseOrder() :\n" + al); 
         Collections.sort(al, Collections.reverseOrder()); 
               // Create a list of strings 
-       
-  
+
         // Let us print the sorted list 
         System.out.println("List after the use of" + 
                            " Collection.sort() :\n" + al); 
     }
-    
-    
-    
+
+        
         public static void main(String[] args) 
     { 
        sortArrayList1();

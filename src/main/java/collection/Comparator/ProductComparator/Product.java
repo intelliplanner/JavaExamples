@@ -1,16 +1,12 @@
 package collection.Comparator.ProductComparator;
 
-/**
- * Encapsulates product behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates product behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class Product {
 	int id;
 	String name;
 	float price;
 
-	/**
- * Creates a configured product instance for the represented workflow.
- */
+	/** Purpose: Creates a product instance. */
 	public Product(int id, String name, float price) {
 		this.id = id;
 		this.name = name;
@@ -27,41 +23,32 @@ public class Product {
 //	        return false;
 //	}
 
+	/** Purpose: Retrieves get id data. */
 	public int getId() {
 		return id;
 	}
 
-	/**
- * Updates set id while keeping domain data consistent.
- */
+	/** Purpose: Updates set id data. */
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
- * Retrieves or locates get price data needed for decision-making.
- */
+	/** Purpose: Retrieves get price data. */
 	public float getPrice() {
 		return price;
 	}
 
-	/**
- * Updates set price while keeping domain data consistent.
- */
+	/** Purpose: Updates set price data. */
 	public void setPrice(float price) {
 		this.price = price;
 	}

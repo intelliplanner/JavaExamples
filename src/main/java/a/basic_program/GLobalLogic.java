@@ -1,13 +1,10 @@
 package a.basic_program;
 
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates g lobal logic behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates g lobal logic behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class GLobalLogic {
 
 //    Given a large list of integers, calculate the sum of all prime numbers using java 8 stream API

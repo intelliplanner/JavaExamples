@@ -5,9 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Encapsulates person test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates person test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class PersonTest {  
 
 	  	  public static void main(String args[]) {

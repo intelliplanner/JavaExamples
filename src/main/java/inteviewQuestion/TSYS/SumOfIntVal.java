@@ -1,9 +1,9 @@
 package inteviewQuestion.TSYS;
 
-
 // Sum of all digit value of 5 digit no. in single digit
+/** Purpose: Encapsulates sum of int val behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class SumOfIntVal {
-	
+
 		public static void main(String[] args) {
 		int n = 5432;
 		while(Integer.toString(n).length() > 1) {
@@ -13,9 +13,7 @@ public class SumOfIntVal {
 		System.out.println("Final: "+n);
 	}
 
-	/**
- * Performs the calc sum operation required by the represented example.
- */
+	/** Purpose: Performs the calc sum operation. */
 	private static int calcSum(int n) {
 		int sum = 0;
 			while (n > 0  ) {

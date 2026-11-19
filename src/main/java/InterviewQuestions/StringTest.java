@@ -3,11 +3,9 @@ package InterviewQuestions;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
-/**
- * Encapsulates string test behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates string test behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class StringTest {
-	
+
 		public static void main(String argrs[]) {
 		String s1="Hello";
 		String s2= new String("Hello");
@@ -19,8 +17,7 @@ public class StringTest {
 		System.out.println(s1.equals(s2));//compare the  hashcode, content so result comes true
 	    System.out.println(s1 == s2.intern());  //true
 		System.out.println("s1= "+s1.hashCode() +", s2= "+ s2.hashCode());
-		
-		
+
 		String s3 = "Hello 24-02-1989, 12-02-1990.";
 		s3 = s3.replace(",", " ");
 		s3 = s3.replace(".", " ");
@@ -33,10 +30,8 @@ public class StringTest {
 		}
 		String [] s6= s3.split("\\d{2}-\\d{2}-\\d{4}",s4.length);
 		System.out.println();
-		
-		
+
 	}
 }
-
 
 //(\\d{2}-\\d{2}-\\d{4},s)

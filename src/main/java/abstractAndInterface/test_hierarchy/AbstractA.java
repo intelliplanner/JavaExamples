@@ -1,17 +1,12 @@
 package abstractAndInterface.test_hierarchy;
 
-/**
- * Encapsulates abstract a behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates abstract a behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public abstract class AbstractA  {
-	
-	/**
- * Performs the test abstract operation required by the represented example.
- */
+
+	/** Purpose: Performs the test abstract operation. */
 	abstract void testAbstract() ;
-	/**
- * Calculates the required sum result for the business scenario.
- */
+	
+	/** Purpose: Calculates the sum result. */
 	void sum() {
 		int a = 10+20;
 	}

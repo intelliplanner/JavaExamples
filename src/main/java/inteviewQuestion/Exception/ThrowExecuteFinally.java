@@ -1,8 +1,6 @@
 package inteviewQuestion.Exception;
 
-/**
- * Encapsulates throw execute finally behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates throw execute finally behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ThrowExecuteFinally {
 
 		public static void main(String[] args) throws Exception {

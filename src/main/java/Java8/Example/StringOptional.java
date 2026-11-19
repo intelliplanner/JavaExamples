@@ -2,9 +2,7 @@ package Java8.Example;
 
 import java.util.Optional;
 
-/**
- * Encapsulates string optional behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates string optional behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class StringOptional {
 
 		public static void main(String[] args) {
@@ -15,8 +13,7 @@ public class StringOptional {
 		str[3]="ss";
 		str[4]="sa";
 		Optional<String> checkNull = Optional.ofNullable(str[3]);
-		
-		
+
 		if(checkNull.isPresent()) {
 			System.out.println("Not Nullable");
 		}else {

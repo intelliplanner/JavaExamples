@@ -4,18 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Encapsulates employee behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates employee behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class Employee {
 	int id;
 	String name;
 	int age;
 	int salary;
 
-	/**
- * Creates a configured employee instance for the represented workflow.
- */
+	/** Purpose: Creates a employee instance. */
 	public Employee(int id, String name, int age, int salary) {
 		super();
 		this.id = id;
@@ -24,68 +20,51 @@ class Employee {
 		this.salary = salary;
 	}
 
-	/**
- * Retrieves or locates get id data needed for decision-making.
- */
+	/** Purpose: Retrieves get id data. */
 	public int getId() {
 		return id;
 	}
 
-	/**
- * Updates set id while keeping domain data consistent.
- */
+	/** Purpose: Updates set id data. */
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
- * Retrieves or locates get age data needed for decision-making.
- */
+	/** Purpose: Retrieves get age data. */
 	public int getAge() {
 		return age;
 	}
 
-	/**
- * Updates set age while keeping domain data consistent.
- */
+	/** Purpose: Updates set age data. */
 	public void setAge(int age) {
 		this.age = age;
 	}
 
-	/**
- * Retrieves or locates get salary data needed for decision-making.
- */
+	/** Purpose: Retrieves get salary data. */
 	public int getSalary() {
 		return salary;
 	}
 
-	/**
- * Updates set salary while keeping domain data consistent.
- */
+	/** Purpose: Updates set salary data. */
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 
 }
 
-/**
- * Encapsulates virtusa behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates virtusa behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Virtusa {
+		
 		public static void main(String[] args) {
 		List<Employee> empList = new ArrayList<Employee>();
 		empList.add(new Employee(1,"vicky",20,200000));

@@ -5,6 +5,7 @@ package InterviewQuestions.nagarrowInterviewQuestions;
 //{1,1,3,3,2,8}->{1,3,3,2}&&{1,8}
 //{1,3,4,7}->no subset 
 
+/** Purpose: Encapsulates subsets example behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class SubsetsExample {
 	static int[] subset1 = new int[5];
 	static int[] subset2 = new int[5];
@@ -16,9 +17,7 @@ public class SubsetsExample {
 		getSubsets(set);
 	}
 
-	/**
- * Retrieves or locates get subsets data needed for decision-making.
- */
+	/** Purpose: Retrieves get subsets data. */
 	private static void getSubsets(int[] set) {
 		int arrTotalSize = 0;
 		for (int i = 0; i < set.length; i++) {

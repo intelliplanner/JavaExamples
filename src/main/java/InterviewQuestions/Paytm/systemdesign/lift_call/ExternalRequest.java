@@ -1,39 +1,32 @@
 package InterviewQuestions.Paytm.systemdesign.lift_call;
 
-/**
- * Encapsulates external request behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates external request behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ExternalRequest {
 	private Direction directionToGo;
 	private int sourceFloor;
-	/**
- * Creates a configured external request instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a external request instance. */
 	public ExternalRequest(Direction directionToGo, int sourceFloor) {
 		this.directionToGo = directionToGo;
 		this.sourceFloor = sourceFloor;
 	}
-	/**
- * Retrieves or locates get direction to go data needed for decision-making.
- */
+	
+	/** Purpose: Retrieves get direction to go data. */
 	public Direction getDirectionToGo() {
 		return directionToGo;
 	}
-	/**
- * Updates set direction to go while keeping domain data consistent.
- */
+	
+	/** Purpose: Updates set direction to go data. */
 	public void setDirectionToGo(Direction directionToGo) {
 		this.directionToGo = directionToGo;
 	}
-	/**
- * Retrieves or locates get source floor data needed for decision-making.
- */
+	
+	/** Purpose: Retrieves get source floor data. */
 	public int getSourceFloor() {
 		return sourceFloor;
 	}
-	/**
- * Updates set source floor while keeping domain data consistent.
- */
+	
+	/** Purpose: Updates set source floor data. */
 	public void setSourceFloor(int sourceFloor) {
 		this.sourceFloor = sourceFloor;
 	}

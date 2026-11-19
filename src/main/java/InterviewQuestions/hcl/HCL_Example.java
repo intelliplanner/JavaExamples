@@ -4,18 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Encapsulates employee behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates employee behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 class Employee implements Comparable<Employee> {
 	int age;
 	String name;
 	int departmentId;
 	int salary;
 
-	/**
- * Creates a configured employee instance for the represented workflow.
- */
+	/** Purpose: Creates a employee instance. */
 	public Employee(int age, String name, int departmentId, int salary) {
 		super();
 		this.age = age;
@@ -24,66 +20,49 @@ class Employee implements Comparable<Employee> {
 		this.salary = salary;
 	}
 
-	/**
- * Retrieves or locates get age data needed for decision-making.
- */
+	/** Purpose: Retrieves get age data. */
 	public int getAge() {
 		return age;
 	}
 
-	/**
- * Updates set age while keeping domain data consistent.
- */
+	/** Purpose: Updates set age data. */
 	public void setAge(int age) {
 		this.age = age;
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
- * Retrieves or locates get department id data needed for decision-making.
- */
+	/** Purpose: Retrieves get department id data. */
 	public int getDepartmentId() {
 		return departmentId;
 	}
 
-	/**
- * Updates set department id while keeping domain data consistent.
- */
+	/** Purpose: Updates set department id data. */
 	public void setDepartmentId(int departmentId) {
 		this.departmentId = departmentId;
 	}
 
-	/**
- * Retrieves or locates get salary data needed for decision-making.
- */
+	/** Purpose: Retrieves get salary data. */
 	public int getSalary() {
 		return salary;
 	}
 
-	/**
- * Updates set salary while keeping domain data consistent.
- */
+	/** Purpose: Updates set salary data. */
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 
 	@Override
-	/**
- * Performs the compare to operation required by the represented example.
- */
+	
+	/** Purpose: Performs the compare to operation. */
 	public int compareTo(Employee o) {
 		if (this.salary > o.salary) {
 			return 1;
@@ -97,9 +76,7 @@ class Employee implements Comparable<Employee> {
 
 }
 
-/**
- * Encapsulates hcl_example behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates hcl_example behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class HCL_Example {
 
 		public static void main(String[] args) {

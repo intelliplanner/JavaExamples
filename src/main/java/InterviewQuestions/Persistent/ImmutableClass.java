@@ -2,46 +2,35 @@ package InterviewQuestions.Persistent;
 
 import java.util.Date;
 
-/**
- * Encapsulates immutable class behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates immutable class behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 final class ImmutableClass {
 	private final String name;
 	private final int id;
 	private final Date date;
-	/**
- * Creates a configured immutable class instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a immutable class instance. */
 	private ImmutableClass(String name, int id,Date date) {
 		this.name = name;
 		this.id = id;
 		this.date= new Date(date.getTime());
 	}
 
-	/**
- * Retrieves or locates get immutable class object data needed for decision-making.
- */
+	/** Purpose: Retrieves get immutable class object data. */
 	public ImmutableClass  getImmutableClassObject(String name, int id,Date date) {
 		return new ImmutableClass( name,  id, date);
 	}
-	
-	/**
- * Retrieves or locates get date data needed for decision-making.
- */
+
+	/** Purpose: Retrieves get date data. */
 	public Date getDate() {
 		return new Date(date.getTime());
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Retrieves or locates get id data needed for decision-making.
- */
+	/** Purpose: Retrieves get id data. */
 	public int getId() {
 		return id;
 	}

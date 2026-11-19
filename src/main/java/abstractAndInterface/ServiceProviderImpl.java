@@ -1,14 +1,11 @@
 package abstractAndInterface;
 
-/**
- * Encapsulates service provider impl behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates service provider impl behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ServiceProviderImpl extends AbstractServiceProvider {
 
 	@Override
-	/**
- * Performs the test1 operation required by the represented example.
- */
+	
+	/** Purpose: Performs the test1 operation. */
 	void test1() {
 		System.out.println("call test1");
 	}
@@ -21,27 +18,23 @@ public class ServiceProviderImpl extends AbstractServiceProvider {
 	}
 
 	@Override
-	/**
- * Performs the b operation required by the represented example.
- */
+	
+	/** Purpose: Performs the b operation. */
 	public void b() {
 	}
 
 	@Override
-	/**
- * Performs the c operation required by the represented example.
- */
+	
+	/** Purpose: Performs the c operation. */
 	public void c() {
 	}
 
 	@Override
-	/**
- * Performs the d operation required by the represented example.
- */
+	
+	/** Purpose: Performs the d operation. */
 	public void d() {
 		// TODO Auto-generated method stub
 		
 	}
-
 
 }

@@ -1,8 +1,6 @@
 package InterviewQuestions.Paytm;
 
-/**
- * Encapsulates parking info behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates parking info behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ParkingInfo {
 	int parkingSeq;
 	String alotForVehicleType;
@@ -10,10 +8,8 @@ public class ParkingInfo {
 	int entryPointNo;
 	int exitPoint;
 	boolean isBusy;
-	
-	/**
- * Creates a configured parking info instance for the represented workflow.
- */
+
+	/** Purpose: Creates a parking info instance. */
 	public ParkingInfo(int parkingSeq, String alotForVehicleType, int entryPointNo, int exitPoint, boolean isBusy) {
 		super();
 		this.parkingSeq = parkingSeq;
@@ -22,63 +18,53 @@ public class ParkingInfo {
 		this.exitPoint = exitPoint;
 		this.isBusy = isBusy;
 	}
-	/**
- * Retrieves or locates get parking seq data needed for decision-making.
- */
+	
+	/** Purpose: Retrieves get parking seq data. */
 	public int getParkingSeq() {
 		return parkingSeq;
 	}
-	/**
- * Updates set parking seq while keeping domain data consistent.
- */
+	
+	/** Purpose: Updates set parking seq data. */
 	public void setParkingSeq(int parkingSeq) {
 		this.parkingSeq = parkingSeq;
 	}
-	/**
- * Retrieves or locates get alot for vehicle type data needed for decision-making.
- */
+	
+	/** Purpose: Retrieves get alot for vehicle type data. */
 	public String getAlotForVehicleType() {
 		return alotForVehicleType;
 	}
-	/**
- * Updates set alot for vehicle type while keeping domain data consistent.
- */
+	
+	/** Purpose: Updates set alot for vehicle type data. */
 	public void setAlotForVehicleType(String alotForVehicleType) {
 		this.alotForVehicleType = alotForVehicleType;
 	}
-	/**
- * Retrieves or locates get entry point no data needed for decision-making.
- */
+	
+	/** Purpose: Retrieves get entry point no data. */
 	public int getEntryPointNo() {
 		return entryPointNo;
 	}
-	/**
- * Updates set entry point no while keeping domain data consistent.
- */
+	
+	/** Purpose: Updates set entry point no data. */
 	public void setEntryPointNo(int entryPointNo) {
 		this.entryPointNo = entryPointNo;
 	}
-	/**
- * Retrieves or locates get exit point data needed for decision-making.
- */
+	
+	/** Purpose: Retrieves get exit point data. */
 	public int getExitPoint() {
 		return exitPoint;
 	}
-	/**
- * Updates set exit point while keeping domain data consistent.
- */
+	
+	/** Purpose: Updates set exit point data. */
 	public void setExitPoint(int exitPoint) {
 		this.exitPoint = exitPoint;
 	}
-	/**
- * Verifies is busy conditions before processing continues.
- */
+	
+	/** Purpose: Validates is busy conditions. */
 	public boolean isBusy() {
 		return isBusy;
 	}
-	/**
- * Updates set busy while keeping domain data consistent.
- */
+	
+	/** Purpose: Updates set busy data. */
 	public void setBusy(boolean isBusy) {
 		this.isBusy = isBusy;
 	}

@@ -1,16 +1,14 @@
 package inteviewQuestion.Wipro;
 
-/**
- * Encapsulates arm strong number behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates arm strong number behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ArmStrongNumber {
+		
 		public static void main(String s[]) {
 		int no = 153;
 		System.out.println(checkArmStrong(no));
 	}
-	/**
- * Verifies check arm strong conditions before processing continues.
- */
+	
+	/** Purpose: Validates check arm strong conditions. */
 	public static boolean checkArmStrong(int no) {
 		boolean isTrue = false;
 		int num = 0;

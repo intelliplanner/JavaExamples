@@ -1,8 +1,6 @@
 package collection.map;
 
-/**
- * Encapsulates mobile behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates mobile behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class Mobile /* implements Comparable<Mobile> */ {
 
 	private int id;
@@ -10,37 +8,29 @@ public class Mobile /* implements Comparable<Mobile> */ {
 //	private int price;
 //	private int year;
 
-
+	/** Purpose: Creates a mobile instance. */
 	public Mobile(int id, String brand) {
 		super();
 		this.id = id;
 		this.brand = brand;
 	}
 
-	/**
- * Retrieves or locates get id data needed for decision-making.
- */
+	/** Purpose: Retrieves get id data. */
 	public int getId() {
 		return id;
 	}
 
-	/**
- * Updates set id while keeping domain data consistent.
- */
+	/** Purpose: Updates set id data. */
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	/**
- * Retrieves or locates get brand data needed for decision-making.
- */
+	/** Purpose: Retrieves get brand data. */
 	public String getBrand() {
 		return brand;
 	}
 
-	/**
- * Updates set brand while keeping domain data consistent.
- */
+	/** Purpose: Updates set brand data. */
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}

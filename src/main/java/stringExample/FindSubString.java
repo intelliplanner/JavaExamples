@@ -1,17 +1,14 @@
 package stringExample;
 
-/**
- * Encapsulates find sub string behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates find sub string behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class FindSubString {
+		
 		public static void main(String args[]) {
 		int i = subString("aabcbc","abc"); 
 		System.out.println(i);
 	}
-	
-	/**
- * Performs the sub string operation required by the represented example.
- */
+
+	/** Purpose: Performs the sub string operation. */
 	public static int subString(String s1,String s2) {
 		int count = 0;
 		

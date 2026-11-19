@@ -5,42 +5,33 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-
-/**
- * Encapsulates date test2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates date test2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class DateTest2 {
 
-	/**
-	 * @param
-	 */
+	/** Purpose: Retrieves get me yesterday data. */
 	private static Date getMeYesterday(){
 	     return new Date(System.currentTimeMillis()-24*60*60*1000);
 
 	}
-	
-	/**
- * Performs the yesterday operation required by the represented example.
- */
+
+	/** Purpose: Performs the yesterday operation. */
 	private Date yesterday() {
 	    final Calendar cal = Calendar.getInstance();
 	    cal.add(Calendar.DATE, -1);
 	    return cal.getTime();
 	}
-	
-	/**
- * Retrieves or locates get yesterday date string data needed for decision-making.
- */
+
+	/** Purpose: Retrieves get yesterday date string data. */
 	private static String getYesterdayDateString() {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd 00:00:00");
 		String currentDate = dateFormat.format(new Date());
         return currentDate;
 	}
+		
 		public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	//	String str = "image_blink.png";
-		
-	
+
 //		System.out.print(System.currentTimeMillis());
 		//System.out.println(getYesterdayDateString());
 	//	printDateIntoLong();
@@ -50,9 +41,7 @@ public class DateTest2 {
 //		String  
 	}
 
-	/**
- * Performs the print date into long operation required by the represented example.
- */
+	/** Purpose: Performs the print date into long operation. */
 	public static void printDateIntoLong() {
 		String dt = "2019-09-14";
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

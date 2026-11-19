@@ -2,9 +2,7 @@ package a_example;
 
 import java.util.HashMap;
 
-/**
- * Encapsulates string char count behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates string char count behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class StringCharCount {
 
 		public static void main(String[] args) {

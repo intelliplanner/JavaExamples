@@ -1,8 +1,6 @@
 package a_example;
 
-/**
- * Encapsulates test example behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates test example behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class TestExample {
 	String berry = "blue";
 
@@ -11,9 +9,7 @@ public class TestExample {
 		new TestExample().juicy("straw");
 	}
 
-	/**
- * Performs the division test operation required by the represented example.
- */
+	/** Purpose: Performs the division test operation. */
 	private static void divisionTest() {
 		// boolean s = Math.isD== 0;
 		int int0 = 0;
@@ -25,9 +21,7 @@ public class TestExample {
 
 	}
 
-	/**
- * Performs the juicy operation required by the represented example.
- */
+	/** Purpose: Performs the juicy operation. */
 	void juicy(String berry) {
 		this.berry = "rasp";
 		System.out.println(berry + "berry");

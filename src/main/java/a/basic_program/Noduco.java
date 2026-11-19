@@ -1,28 +1,22 @@
 package a.basic_program;
 
-/**
- * Encapsulates noduco behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates noduco behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Noduco {
     int empId;
     String empName;
 
     @Override
-    /**
- * Verifies hash code conditions before processing continues.
- */
+    
+    /** Purpose: Validates hash code conditions. */
     public int hashCode() {
         return empName.hashCode();
     }
 
     @Override
-    /**
- * Supports reliable object comparison and collection lookup.
- */
+    
+    /** Purpose: Supports reliable object comparison. */
     public boolean equals(Object str){
         return str.equals(empId);
     }
-
-
 
 }

@@ -1,8 +1,6 @@
 package Java13.Text_Blocks_JEP_355;
 
-/**
- * Encapsulates textblock example behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates textblock example behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class TextblockExample  
 {  
     /* Driver Code */  

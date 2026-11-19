@@ -1,8 +1,6 @@
 package InterviewQuestions;
 
-/**
- * Encapsulates f ind missing behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates f ind missing behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class FIndMissing {
 
 		public static void main(String[] args) {
@@ -11,9 +9,7 @@ public class FIndMissing {
 		findMissing(arr);
 	}
 
-	/**
- * Retrieves or locates find missing data needed for decision-making.
- */
+	/** Purpose: Retrieves find missing data. */
 	private static void findMissing(int[] arr) {
 		int i = 0;
 		int lastDiff = 0;

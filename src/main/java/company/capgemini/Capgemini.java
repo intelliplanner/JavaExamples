@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates capgemini behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates capgemini behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Capgemini {
 
 		public static void main(String[] args) {
@@ -19,8 +17,6 @@ public class Capgemini {
 //
 		List<String> l1 = Arrays.asList("ABC",  "XYZ","pnq");
 		List<String> l2 = Arrays.asList("ABC",  "XYZ","lmn");
-
-
 
 		List m =   l1.stream().filter(li -> !l2.contains(l1)).collect(Collectors.toList());
 //        System.out.println(m);

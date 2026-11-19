@@ -1,12 +1,9 @@
 package LeetCode;
 
-/**
- * Encapsulates merge sort behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates merge sort behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class MergeSort {
-    /**
- * Performs the merge operation required by the represented example.
- */
+    
+    /** Purpose: Performs the merge operation. */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = 0;
         int j = 0;

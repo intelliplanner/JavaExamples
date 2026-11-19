@@ -13,12 +13,11 @@ import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
 import com.ipssi.beans.ExcelBean;
 
-/**
- * Encapsulates excel writer auto flush behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates excel writer auto flush behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ExcelWriterAutoFlush {
 
 	// using auto flush and default window size 100
+	/** Purpose: Performs the write to excel auto flush operation. */
 	public void writeToExcelAutoFlush(String fileName, List<ExcelBean> excelData) {
 		SXSSFWorkbook wb = null;
 		FileOutputStream fos = null;

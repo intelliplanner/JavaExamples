@@ -2,9 +2,7 @@ package Java8.Example;
 
 import java.util.StringJoiner;
 
-/**
- * Encapsulates string joiner example behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates string joiner example behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class StringJoinerExample {
 
 	    	    public static void main(String[] args) {  

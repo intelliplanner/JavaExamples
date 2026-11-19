@@ -5,32 +5,26 @@
  */
 package ThreadExamples;
 
-/**
- *
- * @author Vicky
- */
+/** Purpose: Encapsulates thread exam1 behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class ThreadExam1{
     TrheadService th = null;
-    /**
- * Performs the test operation required by the represented example.
- */
+    
+    /** Purpose: Performs the test operation. */
     void test(){
         if(th == null){
             th = new TrheadService();
             th.setHandler(new ClassInterface() {
 
                 @Override
-                /**
- * Performs the print operation required by the represented example.
- */
+                
+                /** Purpose: Performs the print operation. */
                 public void print(int val) {
                     System.out.println("Print Method "+val);
                 }
 
                 @Override
-                /**
- * Performs the change text operation required by the represented example.
- */
+                
+                /** Purpose: Performs the change text operation. */
                 public void changeText(String str) {
                     System.out.println("changeText Method " +str );
                 }
@@ -38,7 +32,7 @@ public class ThreadExam1{
             th.start();
         }
     }
-    
+
         public static void main(String[] args) {
         ThreadExam1 t1 = new ThreadExam1();
         t1.test();

@@ -6,9 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates date finder behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates date finder behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class DateFinder {
 	static SimpleDateFormat dateFormatter = new SimpleDateFormat("DD-MM-YYYY");
 
@@ -24,9 +22,7 @@ public class DateFinder {
 		System.out.println(cunt);
 	}
 
-	/**
- * Retrieves or locates get date count by java8 data needed for decision-making.
- */
+	/** Purpose: Retrieves get date count by java8 data. */
 	private static int getDateCountByJava8(String paragraph) {
 		paragraph = paragraph.substring(0, paragraph.length() - 1);
 		List<String> li = Arrays.asList(paragraph.split(" "));
@@ -35,9 +31,7 @@ public class DateFinder {
 		return list.size();
 	}
 
-	/**
- * Retrieves or locates get date count data needed for decision-making.
- */
+	/** Purpose: Retrieves get date count data. */
 	public static int getDateCount(String paragraph) {
 		int count = 0;
 
@@ -53,9 +47,7 @@ public class DateFinder {
 
 	}
 
-	/**
- * Verifies is valid conditions before processing continues.
- */
+	/** Purpose: Validates is valid conditions. */
 	public static boolean isValid(String dateStr) {
 		boolean isTrue = false;
 		try {

@@ -3,16 +3,9 @@ package a_example;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Demonstrates finding unique characters shared by two strings.
- * It helps solve common-string comparison problems without allowing duplicate matches.
- */
+/** Purpose: Encapsulates ana behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Ana {
 
-	/**
-	 * Compares two example strings and prints each character-position match once,
-	 * addressing duplicate character comparison in the business or data-validation scenario.
-	 */
 	public static void main(String[] args) {
 		String str1 = "TRIGNALE";
 		String str2 = "TRIANGLE";

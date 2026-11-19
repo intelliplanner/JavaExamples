@@ -1,8 +1,6 @@
 package a_example;
 
-/**
- * Encapsulates implement custom hashmap behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates implement custom hashmap behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ImplementCustomHashmap {
 
         public static void main(String str[]){

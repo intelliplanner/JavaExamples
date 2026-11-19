@@ -1,8 +1,6 @@
 package aaChildParentRelationExample;
 
-/**
- * Encapsulates child a behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates child a behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ChildA extends ParentA {
 
 //	B() {
@@ -12,37 +10,27 @@ public class ChildA extends ParentA {
 
 	int i = 20;
 
-	/**
- * Performs the print operation required by the represented example.
- */
+	/** Purpose: Performs the print operation. */
 	void print(String s) {
 		System.out.println(s);
 	}
 
-	/**
- * Performs the print operation required by the represented example.
- */
+	/** Purpose: Performs the print operation. */
 	void print(Object o) {
 		System.out.println(o);
 	}
 
-	/**
- * Performs the test operation required by the represented example.
- */
+	/** Purpose: Performs the test operation. */
 	void test() {
 		System.out.println("B B1");
 	}
 
-	/**
- * Performs the m1 operation required by the represented example.
- */
+	/** Purpose: Performs the m1 operation. */
 	void m1() {
 		System.out.println("B m1");
 	}
 
-	/**
- * Performs the private method operation required by the represented example.
- */
+	/** Purpose: Performs the private method operation. */
 	public void privateMethod() {
 		System.out.println("B privateMethod");
 	}

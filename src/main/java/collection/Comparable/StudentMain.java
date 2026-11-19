@@ -3,11 +3,10 @@ package collection.Comparable;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- * Encapsulates student main behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates student main behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class StudentMain {
 	// Creating a test class to sort the elements
+		
 		public static void main(String args[]) {
 			ArrayList<Student> al = new ArrayList<Student>();
 			al.add(new Student(101, "Vijay", 23));

@@ -10,6 +10,7 @@ import java.util.List;
  LinkedList class inherit AbstractSequencialList class and List implements List and Deque interface	    
  */
 public class LinkedListExample {
+		
 		public static void main(String a[]) {
 		LinkedList<String> lst1 = new	LinkedList<String>();
 		lst1.add("a");
@@ -30,8 +31,7 @@ public class LinkedListExample {
 		lst3.add("G");
 		lst3.add("S");
 		lst3.add("T");
-		
-		
+
 		System.out.println("List3: " + lst3);
 		
 		System.out.println("After Update position");
@@ -47,16 +47,14 @@ public class LinkedListExample {
 		lst1.addAll(1,lst3);
 		
 		System.out.println("List1: "+lst1);
-		
-		
+
 		
 		System.out.println("First: "+lst1.getFirst());
 		
 		System.out.println("Last: "+lst1.getLast());
 		lst1.removeFirstOccurrence("a");
 		System.out.println("Remove: "+lst1);
-		
-		
+
 		for(String s :lst1){
 			System.out.print(s);
 		}

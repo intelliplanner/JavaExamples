@@ -1,9 +1,8 @@
 package data_structure.sorting;
 
-/**
- * Encapsulates sorting behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates sorting behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class Sorting {
+		
 		public static void main(String[] args) {
 		int[] a = { 2, 7, 3, 1, 5, 4 };
 		System.out.print("{");
@@ -16,9 +15,7 @@ public class Sorting {
 //		mergeSort(a);
 	}
 
-	/**
- * Performs the merge sort operation required by the represented example.
- */
+	/** Purpose: Performs the merge sort operation. */
 	private static void mergeSort(int[] a) {
 
 		System.out.println("-----------------------Merge Sort---------------------");
@@ -63,9 +60,7 @@ public class Sorting {
 		System.out.println("}");
 	}
 
-	/**
- * Performs the selection sorting operation required by the represented example.
- */
+	/** Purpose: Performs the selection sorting operation. */
 	public static void SelectionSorting(int[] a, int n) {
 		System.out.println("-----------------------Selection Sort---------------------");
 		int imin = -1;
@@ -95,18 +90,14 @@ public class Sorting {
 		System.out.println("}");
 	}
 
-	/**
- * Performs the print array operation required by the represented example.
- */
+	/** Purpose: Performs the print array operation. */
 	private static void printArray(int[] a) {
 		for (int m : a) {
 			System.out.print(m + " ");
 		}
 	}
 
-	/**
- * Performs the bubblesort operation required by the represented example.
- */
+	/** Purpose: Performs the bubblesort operation. */
 	public static void bubblesort(int arr[]) {
 
 		System.out.println("-----------------------Bubble Sort---------------------");

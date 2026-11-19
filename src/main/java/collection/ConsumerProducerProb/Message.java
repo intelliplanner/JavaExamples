@@ -1,28 +1,20 @@
 package collection.ConsumerProducerProb;
 
-/**
- * Encapsulates message behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates message behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class Message {
 String msg;
 
-/**
- * Creates a configured message instance for the represented workflow.
- */
+/** Purpose: Creates a message instance. */
 Message(String msg){
 	this.msg=msg;
 }
 
-/**
- * Retrieves or locates get msg data needed for decision-making.
- */
+/** Purpose: Retrieves get msg data. */
 public String getMsg() {
 	return msg;
 }
 
-/**
- * Updates set msg while keeping domain data consistent.
- */
+/** Purpose: Updates set msg data. */
 public void setMsg(String msg) {
 	this.msg = msg;
 }

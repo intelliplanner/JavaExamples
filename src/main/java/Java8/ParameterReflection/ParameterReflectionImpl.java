@@ -3,9 +3,7 @@ package Java8.ParameterReflection;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
-/**
- * Encapsulates parameter reflection impl behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates parameter reflection impl behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class ParameterReflectionImpl {
 
 		public static void main(String str[]) {

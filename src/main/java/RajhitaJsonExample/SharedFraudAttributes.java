@@ -8,10 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
 
-
-/**
- * Encapsulates shared fraud attributes behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates shared fraud attributes behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class SharedFraudAttributes {
     String s1;
     String s2;

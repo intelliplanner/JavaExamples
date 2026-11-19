@@ -2,8 +2,7 @@ package functionInterFace;
 
 @FunctionalInterface
 public interface FunInter {
-	/**
- * Performs the method1 operation required by the represented example.
- */
+	
+	/** Purpose: Performs the method1 operation. */
 	public String method1(String name);
 }

@@ -1,17 +1,14 @@
 package functionInterFace;
 
-/**
- * Encapsulates functional example2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates functional example2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class FunctionalExample2 {
 
 		public static void main(String[] args) {
 		FunctionInter f1 = new FunctionInter() {
 
 			@Override
-			/**
- * Performs the functional interface operation required by the represented example.
- */
+			
+			/** Purpose: Performs the functional interface operation. */
 			public void functionalInterface() {
 				System.out.println("1. Functional Interface Call");
 			}
@@ -26,15 +23,13 @@ public class FunctionalExample2 {
 
 		f2.functionalInterface();
 
-		
 		System.out.println("============================================");
 		
 		Runnable r = new Runnable() {
 			
 			@Override
-			/**
- * Executes run processing and coordinates the required workflow.
- */
+			
+			/** Purpose: Executes the run workflow. */
 			public void run() {
 				System.out.println("Runnable...r1");
 			}
@@ -42,9 +37,7 @@ public class FunctionalExample2 {
 		
 		Thread t1= new Thread(r);
 		t1.start();
-		
-		
-		
+
 		Runnable r2 = ()->{
 			System.out.println("============================================");
 				System.out.println("Runnable...r2");
@@ -52,8 +45,7 @@ public class FunctionalExample2 {
 		
 		Thread t2= new Thread(r2);
 		t2.start();
-		
-		
+
 	}
 
 }

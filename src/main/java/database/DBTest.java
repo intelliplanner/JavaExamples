@@ -5,16 +5,10 @@
  */
 package database;
 
-/**
- *
- * @author IPSSI
- */
 //import com.ipssi.gen.utils.DBConnectionPool;
 import java.sql.*;
 
-/**
- * Encapsulates db test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates db test behavior; it supports database access workflows. Owner: Virendra Gupta. */
 class DBTest {
 
         public static void main(String args[]) {

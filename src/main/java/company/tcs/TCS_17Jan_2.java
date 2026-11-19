@@ -2,10 +2,9 @@ package company.tcs;
 
 import java.util.Scanner;
 
-/**
- * Encapsulates tcs_17 jan_2 behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates tcs_17 jan_2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class TCS_17Jan_2 {
+        
         public static void main(String[] at) {
         System.out.println("Please Enter Number: ");
         Scanner sc = new Scanner(System.in);
@@ -58,7 +57,6 @@ public class TCS_17Jan_2 {
 //                    System.out.print("Zero ");
 //            }
 //        }
-
 
     }
 

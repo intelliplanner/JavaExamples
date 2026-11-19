@@ -1,29 +1,22 @@
 package a;
 
-/**
- * Encapsulates osstra behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates osstra behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Osstra {
 
     Node list = null;
-    /**
- * Encapsulates node behavior for the represented example workflow.
- */
+    
+    /** Purpose: Encapsulates node behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
     static class Node{
         int val;
         Node next = null;
 
-        /**
- * Creates a configured node instance for the represented workflow.
- */
+        /** Purpose: Creates a node instance. */
         Node(int val){
             this.val = val;
         }
     }
 
-    /**
- * Adds insert information required by the workflow.
- */
+    /** Purpose: Adds insert data. */
     public Node  insert(int value){
         if(list == null){
             list = new Node(value);
@@ -42,11 +35,9 @@ public class Osstra {
 //
 //            }
 
-
         }
         return list;
     }
-
 
         public static void main(String... arr){
         Osstra obj  = new Osstra();
@@ -58,9 +49,6 @@ public class Osstra {
 //             System.out.print(node.val);
 //             node = node.next;
 //         }
-
-
-
 
     }
 

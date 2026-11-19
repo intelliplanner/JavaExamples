@@ -3,16 +3,14 @@ package Java8.Example;
 import java.util.ArrayList;
 
 interface Test3 {
-	/**
- * Adds add information required by the workflow.
- */
+	
+	/** Purpose: Adds add data. */
 	int add(int a, int b);
 }
 
-/**
- * Encapsulates lambda expression3 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates lambda expression3 behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class LambdaExpression3 {
+		
 		public static void main(String[] args) {
 		Test3 t = (a, b) -> {
 			return (a + b);
@@ -30,6 +28,5 @@ public class LambdaExpression3 {
 		str.add("H4");
 		str.forEach((n)->System.out.println(n));
 	}
-	
-	
+
 }

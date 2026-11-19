@@ -1,40 +1,28 @@
 package Java8.Example;
 
-/**
- * Encapsulates abstract class behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates abstract class behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 abstract class AbstractClass {
-	
-	/**
- * Creates a configured abstract class instance for the represented workflow.
- */
+
+	/** Purpose: Creates a abstract class instance. */
 	public AbstractClass() { // constructor
 		System.out.println("You can create constructor in abstract class");
 	}
 
-	/**
- * Adds add information required by the workflow.
- */
+	/** Purpose: Adds add data. */
 	abstract int add(int a, int b); // abstract method
 
-	/**
- * Performs the sub operation required by the represented example.
- */
+	/** Purpose: Performs the sub operation. */
 	int sub(int a, int b) { // non-abstract method
 		return a - b;
 	}
 
-	/**
- * Performs the multiply operation required by the represented example.
- */
+	/** Purpose: Performs the multiply operation. */
 	static int multiply(int a, int b) { // static method
 		return a * b;
 	}
 }
 
-/**
- * Encapsulates abstract vs interface behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates abstract vs interface behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class AbstractVsInterface extends AbstractClass {
 /*	
 	public AbstractVsInterface(int i){

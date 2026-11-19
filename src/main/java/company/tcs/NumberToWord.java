@@ -1,11 +1,10 @@
 package company.tcs;
 
-/**
- * Encapsulates number to word behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates number to word behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class NumberToWord {
 
     //user-defined static method that converts a number into words
+    /** Purpose: Performs the number to words operation. */
     static void numberToWords(char num[]) {
 //determines the number of digits in the given number
         int len = num.length;
@@ -97,6 +96,7 @@ public class NumberToWord {
     }
 
     //main() method
+    
     public static void main(String args[]) {
 //calling the user-defined method and that invokes another predefined method toCharArray()
 //the method toCharArray() converts the given number into character array

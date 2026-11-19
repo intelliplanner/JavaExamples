@@ -3,9 +3,7 @@ package collection.map;
 import java.util.*;
 import java.util.Map.Entry;
 
-/**
- * Encapsulates hash map interview question behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates hash map interview question behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class HashMapInterviewQuestion {
 
 	/*
@@ -33,9 +31,7 @@ public class HashMapInterviewQuestion {
 	
 	}
 
-	/**
- * Performs the print operation required by the represented example.
- */
+	/** Purpose: Performs the print operation. */
 	private static void print(String str) {
 		HashMap<Integer, Integer> hm = new HashMap<>();
 		String [] str1 = str.split(" ");
@@ -55,7 +51,5 @@ public class HashMapInterviewQuestion {
 			System.out.println(m.getKey()+":"+m.getValue());
 		}
 	}
-	
-	
 
 }

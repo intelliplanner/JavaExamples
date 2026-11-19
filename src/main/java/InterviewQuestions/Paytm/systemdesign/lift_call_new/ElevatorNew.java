@@ -6,30 +6,19 @@ import InterviewQuestions.Paytm.systemdesign.lift_call.Direction;
 import InterviewQuestions.Paytm.systemdesign.lift_call.Request;
 import InterviewQuestions.Paytm.systemdesign.lift_call.State;
 
-/**
- * Encapsulates elevator new behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates elevator new behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ElevatorNew {
 	private Direction currentDirection = Direction.UP;
 	private State currentState = State.IDLE;
 	private int currentFloor = 0;
 
-	/**
-	 * jobs which are being processed
-	 */
 	private TreeSet<Request> currentJobs = new TreeSet<>();
-	/**
-	 * up jobs which cannot be processed now so put in pending queue
-	 */
+	
 	private TreeSet<Request> upPendingJobs = new TreeSet<>();
-	/**
-	 * down jobs which cannot be processed now so put in pending queue
-	 */
+	
 	private TreeSet<Request> downPendingJobs = new TreeSet<>();
 
-	/**
- * Executes start elevator processing and coordinates the required workflow.
- */
+	/** Purpose: Executes the start elevator workflow. */
 	public void startElevator() {
 		System.out.println("The Elevator has started functioning");
 		while (true) {
@@ -57,9 +46,7 @@ public class ElevatorNew {
 		}
 	}
 
-	/**
- * Verifies check if job conditions before processing continues.
- */
+	/** Purpose: Validates check if job conditions. */
 	public boolean checkIfJob() {
 
 		if (currentJobs.isEmpty()) {
@@ -69,9 +56,7 @@ public class ElevatorNew {
 
 	}
 
-	/**
- * Executes process up request processing and coordinates the required workflow.
- */
+	/** Purpose: Executes the process up request workflow. */
 	private void processUpRequest(Request request) {
 
 		int startFloor = currentFloor;
@@ -111,9 +96,7 @@ public class ElevatorNew {
 
 	}
 
-	/**
- * Executes process down request processing and coordinates the required workflow.
- */
+	/** Purpose: Executes the process down request workflow. */
 	private void processDownRequest(Request request) {
 
 		int startFloor = currentFloor;
@@ -150,9 +133,7 @@ public class ElevatorNew {
 
 	}
 
-	/**
- * Verifies check if new job can be processed conditions before processing continues.
- */
+	/** Purpose: Validates check if new job can be processed conditions. */
 	private boolean checkIfNewJobCanBeProcessed(Request currentRequest) {
 		if (checkIfJob()) {
 			if (currentDirection == Direction.UP) {
@@ -184,9 +165,7 @@ public class ElevatorNew {
 
 	}
 
-	/**
- * Adds add pending down jobs to current jobs information required by the workflow.
- */
+	/** Purpose: Adds add pending down jobs to current jobs data. */
 	private void addPendingDownJobsToCurrentJobs() {
 		if (!downPendingJobs.isEmpty()) {
 			System.out.println("Pick a pending down job and execute it by putting in current job");
@@ -199,9 +178,7 @@ public class ElevatorNew {
 
 	}
 
-	/**
- * Adds add pending up jobs to current jobs information required by the workflow.
- */
+	/** Purpose: Adds add pending up jobs to current jobs data. */
 	private void addPendingUpJobsToCurrentJobs() {
 		if (!upPendingJobs.isEmpty()) {
 			System.out.println("Pick a pending up job and execute it by putting in current job");
@@ -216,9 +193,7 @@ public class ElevatorNew {
 
 	}
 
-	/**
- * Adds add job information required by the workflow.
- */
+	/** Purpose: Adds add job data. */
 	public void addJob(Request request) {
 		if (currentState == State.IDLE) {
 			currentState = State.MOVING;
@@ -245,9 +220,7 @@ public class ElevatorNew {
 
 	}
 
-	/**
- * Adds addto pending jobs information required by the workflow.
- */
+	/** Purpose: Adds addto pending jobs data. */
 	public void addtoPendingJobs(Request request) {
 		if (request.getExternalRequest().getDirectionToGo() == Direction.UP) {
 			System.out.println("Add to pending up jobs");

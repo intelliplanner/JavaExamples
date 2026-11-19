@@ -1,21 +1,16 @@
 package data_structure.binary_tree.example1;
 
-/**
- * Encapsulates binary tree ex1 behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates binary tree ex1 behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class BinaryTreeEx1 {
 	Node root;
-	/**
- * Encapsulates node behavior for efficient data organization and processing.
- */
+	
+	/** Purpose: Encapsulates node behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 	class Node {
 		int key;
 		Node left;
 		Node right;
 
-		/**
- * Creates a configured node instance for the represented workflow.
- */
+		/** Purpose: Creates a node instance. */
 		public Node(int key) {
 			this.key = key;
 			left = null;
@@ -23,25 +18,17 @@ public class BinaryTreeEx1 {
 		}
 	}
 
-
-
-	/**
- * Creates a configured binary tree ex1 instance for the represented workflow.
- */
+	/** Purpose: Creates a binary tree ex1 instance. */
 	BinaryTreeEx1() {
 		root = null;
 	}
 
-	/**
- * Adds insert information required by the workflow.
- */
+	/** Purpose: Adds insert data. */
 	void insert(int key) {
 		root = insert(root, key);
 	}
 
-	/**
- * Adds insert information required by the workflow.
- */
+	/** Purpose: Adds insert data. */
 	Node insert(Node root, int key) {
 		if (root == null) {
 			root = new Node(key);
@@ -55,9 +42,7 @@ public class BinaryTreeEx1 {
 		return root;
 	}
 
-	/**
- * Performs the in order operation required by the represented example.
- */
+	/** Purpose: Performs the in order operation. */
 	void inOrder() {
 		System.out.println("---------------In-Order-----------");
 		inOrderRec(root);
@@ -65,6 +50,7 @@ public class BinaryTreeEx1 {
 	}
 
 	// A utility function to do inorder traversal of BST
+	/** Purpose: Performs the in order rec operation. */
 	void inOrderRec(Node root) {
 		if (root != null) {
 			inOrderRec(root.left);
@@ -73,18 +59,14 @@ public class BinaryTreeEx1 {
 		}
 	}
 
-	/**
- * Performs the pre order operation required by the represented example.
- */
+	/** Purpose: Performs the pre order operation. */
 	void preOrder() {
 		System.out.println("---------------Pre Order-----------");
 		preOrder(root);
 		System.out.println("");
 	}
 
-	/**
- * Performs the pre order operation required by the represented example.
- */
+	/** Purpose: Performs the pre order operation. */
 	void preOrder(Node root) {
 		if(root!=null) {
 			System.out.print(root.key+" ");
@@ -93,17 +75,14 @@ public class BinaryTreeEx1 {
 		}
 	}
 
-	/**
- * Performs the post order operation required by the represented example.
- */
+	/** Purpose: Performs the post order operation. */
 	void postOrder() {
 		System.out.println("---------------Post Order-----------");
 		postOrder(root);
 		System.out.println("");
 	}
-	/**
- * Performs the post order operation required by the represented example.
- */
+	
+	/** Purpose: Performs the post order operation. */
 	void postOrder(Node root) {
 		if(root!=null) {
 			postOrder(root.left);
@@ -112,17 +91,13 @@ public class BinaryTreeEx1 {
 		}
 	}
 
-	/**
- * Performs the search keyin bst operation required by the represented example.
- */
+	/** Purpose: Performs the search keyin bst operation. */
 	boolean searchKeyinBST(int key) {
 		boolean s =  searchKeyinBST(root,key);
 		return s;
 	}
-	
-	/**
- * Performs the search keyin bst operation required by the represented example.
- */
+
+	/** Purpose: Performs the search keyin bst operation. */
 	boolean searchKeyinBST(Node root,int key) {
 		if(root == null) {
 			return false;
@@ -136,9 +111,8 @@ public class BinaryTreeEx1 {
 			return	searchKeyinBST(root.right,key);
 		
 	}
-	
-	
-	
+
+		
 		public static void main(String args[]) {
 		BinaryTreeEx1 tree = new BinaryTreeEx1();
 
@@ -157,8 +131,7 @@ public class BinaryTreeEx1 {
 		tree.inOrder();
 		tree.preOrder();
 		tree.postOrder();
-		
-		
+
 	System.out.println("Key Exist: "+tree.searchKeyinBST(90));
 	}
 

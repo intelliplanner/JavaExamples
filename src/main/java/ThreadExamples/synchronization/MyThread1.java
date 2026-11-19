@@ -1,19 +1,15 @@
 package ThreadExamples.synchronization;
 
-/**
- * Encapsulates my thread1 behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates my thread1 behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class MyThread1 extends Thread{
 	Table t;
-	/**
- * Creates a configured my thread1 instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a my thread1 instance. */
 	public MyThread1(Table t) {
 		this.t=t;
 	}
-	/**
- * Executes run processing and coordinates the required workflow.
- */
+	
+	/** Purpose: Executes the run workflow. */
 	public void run(){  
 		t.printable(10);  
 	}  

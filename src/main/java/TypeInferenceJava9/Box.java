@@ -1,22 +1,16 @@
 package TypeInferenceJava9;
 
-/**
- * Encapsulates box behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates box behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Box<T> {
 
 	private T t; // T stands for "Type"
 
-	/**
- * Updates set while keeping domain data consistent.
- */
+	/** Purpose: Updates set data. */
 	public void set(T t) {
 		this.t = t;
 	}
 
-	/**
- * Retrieves or locates get data needed for decision-making.
- */
+	/** Purpose: Retrieves get data. */
 	public T get() {
 		return t;
 	}

@@ -4,10 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-/**
- * Encapsulates array list dictionary order behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates array list dictionary order behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class ArrayListDictionaryOrder { // lexographically
+		
 		public static void main(String[] args) {
 		// Initializing String array.
 //		dictionarySortedString();
@@ -56,6 +55,7 @@ public class ArrayListDictionaryOrder { // lexographically
 //		
 //	}
 
+	/** Purpose: Performs the dictionary sorted string operation. */
 	public static void dictionarySortedString() {
 		String stringArray[] = { "1", "2", "10", "1", "50", "20","0" };
 //		String stringArray[] = { "Gritav", "Harit", "Lovenish", "Nikhil", "Harman", "Girish", };
@@ -65,9 +65,7 @@ public class ArrayListDictionaryOrder { // lexographically
 		printArray(stringArray);
 	}
 
-	/**
- * Orders the relevant records for predictable downstream processing.
- */
+	/** Purpose: Sorts records for predictable business processing. */
 	public static void sortLexicographically(String strArr[]) {
 		for (int i = 0; i < strArr.length; i++) {
 			for (int j = i + 1; j < strArr.length; j++) {
@@ -81,6 +79,7 @@ public class ArrayListDictionaryOrder { // lexographically
 	}
 
 	// this function prints the array passed as argument
+	/** Purpose: Performs the print array operation. */
 	public static void printArray(String strArr[]) {
 		for (String string : strArr)
 			System.out.print(string + " ");

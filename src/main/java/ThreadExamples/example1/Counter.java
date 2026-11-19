@@ -1,21 +1,15 @@
 package ThreadExamples.example1;
 
-/**
- * Encapsulates counter behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates counter behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class Counter {
 	public volatile int count = 0;
 
-	/**
- * Retrieves or locates get count data needed for decision-making.
- */
+	/** Purpose: Retrieves get count data. */
 	public int getCount() {
 		return count;	
 	}
 
-	/**
- * Performs the increment operation required by the represented example.
- */
+	/** Purpose: Performs the increment operation. */
 	public synchronized void increment() {
 		count++;
 	}

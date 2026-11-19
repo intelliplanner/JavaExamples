@@ -1,22 +1,17 @@
 package InteviewQuestions;
 
-/**
- * Encapsulates employee behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates employee behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Employee {
 	String name;
 	
 	@Override
-	/**
- * Verifies hash code conditions before processing continues.
- */
+	
+	/** Purpose: Validates hash code conditions. */
 	public int hashCode() {
 		return 1;
 	}
-	
-	/**
- * Supports reliable object comparison and collection lookup.
- */
+
+	/** Purpose: Supports reliable object comparison. */
 	public boolean equals(Object o) {
 		if(o == null) 
 			return false;
@@ -27,23 +22,18 @@ public class Employee {
 		
 		return (this.getName() == ((Employee)o).getName()) ? true : false; 
 	}
-	/**
- * Creates a configured employee instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a employee instance. */
 	public Employee(String name) {
 		this.name = name;
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}

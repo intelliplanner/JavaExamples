@@ -1,16 +1,12 @@
 package collection.Comparator;
 
-/**
- * Encapsulates student behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates student behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class Student {
 	int rollno;
 	String name;
 	int age;
 
-	/**
- * Creates a configured student instance for the represented workflow.
- */
+	/** Purpose: Creates a student instance. */
 	Student(int rollno, String name, int age) {
 		this.rollno = rollno;
 		this.name = name;

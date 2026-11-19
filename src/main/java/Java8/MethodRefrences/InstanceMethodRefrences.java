@@ -1,29 +1,23 @@
 package Java8.MethodRefrences;
 
 interface Sayables {
-	/**
- * Performs the say operation required by the represented example.
- */
+	
+	/** Purpose: Performs the say operation. */
 	void say();
 }
 
-
 interface Sayabils {
-	/**
- * Performs the say operation required by the represented example.
- */
+	
+	/** Purpose: Performs the say operation. */
 	default void say() {
 		System.out.println("test");
 	}
 }
-/**
- * Encapsulates instance method refrences behavior for the represented example workflow.
- */
+
+/** Purpose: Encapsulates instance method refrences behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class InstanceMethodRefrences implements Sayabils {
 
-	/**
- * Performs the say something operation required by the represented example.
- */
+	/** Purpose: Performs the say something operation. */
 	public void saySomething() {
 		System.out.println("Hello, this is insctance method.");
 	}

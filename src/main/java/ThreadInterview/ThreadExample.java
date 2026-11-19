@@ -1,8 +1,6 @@
 package ThreadInterview;
 
-/**
- * Encapsulates thread example behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates thread example behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class ThreadExample {
 
 		public static void main(String[] args) {
@@ -19,9 +17,7 @@ public class ThreadExample {
 
 }
 
-/**
- * Encapsulates thread runnable behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates thread runnable behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 class ThreadRunnable implements Runnable {
 	static Object lock = new Object();
 	static int number = 1;
@@ -29,17 +25,14 @@ class ThreadRunnable implements Runnable {
 	int remainder;
 	int noOfThreads = 3;
 
-	/**
- * Creates a configured thread runnable instance for the represented workflow.
- */
+	/** Purpose: Creates a thread runnable instance. */
 	ThreadRunnable(int remainder) {
 		this.remainder = remainder;
 	}
 
 	@Override
-	/**
- * Executes run processing and coordinates the required workflow.
- */
+	
+	/** Purpose: Executes the run workflow. */
 	public void run() {
 
 		while (number < totalcount-1) {

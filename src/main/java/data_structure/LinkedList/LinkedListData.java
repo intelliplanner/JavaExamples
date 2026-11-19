@@ -1,31 +1,23 @@
 package data_structure.LinkedList;
 
-/**
- * Encapsulates linked list data behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates linked list data behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class LinkedListData {
 
 	Node head;
 
-	/**
- * Encapsulates node behavior for efficient data organization and processing.
- */
+	/** Purpose: Encapsulates node behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 	static class Node {
 		int data;
 		Node next;
 
-		/**
- * Creates a configured node instance for the represented workflow.
- */
+		/** Purpose: Creates a node instance. */
 		Node(int data) {
 			this.data = data;
 			this.next = null;
 		}
 	}
 
-	/**
- * Adds insert node at position information required by the workflow.
- */
+	/** Purpose: Adds insert node at position data. */
 	public static LinkedListData insertNodeAtPosition(LinkedListData list, int newData, int index) {
 		Node currNode = list.head;
 		Node prev = null;
@@ -46,13 +38,11 @@ public class LinkedListData {
 			prev.next = newNode;
 			newNode.next = currNode;
 		}
-		
-		
+
 		return list;
 	}
-	/**
- * Adds insert node information required by the workflow.
- */
+	
+	/** Purpose: Adds insert node data. */
 	public LinkedListData insertNode(LinkedListData list, int newData) {
 		Node newNode = new Node(newData);
 		newNode.next = null; 		
@@ -70,9 +60,7 @@ public class LinkedListData {
 		return list;
 	}
 
-	/**
- * Performs the print list operation required by the represented example.
- */
+	/** Purpose: Performs the print list operation. */
 	static void printList(LinkedListData list) {
 		
 		if(list!=null) {
@@ -85,10 +73,8 @@ public class LinkedListData {
 			System.out.println("");
 		}
 	}
-	
-	/**
- * Removes delete data so only valid workflow entries remain.
- */
+
+	/** Purpose: Removes delete data. */
 	public static LinkedListData delete(LinkedListData list , int key) {
 			Node currNode = list.head; 
 			Node prev = null;
@@ -118,23 +104,18 @@ public class LinkedListData {
 			if(currNode == null) {
 				System.out.println("Not found 3rd Case, key="+key);
 			}
-			
-			
+
 			return list;	
 	}
-	
-	/**
- * Removes delete by index data so only valid workflow entries remain.
- */
+
+	/** Purpose: Removes delete by index data. */
 	public static LinkedListData deleteByIndex(LinkedListData list,int index) {
 		int key  = getElementByIndex(list,index);
 		list = delete(list, key);
 		return list;
 	}
 
-	/**
- * Retrieves or locates get element by index data needed for decision-making.
- */
+	/** Purpose: Retrieves get element by index data. */
 	public static int getElementByIndex(LinkedListData list,int index) {
 		System.out.println("");
 		int key = -1; 
@@ -149,12 +130,11 @@ public class LinkedListData {
 			i++;
 			
 		}
-		
-		
+
 		System.out.print("Key="+key+" on Index="+index);
 		return key;
 	}
-	
+
 		public static void main(String[] args) {
 		LinkedListData list = new LinkedListData();
 		list = list.insertNode(list, 3);
@@ -184,9 +164,5 @@ public class LinkedListData {
 //		printList(list);
 		
 	}
-	
-	
-	
-	
 
 }

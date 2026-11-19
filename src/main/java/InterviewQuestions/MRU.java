@@ -1,22 +1,19 @@
 package InterviewQuestions;
 
-/**
- * Encapsulates mru behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates mru behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class MRU {
+  
   public static void main(String args[]) {
 	 int[] arr2 = {3,5,2,4,1};
 	 int k=3;
-	 
-	 
+
 	 pringMRU(k,arr2);
 	 int[] arr = {5, 7, 2, 3, 4, 1, 6};
 	 int j = 10;
 	 pringMRU(j,arr);
  }
- /**
- * Performs the pring mru operation required by the represented example.
- */
+ 
+ /** Purpose: Performs the pring mru operation. */
  public static void pringMRU(int k,int[] arr2) {
 	 
 	 for(int i :arr2) {

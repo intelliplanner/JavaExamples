@@ -10,10 +10,9 @@ import java.util.TreeMap;
 
 import org.apache.poi.xssf.model.MapInfo;
 
-/**
- * Encapsulates hashmap sorting behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates hashmap sorting behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class HashmapSorting {
+		
 		public static void main(String args[]) {
 		// sortedComparingByKey();
 		// sortedInReverseComparingByKey();// Java Map Example: comparingByKey() in
@@ -25,9 +24,7 @@ public class HashmapSorting {
 //		HashMapOrderTest2();
 	}
 
-	/**
- * Verifies hash map order test2 conditions before processing continues.
- */
+	/** Purpose: Validates hash map order test2 conditions. */
 	private static void HashMapOrderTest2() {
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		map.put("Jayant", 80);
@@ -41,12 +38,10 @@ public class HashmapSorting {
 		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
 		map.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.reverseOrder())).forEach(System.out::println);
 		map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).forEach(System.out::println);
-		
-		
+
 //		TreeMap<String, Integer> treemap = new TreeMap<String, Integer>(map);  // maintain acending order
 //		System.out.println(treemap);
-		
-		
+
 		List<Map.Entry<String, Integer>> lists = new LinkedList(map.entrySet());
 		
 		Collections.sort(lists, (i1,i2) -> i1.getKey().compareTo(i2.getKey() ));
@@ -54,9 +49,7 @@ public class HashmapSorting {
 		
 	}
 
-	/**
- * Verifies hash map order test conditions before processing continues.
- */
+	/** Purpose: Validates hash map order test conditions. */
 	private static void HashMapOrderTest() {
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		map.put("Jayant", 80);
@@ -84,15 +77,12 @@ public class HashmapSorting {
 		Collections.sort(
 				listHasmap,
 	            (i1, i2) -> i1.getKey().compareTo(i2.getKey()));
-		
-		
+
 //		System.out.println(listHasmap);
 		
 	}
 
-	/**
- * Orders the relevant records for predictable downstream processing.
- */
+	/** Purpose: Sorts records for predictable business processing. */
 	private static void sortedInReverseComparingByValue() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(100, "Amit");
@@ -103,9 +93,7 @@ public class HashmapSorting {
 				.forEach(System.out::println);
 	}
 
-	/**
- * Orders the relevant records for predictable downstream processing.
- */
+	/** Purpose: Sorts records for predictable business processing. */
 	private static void sortedComparingByValue() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(100, "Amit");
@@ -115,9 +103,7 @@ public class HashmapSorting {
 		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
 	}
 
-	/**
- * Orders the relevant records for predictable downstream processing.
- */
+	/** Purpose: Sorts records for predictable business processing. */
 	private static void sortedInReverseComparingByKey() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(100, "Amit");
@@ -133,9 +119,7 @@ public class HashmapSorting {
 				.forEach(System.out::println);
 	}
 
-	/**
- * Orders the relevant records for predictable downstream processing.
- */
+	/** Purpose: Sorts records for predictable business processing. */
 	private static void sortedComparingByKey() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(100, "Amit");

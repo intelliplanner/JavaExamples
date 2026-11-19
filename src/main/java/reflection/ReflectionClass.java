@@ -5,29 +5,22 @@
  */
 package reflection;
 
-
-/**
- *
- * @author Vicky
- */
+/** Purpose: Encapsulates reflection class behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ReflectionClass implements Cloneable{
 	int id;
 	String name;
-	/**
- * Creates a configured reflection class instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a reflection class instance. */
 	public ReflectionClass(int id,	String name){
 		this.id=id;
 		this.name=name;
 	}
-	
-	/**
- * Retrieves or locates get clone data needed for decision-making.
- */
+
+	/** Purpose: Retrieves get clone data. */
 	public Object getClone() throws CloneNotSupportedException {
 		return super.clone();
 	}
-	
+
     public static void main(String []args) throws ClassNotFoundException, InstantiationException, IllegalAccessException{
        try{  
             Class c = Class.forName("Test");

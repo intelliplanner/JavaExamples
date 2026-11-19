@@ -2,20 +2,18 @@ package inteviewQuestion.GlobalLogic;
 
 //Vararg methods Override/Overload confusion
 
+/** Purpose: Encapsulates parent behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 class Parent {
 	int i = 10;
-	/**
- * Performs the test operation required by the represented example.
- */
+	
+	/** Purpose: Performs the test operation. */
 	public void test(int m) {
 		System.out.println("Parent test() m: " +m);
 		System.out.println("Parent test() i: " +i);
 	}
 }
 
-/**
- * Encapsulates global logic example behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates global logic example behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class GlobalLogicExample extends Parent {
 	int i = 20;
 //	public void test(int m) {
@@ -23,6 +21,7 @@ public class GlobalLogicExample extends Parent {
 //		System.out.println("child test() i: " +i);
 //	}
 //	
+	/** Purpose: Performs the test operation. */
 	public void test(int... m) {
 		System.out.println("child varags test() m: " +m);
 		System.out.println("child varags test() i: " +i);

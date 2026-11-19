@@ -2,17 +2,13 @@ package collection.Comparable;
 
 import java.util.*;
 
-/**
- * Encapsulates student behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates student behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 class Student implements Comparable<Student> {
 	int rollno;
 	String name;
 	int age;
 
-	/**
- * Creates a configured student instance for the represented workflow.
- */
+	/** Purpose: Creates a student instance. */
 	Student(int rollno, String name, int age) {
 		this.rollno = rollno;
 		this.name = name;
@@ -20,9 +16,8 @@ class Student implements Comparable<Student> {
 	}
 
 	@Override
-	/**
- * Performs the compare to operation required by the represented example.
- */
+	
+	/** Purpose: Performs the compare to operation. */
 	public int compareTo(Student st) {
 		if (age == st.age)
 			return 0;
@@ -32,6 +27,5 @@ class Student implements Comparable<Student> {
 			return -1;
 	}
 
-	
 }
 

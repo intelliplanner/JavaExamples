@@ -1,12 +1,9 @@
 package Java8.Example;
 
-/**
- * Encapsulates arithmetic behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates arithmetic behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 class Arithmetic {
-	/**
- * Adds add information required by the workflow.
- */
+	
+	/** Purpose: Adds add data. */
 	public static int add(int a, int b) {
 		return a + b;
 	}

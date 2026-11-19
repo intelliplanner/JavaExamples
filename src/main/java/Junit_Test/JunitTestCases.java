@@ -4,6 +4,7 @@ package Junit_Test;
 //
 //import org.junit.jupiter.api.Test;
 
+/** Purpose: Encapsulates junit test cases behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 class JunitTestCases {
 
 //	@Test

@@ -1,23 +1,18 @@
 package DesignPattern.Observer2;
 
-/**
- * Encapsulates phone display behavior for a reusable object-interaction design.
- */
+/** Purpose: Encapsulates phone display behavior; it demonstrates reusable object interaction. Owner: Virendra Gupta. */
 public class PhoneDisplay implements Observer {
     private String weather;
 
     @Override
-    /**
- * Updates update while keeping domain data consistent.
- */
+    
+    /** Purpose: Updates update data. */
     public void update(String weather) {
         this.weather = weather;
         display();
     }
 
-    /**
- * Performs the display operation required by the represented example.
- */
+    /** Purpose: Performs the display operation. */
     private void display() {
         System.out.println("Phone Display: Weather updated - " + weather);
     }

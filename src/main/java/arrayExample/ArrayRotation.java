@@ -7,11 +7,9 @@ package arrayExample;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author IPSSI
- */
+/** Purpose: Encapsulates array rotation behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ArrayRotation {
+        
         public static void main(String []args){
           int val=1;
           int [][] arr = new int[4][4];
@@ -37,9 +35,7 @@ System.out.println("====================================================== \n\n"
           
     }
 
-    /**
- * Performs the rotate array operation required by the represented example.
- */
+    /** Purpose: Performs the rotate array operation. */
     private static void rotateArray(String rotationDirection, int[][] arr) {
         if(rotationDirection.equalsIgnoreCase("LEFT")){
 

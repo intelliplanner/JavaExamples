@@ -2,10 +2,9 @@ package InteviewQuestions;
 
 import java.util.TreeSet;
 
-/**
- * Encapsulates tree set class behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates tree set class behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class TreeSetClass {
+		
 		public static void main(String str[]) {
 
 		TreeSet<String> currentJobs = new TreeSet<>();

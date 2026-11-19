@@ -2,10 +2,9 @@ package collection.map.hasmapCustomKey;
 
 import java.util.HashMap;
 
-/**
- * Encapsulates custom hashmap main behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates custom hashmap main behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class CustomHashmapMain {
+		
 		public static void main(String args[]) {
 		HashMap<CustomHashmapKey, String> obj = new HashMap<CustomHashmapKey, String>();
 		CustomHashmapKey obj1 = new CustomHashmapKey(1, "Virendra");

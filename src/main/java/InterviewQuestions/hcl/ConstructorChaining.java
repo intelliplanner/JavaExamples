@@ -1,19 +1,14 @@
 package InterviewQuestions.hcl;
 
-/**
- * Encapsulates constructor chaining behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates constructor chaining behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class ConstructorChaining {
-	/**
- * Creates a configured constructor chaining instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a constructor chaining instance. */
 	ConstructorChaining(String str){
 		System.out.println(str);
 	}
-	
-	/**
- * Performs the test operation required by the represented example.
- */
+
+	/** Purpose: Performs the test operation. */
 	public Object test(){
 		return null;
 	}

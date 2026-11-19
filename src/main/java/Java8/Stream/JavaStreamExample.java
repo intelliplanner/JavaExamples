@@ -8,71 +8,54 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates product behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates product behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 class Product {
 	int id;
 	String name;
 	float price;
 
-	/**
- * Creates a configured product instance for the represented workflow.
- */
+	/** Purpose: Creates a product instance. */
 	public Product(int id, String name, float price) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
 	}
 
-	/**
- * Retrieves or locates get id data needed for decision-making.
- */
+	/** Purpose: Retrieves get id data. */
 	public int getId() {
 		return id;
 	}
 
-	/**
- * Updates set id while keeping domain data consistent.
- */
+	/** Purpose: Updates set id data. */
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
- * Retrieves or locates get price data needed for decision-making.
- */
+	/** Purpose: Retrieves get price data. */
 	public float getPrice() {
 		return price;
 	}
 
-	/**
- * Updates set price while keeping domain data consistent.
- */
+	/** Purpose: Updates set price data. */
 	public void setPrice(float price) {
 		this.price = price;
 	}
 
 }
 
-/**
- * Encapsulates java stream example behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates java stream example behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class JavaStreamExample {
+		
 		public static void main(String[] args) {
 		List<Product> productsList = new ArrayList<Product>();
 		// Adding Products
@@ -89,9 +72,7 @@ public class JavaStreamExample {
 
 	}
 
-	/**
- * Performs the convert list to map operation required by the represented example.
- */
+	/** Purpose: Performs the convert list to map operation. */
 	private static void convertListToMap() {
 		List<Integer> intList = new ArrayList<Integer>();
 		intList.add(21);
@@ -114,9 +95,7 @@ public class JavaStreamExample {
 
 	}
 
-	/**
- * Performs the filter with stream operation required by the represented example.
- */
+	/** Purpose: Performs the filter with stream operation. */
 	public static void filterWithStream(List<Product> productsList) {
 		// List<Float> productList2 = productsList.stream().filter(p -> p.price >
 		// 30000).map(p -> p.price)
@@ -130,9 +109,7 @@ public class JavaStreamExample {
 		System.out.println(productName);
 	}
 
-	/**
- * Performs the convert list before java8 operation required by the represented example.
- */
+	/** Purpose: Performs the convert list before java8 operation. */
 	public static void convertListBeforeJava8(List<Product> list) {
 		Map<Integer, Product> map = new HashMap<>();
 		for (Product product : list) {
@@ -141,9 +118,7 @@ public class JavaStreamExample {
 		System.out.println(map);
 	}
 
-	/**
- * Performs the convert list after java8 operation required by the represented example.
- */
+	/** Purpose: Performs the convert list after java8 operation. */
 	public static void convertListAfterJava8(List<Product> list) {
 		Map<Integer, Product> map = list.stream().collect(Collectors.toMap(Product::getId, Function.identity()));
 		System.out.println(map);

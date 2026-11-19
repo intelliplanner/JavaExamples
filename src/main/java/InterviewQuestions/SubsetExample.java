@@ -1,8 +1,6 @@
 package InterviewQuestions;
 
-/**
- * Encapsulates subset example behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates subset example behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class SubsetExample {
 
 		public static void main(String[] args) {
@@ -10,8 +8,7 @@ public class SubsetExample {
 		int noOfSubset = 3;
 		
 //		createSubset(arr,2);
-		
-		
+
 	}
 
 }

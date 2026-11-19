@@ -1,8 +1,6 @@
 package a.basic_program;
 
-/**
- * Encapsulates reverse no behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates reverse no behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ReverseNo {
 
 		public static void main(String[] args) {

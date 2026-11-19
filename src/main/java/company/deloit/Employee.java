@@ -1,8 +1,6 @@
 package company.deloit;
 
-/**
- * Encapsulates employee behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates employee behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Employee {
 	int id;
 	int age;
@@ -21,6 +19,7 @@ public class Employee {
 //			return -1;
 //	}
 
+	/** Purpose: Creates a employee instance. */
 	public Employee(int id, int age, String name, String depart) {
 		super();
 		this.id = id;
@@ -29,61 +28,44 @@ public class Employee {
 		this.depart = depart;
 	}
 
-	/**
- * Retrieves or locates get id data needed for decision-making.
- */
+	/** Purpose: Retrieves get id data. */
 	public int getId() {
 		return id;
 	}
 
-	/**
- * Updates set id while keeping domain data consistent.
- */
+	/** Purpose: Updates set id data. */
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	/**
- * Retrieves or locates get age data needed for decision-making.
- */
+	/** Purpose: Retrieves get age data. */
 	public int getAge() {
 		return age;
 	}
 
-	/**
- * Updates set age while keeping domain data consistent.
- */
+	/** Purpose: Updates set age data. */
 	public void setAge(int age) {
 		this.age = age;
 	}
 
-	/**
- * Retrieves or locates get name data needed for decision-making.
- */
+	/** Purpose: Retrieves get name data. */
 	public String getName() {
 		return name;
 	}
 
-	/**
- * Updates set name while keeping domain data consistent.
- */
+	/** Purpose: Updates set name data. */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
- * Retrieves or locates get depart data needed for decision-making.
- */
+	/** Purpose: Retrieves get depart data. */
 	public String getDepart() {
 		return depart;
 	}
 
-	/**
- * Updates set depart while keeping domain data consistent.
- */
+	/** Purpose: Updates set depart data. */
 	public void setDepart(String depart) {
 		this.depart = depart;
 	}
 
-	
 }

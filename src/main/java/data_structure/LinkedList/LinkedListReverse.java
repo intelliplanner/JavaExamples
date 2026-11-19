@@ -1,31 +1,23 @@
 package data_structure.LinkedList;
 
-
-/**
- * Encapsulates linked list reverse behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates linked list reverse behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class LinkedListReverse {
 
 	Node head;
 
-	/**
- * Encapsulates node behavior for efficient data organization and processing.
- */
+	/** Purpose: Encapsulates node behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 	static class Node {
 		int data;
 		Node next;
 
-		/**
- * Creates a configured node instance for the represented workflow.
- */
+		/** Purpose: Creates a node instance. */
 		Node(int data) {
 			this.data = data;
 			this.next = null;
 		}
 	}
-	/**
- * Adds insert node information required by the workflow.
- */
+	
+	/** Purpose: Adds insert node data. */
 	public LinkedListReverse insertNode(LinkedListReverse list, int newData) {
 		Node newNode = new Node(newData);
 		newNode.next = null; 		
@@ -44,9 +36,7 @@ public class LinkedListReverse {
 		return list;
 	}
 
-	/**
- * Performs the print list operation required by the represented example.
- */
+	/** Purpose: Performs the print list operation. */
 	static void printList(LinkedListReverse list) {
 		
 		if(list!=null) {
@@ -59,20 +49,15 @@ public class LinkedListReverse {
 			System.out.println("");
 		}
 	}
-	
 
-	/**
- * Performs the print reverse list operation required by the represented example.
- */
+	/** Purpose: Performs the print reverse list operation. */
 	static void printReverseList(LinkedListReverse list) {
 		if(list!=null) {
 			printReverseList(list.head);
 		}
 	}
-	
-	/**
- * Performs the print reverse list operation required by the represented example.
- */
+
+	/** Purpose: Performs the print reverse list operation. */
 	private static void printReverseList(Node node) {
 		if(node !=null) {
 			printReverseList(node.next);
@@ -101,11 +86,8 @@ public class LinkedListReverse {
 //		System.out.println("----------- List Chunks Reverse -----------------------");
 //		reverseLinkedListIntoChunks(list);
 	}
-	
-	
-	/**
- * Performs the print reverse list new operation required by the represented example.
- */
+
+	/** Purpose: Performs the print reverse list new operation. */
 	static void printReverseListNew(LinkedListReverse list, int countIndex) {
 		if(list!=null) {
 			Node node = printReverseListNew(list.head, countIndex);
@@ -118,9 +100,8 @@ public class LinkedListReverse {
 	}
 	
 	static int index=1;
-	/**
- * Performs the print reverse list new operation required by the represented example.
- */
+	
+	/** Purpose: Performs the print reverse list new operation. */
 	private static Node printReverseListNew(Node node,int countIndex) {
 		if(node !=null) {
 			if(index!=countIndex) {
@@ -131,11 +112,8 @@ public class LinkedListReverse {
 		}
 		return node;
 	}
-	
-	
-	/**
- * Performs the reverse linked list into chunks operation required by the represented example.
- */
+
+	/** Purpose: Performs the reverse linked list into chunks operation. */
 	private static Node reverseLinkedListIntoChunks(Node head, int k) {
 		Node current = head; 
 	       Node next = null; 
@@ -162,15 +140,12 @@ public class LinkedListReverse {
 	       return prev; 
 
 	}
-	/**
- * Performs the reverse linked list into chunks operation required by the represented example.
- */
+	
+	/** Purpose: Performs the reverse linked list into chunks operation. */
 	private static void reverseLinkedListIntoChunks(LinkedListReverse list) {
 		Node node = list.head; 
 		reverseLinkedListIntoChunks(node,2);
 	}
-	
-	
-	
+
 	
 }

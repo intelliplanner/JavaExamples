@@ -12,18 +12,16 @@ import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 @Command(name = "sudoku", mixinStandardHelpOptions = true, version = "checksum 4.0", description = "validates Sudoku numbers")
-/**
- * Encapsulates sudoku behavior for the represented example workflow.
- */
+
+/** Purpose: Encapsulates sudoku behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Sudoku implements Runnable {
 
 	@Option(names = { "-f", "--file" }, required = true, description = "Filename")
 	File file;
 
 	@Override
-	/**
- * Executes run processing and coordinates the required workflow.
- */
+	
+	/** Purpose: Executes the run workflow. */
 	public void run() {
 		// File file = new File("src/main/java/input.txt");
 		Scanner scan = null;

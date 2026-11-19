@@ -2,27 +2,21 @@ package a.immutable_class;
 
 import java.util.Date;
 
-/**
- * Encapsulates immutable and singleton class test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates immutable and singleton class test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public final class ImmutableAndSingletonClassTest {
     private final Integer t1;
     private final String str;
     private final Date mutDate;
     static ImmutableAndSingletonClassTest obj = null;
 
-    /**
- * Creates a configured immutable and singleton class test instance for the represented workflow.
- */
+    /** Purpose: Creates a immutable and singleton class test instance. */
     private ImmutableAndSingletonClassTest(Integer t1, String str, Date mutDate) {
         this.t1 = t1;
         this.str = str;
         this.mutDate = new Date(mutDate.getTime());
     }
 
-    /**
- * Performs the create new instance operation required by the represented example.
- */
+    /** Purpose: Performs the create new instance operation. */
     public static ImmutableAndSingletonClassTest createNewInstance(Integer t1, String str, Date mutDate) {
 //        return new ImmutableClassTest(t1, str, mutDate);
         if (obj == null) {
@@ -31,31 +25,24 @@ public final class ImmutableAndSingletonClassTest {
         return obj;
     }
 
-    /**
- * Retrieves or locates get t1 data needed for decision-making.
- */
+    /** Purpose: Retrieves get t1 data. */
     public Integer getT1() {
         return t1;
     }
 
-    /**
- * Retrieves or locates get str data needed for decision-making.
- */
+    /** Purpose: Retrieves get str data. */
     public String getStr() {
         return str;
     }
 
-    /**
- * Retrieves or locates get mut date data needed for decision-making.
- */
+    /** Purpose: Retrieves get mut date data. */
     public Date getMutDate() {
         return new Date(mutDate.getTime());
     }
 
     @Override
-    /**
- * Provides a readable representation for reporting or diagnostics.
- */
+    
+    /** Purpose: Provides a readable object representation. */
     public String toString() {
         return "ImmutableAndSingletonClassTest{" +
                 "t1=" + t1 +

@@ -10,9 +10,7 @@ import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates autozone behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates autozone behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Autozone {
 //	Given an integer array nums, return the number of 
 //			subarrays
@@ -21,6 +19,7 @@ public class Autozone {
 //			Input: nums = [1,2,1,4,1]
 //			Output: 1
 //			 
+	
 	public static void main(String[] args) {
 		
 		test();
@@ -47,15 +46,11 @@ public class Autozone {
 			}
 			System.out.println("count: " +count);
 		}
-	
-		
-		
+
 		
 	}
 
-/**
- * Performs the test operation required by the represented example.
- */
+/** Purpose: Performs the test operation. */
 private static void test() {
 	List<String> li = Arrays.asList("Virendra","Vicky","Virendra","Sanu");
 	

@@ -1,17 +1,12 @@
 
 package collection.map;
 
-/**
- * @author IPSSI
- *
- */
+/** Purpose: Encapsulates book behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class Book {
 	int bookId;
 	String bookAuth;
 
-	/**
- * Creates a configured book instance for the represented workflow.
- */
+	/** Purpose: Creates a book instance. */
 	public Book(int bookId, String bookAuth) {
 		this.bookId = bookId;
 		this.bookAuth = bookAuth;

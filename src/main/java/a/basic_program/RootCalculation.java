@@ -1,12 +1,9 @@
 package a.basic_program;
 
-/**
- * Encapsulates root calculation behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates root calculation behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class RootCalculation {
-	/**
- * Performs the root calc operation required by the represented example.
- */
+	
+	/** Purpose: Performs the root calc operation. */
 	public static double rootCalc(int number) {
 		double temp;
 		double sr = number / 2;

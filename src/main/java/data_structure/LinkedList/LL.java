@@ -1,21 +1,15 @@
 package data_structure.LinkedList;
 
-/**
- * Encapsulates ll behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates ll behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class LL {
 	Node head = null;
 
-	/**
- * Encapsulates node behavior for efficient data organization and processing.
- */
+	/** Purpose: Encapsulates node behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 	static class Node {
 		int data;
 		Node next;
 
-		/**
- * Creates a configured node instance for the represented workflow.
- */
+		/** Purpose: Creates a node instance. */
 		Node(int data) {
 			this.data = data;
 			this.next = null;
@@ -43,9 +37,7 @@ public class LL {
 		removeLoopInLinkedList(); // Not Completed Go to GeeksFor Geeks
 	}
 
-	/**
- * Removes remove loop in linked list data so only valid workflow entries remain.
- */
+	/** Purpose: Removes remove loop in linked list data. */
 	private static void removeLoopInLinkedList() {
 		LL linkedList = new LL();
 		// assign values to each linked list node
@@ -74,9 +66,7 @@ public class LL {
 //		removeLoopInLinkedList(linkedList);
 	}
 
-	/**
- * Removes remove loop in linked list data so only valid workflow entries remain.
- */
+	/** Purpose: Removes remove loop in linked list data. */
 	private static void removeLoopInLinkedList(LL linkedList) {
 
 		if (linkedList == null || linkedList.head.next == null) {
@@ -96,9 +86,7 @@ public class LL {
 		printLinkedList(linkedList);
 	}
 
-	/**
- * Removes remove loop data so only valid workflow entries remain.
- */
+	/** Purpose: Removes remove loop data. */
 	private static void removeLoop(Node loop, Node head) {
         Node ptr1 = loop;
         Node ptr2 = loop;
@@ -135,10 +123,8 @@ public class LL {
          to fix the loop */
         ptr2.next = null;
     }
-	
-	/**
- * Performs the detect loop in linked list operation required by the represented example.
- */
+
+	/** Purpose: Performs the detect loop in linked list operation. */
 	private static void detectLoopInLinkedList() {
 		LL linkedList = new LL();
 
@@ -157,9 +143,7 @@ public class LL {
 		detectLoopInLinkedList(linkedList);
 	}
 
-	/**
- * Performs the detect loop in linked list operation required by the represented example.
- */
+	/** Purpose: Performs the detect loop in linked list operation. */
 	private static void detectLoopInLinkedList(LL linkedList) {
 		if (linkedList == null || linkedList.head.next == null) {
 			return;
@@ -176,9 +160,7 @@ public class LL {
 		}
 	}
 
-	/**
- * Performs the reverse linked list in groups of given size operation required by the represented example.
- */
+	/** Purpose: Performs the reverse linked list in groups of given size operation. */
 	private static void reverseLinkedListInGroupsOfGivenSize(LL linkedList) {
 		if (linkedList == null || linkedList.head.next == null) {
 			return;
@@ -199,9 +181,7 @@ public class LL {
 		printLinkedList(linkedList);
 	}
 
-	/**
- * Removes remove duplicate element from sorted linked list data so only valid workflow entries remain.
- */
+	/** Purpose: Removes remove duplicate element from sorted linked list data. */
 	private static void removeDuplicateElementFromSortedLinkedList(LL linkedList) {
 
 		if (linkedList == null || linkedList.head.next == null) {
@@ -219,9 +199,7 @@ public class LL {
 		printLinkedList(linkedList);
 	}
 
-	/**
- * Removes delete middle of linked list data so only valid workflow entries remain.
- */
+	/** Purpose: Removes delete middle of linked list data. */
 	private static void deleteMiddleOfLinkedList(LL linkedList) {
 		Node prevNode = null;
 		Node slowPointer = linkedList.head;
@@ -237,9 +215,7 @@ public class LL {
 		printLinkedList(linkedList);
 	}
 
-	/**
- * Performs the search middle of linked list operation required by the represented example.
- */
+	/** Purpose: Performs the search middle of linked list operation. */
 	private static void searchMiddleOfLinkedList(LL linkedList) {
 
 		if (linkedList != null) {
@@ -253,9 +229,7 @@ public class LL {
 		}
 	}
 
-	/**
- * Performs the reverse linked list operation required by the represented example.
- */
+	/** Purpose: Performs the reverse linked list operation. */
 	private static void reverseLinkedList(LL linkedList) {
 		if (linkedList != null && linkedList.head.next == null) {
 			return;
@@ -275,18 +249,14 @@ public class LL {
 		printLinkedList(linkedList);
 	}
 
-	/**
- * Performs the reverse linked list secondway operation required by the represented example.
- */
+	/** Purpose: Performs the reverse linked list secondway operation. */
 	private static void reverseLinkedListSecondway(LL linkedList) {
 		if (linkedList != null) {
 			reverseList(linkedList.head);
 		}
 	}
 
-	/**
- * Performs the reverse list operation required by the represented example.
- */
+	/** Purpose: Performs the reverse list operation. */
 	private static void reverseList(Node node) {
 		if (node != null) {
 			reverseList(node.next);
@@ -294,9 +264,7 @@ public class LL {
 		}
 	}
 
-	/**
- * Performs the print linked list operation required by the represented example.
- */
+	/** Purpose: Performs the print linked list operation. */
 	private static void printLinkedList(LL linkedList) {
 		if (linkedList != null) {
 			Node node = linkedList.head;
@@ -308,9 +276,7 @@ public class LL {
 		}
 	}
 
-	/**
- * Adds add node at position information required by the workflow.
- */
+	/** Purpose: Adds add node at position data. */
 	private void addNodeAtPosition(LL linkedList, int data, int position) {
 		Node newNode = new Node(data);
 		if (linkedList != null) {
@@ -332,9 +298,7 @@ public class LL {
 		}
 	}
 
-	/**
- * Adds add first information required by the workflow.
- */
+	/** Purpose: Adds add first data. */
 	private void addFirst(LL linkedList, int data) {
 		Node newNode = new Node(data);
 		if (linkedList.head == null) {

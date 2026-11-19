@@ -4,9 +4,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-/**
- * Encapsulates reverse string behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates reverse string behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ReverseString {
 
 		public static void main(String[] args) {
@@ -19,9 +17,7 @@ public class ReverseString {
 		IntStream.range(0,ch.length).mapToObj(i-> ch[(ch.length-1)-i]).forEach(s->System.out.println(s));
 	}
 
-	/**
- * Performs the reverse string new operation required by the represented example.
- */
+	/** Purpose: Performs the reverse string new operation. */
 	private static void reverseStringNew(String string) {
 		// 1st way
 		System.out.println("1st way:");
@@ -61,9 +57,7 @@ public class ReverseString {
 		
 	}
 
-	/**
- * Performs the reverse string operation required by the represented example.
- */
+	/** Purpose: Performs the reverse string operation. */
 	private static void reverseString(String str) {
 		System.out.println();
 		char[] arr = str.toCharArray();
@@ -87,9 +81,7 @@ public class ReverseString {
 		}
 	}
 
-	/**
- * Performs the reverse array operation required by the represented example.
- */
+	/** Purpose: Performs the reverse array operation. */
 	private static void reverseArray(int[] arr) {
 		for (int j = 0; j < arr.length; j++) {
 			System.out.print(" " + arr[j]);

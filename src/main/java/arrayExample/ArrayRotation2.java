@@ -1,14 +1,9 @@
 package arrayExample;
 
-/**
- * Encapsulates array rotation2 behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates array rotation2 behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class ArrayRotation2 {
-	
-	
-	/**
- * Performs the rotate left operation required by the represented example.
- */
+
+	/** Purpose: Performs the rotate left operation. */
 	static void rotateLeft(int[] arr,int key) {
 		int arrSize=arr.length;
 		if(arr[arrSize-1] == key) {
@@ -22,13 +17,12 @@ public class ArrayRotation2 {
 		arr = m;
 		rotateLeft(arr, key);
 	}
-	/**
- * Performs the rotate right operation required by the represented example.
- */
+	
+	/** Purpose: Performs the rotate right operation. */
 	static void rotateRight(int[] arr,int key) {
 		
 	}
-	
+
 		public static void main(String ars[]) {
 		int arr[]= {1,2,3,4,5,6};
 		rotateLeft(arr, 2);

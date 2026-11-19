@@ -3,8 +3,10 @@ package Java8.ForEach;
 import java.io.*;
 
 // DO NOT change the class name
+/** Purpose: Encapsulates solution behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class Solution
 {
+        
         public static void main(String[] args) {
 
         System.out.println("Hello Java!");
@@ -27,9 +29,7 @@ public class Solution
 
     }
 
-    /**
- * Performs the reverse operation required by the represented example.
- */
+    /** Purpose: Performs the reverse operation. */
     public static ListNode reverse(ListNode head) {
 //        ListNode next= null;
         ListNode currNode = head;
@@ -47,15 +47,12 @@ public class Solution
     }
 }
 
-/**
- * Encapsulates list node behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates list node behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 class ListNode {
     int val;
     ListNode next;
-    /**
- * Creates a configured list node instance for the represented workflow.
- */
+    
+    /** Purpose: Creates a list node instance. */
     ListNode(int val) {
         this.val = val;
     }

@@ -4,16 +4,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Encapsulates atomic variable behavior for safe concurrent execution and shared-state coordination.
- */
+/** Purpose: Encapsulates atomic variable behavior; it supports concurrent workflow execution. Owner: Virendra Gupta. */
 public class AtomicVariable {
 	Counter counter = new Counter();
 	ExecutorService execute;
 
-	/**
- * Performs the service operation required by the represented example.
- */
+	/** Purpose: Performs the service operation. */
 	public void service() {
 		try {
 			execute = Executors.newFixedThreadPool(2);

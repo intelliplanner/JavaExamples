@@ -18,6 +18,7 @@ package JavaFX;
 //import javafx.stage.Stage;
 //import javafx.util.Duration;
 //
+/** Purpose: Encapsulates event handler example behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class EventHandlerExample
 {
 //  extends

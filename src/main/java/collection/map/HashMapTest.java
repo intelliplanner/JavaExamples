@@ -3,10 +3,9 @@ package collection.map;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 
-/**
- * Encapsulates hash map test behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates hash map test behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class HashMapTest {
+		
 		public static void main(String s[]) {
 		// HashMap<Integer,String> map = new HashMap<>();
 		// map.put(1, "1");
@@ -21,9 +20,7 @@ public class HashMapTest {
 		checkHashMapCapcity();
 	}
 
-	/**
- * Verifies check hash map capcity conditions before processing continues.
- */
+	/** Purpose: Validates check hash map capcity conditions. */
 	private static void checkHashMapCapcity() {
 		try {
 			HashMap m = new HashMap();

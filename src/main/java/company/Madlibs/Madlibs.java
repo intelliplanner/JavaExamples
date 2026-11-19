@@ -2,14 +2,10 @@ package company.Madlibs;
 import java.util.*;
 import java.io.*;
 
-/**
- * Encapsulates madlibs behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates madlibs behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class Madlibs {
 
-	/**
-	 * Displays Intro
-	 * */
+	/** Purpose: Performs the intro operation. */
 	private static void intro() {
 		System.out.println("Welcome to the game of Mad Libs.");
 		System.out.println("I will ask you to provide several words");
@@ -45,11 +41,7 @@ public class Madlibs {
 
 	}
 
-	/***
-	 * 
-	 * @param input
-	 * @throws FileNotFoundException
-	 */
+	/** Purpose: Performs the create mad lib operation. */
 	public static void createMadLib(Scanner input) throws FileNotFoundException {
 		System.out.println();
 		File inputFile = getFile(input);
@@ -61,9 +53,7 @@ public class Madlibs {
 
 	}
 
-	/**
-	 * returns the file
-	 */
+	/** Purpose: Retrieves get file data. */
 	public static File getFile(Scanner input) {
 		System.out.print("Input file name: ");
 		String fileName = input.nextLine();
@@ -75,10 +65,8 @@ public class Madlibs {
 		}
 		return f;
 	}
-	
-	/**
-	 * Shows the Mad Lib file
-	 * */
+
+	/** Purpose: Performs the view mad lib operation. */
 	public static void viewMadLib(File outputFile, Scanner input)
 			throws FileNotFoundException {
 		System.out.println();
@@ -91,9 +79,7 @@ public class Madlibs {
 
 	}
 
-	/**
-	 * returns if it is vowel
-	 * */
+	/** Purpose: Validates is vowel conditions. */
 	public static boolean isVowel(String value) {
 		if (value.startsWith("a") || value.startsWith("A")
 				|| value.startsWith("e") || value.startsWith("E")
@@ -105,9 +91,7 @@ public class Madlibs {
 			return false;
 	}
 
-	/**
-	 * returns length
-	 * */
+	/** Purpose: Retrieves get length data. */
 	public static int getLength(String word) {
 		int length = word.length();
 		if (word.substring(length - 1).equals(">")) {
@@ -117,9 +101,7 @@ public class Madlibs {
 
 	}
 
-	/***
-	 * creates MadLib file
-	 */
+	/** Purpose: Performs the create mad libarary file operation. */
 	public static void createMadLibararyFile(File inputFile,
 			PrintStream output, Scanner input) throws FileNotFoundException {
 

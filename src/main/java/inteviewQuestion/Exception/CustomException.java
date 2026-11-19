@@ -1,12 +1,9 @@
 package inteviewQuestion.Exception;
 
-/**
- * Encapsulates custom exception behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates custom exception behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class CustomException extends Exception{
-	/**
- * Creates a configured custom exception instance for the represented workflow.
- */
+	
+	/** Purpose: Creates a custom exception instance. */
 	CustomException(String s){
 		super(s);
 	}

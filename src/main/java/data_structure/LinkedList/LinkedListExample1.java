@@ -1,32 +1,23 @@
 package data_structure.LinkedList;
 
-
-/**
- * Encapsulates linked list example1 behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates linked list example1 behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class LinkedListExample1 {
 
 	Node head;
 
-	/**
- * Encapsulates node behavior for efficient data organization and processing.
- */
+	/** Purpose: Encapsulates node behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 	class Node {
 		Node next;
 		int data;
 
-		/**
- * Creates a configured node instance for the represented workflow.
- */
+		/** Purpose: Creates a node instance. */
 		public Node(int data) {
 			this.next = null;
 			this.data = data;
 		}
 	}
 
-	/**
- * Adds insert information required by the workflow.
- */
+	/** Purpose: Adds insert data. */
 	private LinkedListExample1 insert(int data, LinkedListExample1 list) {
 		Node newNode = new Node(data);
 		newNode.next = null;
@@ -52,9 +43,7 @@ public class LinkedListExample1 {
 		printLinkedListData(list);
 	}
 
-	/**
- * Performs the print linked list data operation required by the represented example.
- */
+	/** Purpose: Performs the print linked list data operation. */
 	private static void printLinkedListData(LinkedListExample1 list) {
 		if (list != null) {
 			Node node = list.head;

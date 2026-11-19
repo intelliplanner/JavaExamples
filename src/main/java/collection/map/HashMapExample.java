@@ -3,9 +3,7 @@ package collection.map;
 import java.util.*;
 import java.util.Map.Entry;
 
-/**
- * Encapsulates hash map example behavior for collection data management and lookup.
- */
+/** Purpose: Encapsulates hash map example behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 public class HashMapExample {
 
 	/*
@@ -25,7 +23,6 @@ public class HashMapExample {
 		hm.put(null, new Book(106, "book6"));
 
 		
-		
 		for (Map.Entry<Integer, Book> m : hm.entrySet()) {
 			Book b = m.getValue();
 			System.out.println(b.bookId + ", " + b.bookAuth);
@@ -37,8 +34,7 @@ public class HashMapExample {
 		for (Integer i : hm.keySet()) {
 			System.out.println(i);
 		}
-		
-		
+
 	Iterator<Entry<Integer, Book>> i = hm.entrySet().iterator();
 		while(i.hasNext()) {
 			Entry<Integer, Book> e=i.next();
@@ -63,10 +59,7 @@ public class HashMapExample {
 			Book k = m.getValue();
 			System.out.println("New: "+k.bookId+ ", "+k.bookAuth);
 		}
-		
-		
+
 	}
-	
-	
 
 }

@@ -6,10 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-
-/**
- * Encapsulates deloit test behavior for the represented company or real-world workflow.
- */
+/** Purpose: Encapsulates deloit test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class DeloitTest {
 
 		public static void main(String[] args) {

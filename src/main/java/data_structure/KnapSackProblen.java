@@ -1,9 +1,8 @@
 package data_structure;
 
-/**
- * Encapsulates knap sack problen behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates knap sack problen behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class KnapSackProblen {
+		
 		public static void main(String s[]) {
 		int val[] = new int[] { 60, 100, 120 };
 		int wt[] = new int[] { 10, 20, 30 };
@@ -12,9 +11,7 @@ public class KnapSackProblen {
 		System.out.println(knapSack(w, wt, val, n));
 	}
 
-	/**
- * Performs the knap sack operation required by the represented example.
- */
+	/** Purpose: Performs the knap sack operation. */
 	private static int[] knapSack(int w, int[] wt, int[] val, int n) {
 		// if(w==0 || n < 0 )
 		// return null;

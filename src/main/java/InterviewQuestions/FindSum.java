@@ -8,9 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Encapsulates find sum behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates find sum behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class FindSum {
 //	Given an array of integers and a sum, find the number of pairs whose sum is equal to the given sum. Example: 
 //	Input: array = {1, 5, 7, -1}, sum = 6 Output: 2
@@ -45,9 +43,7 @@ public class FindSum {
 //		System.out.println("output Count:"+count );
 
 //		arr.stream().reduce(6, o ->( o1+o2 == 6)).collect(Collectors.toMap(z));//
-		
-		
-		
+
 		
 	}
 

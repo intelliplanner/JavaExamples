@@ -2,13 +2,10 @@ package InteviewQuestions;
 
 import java.util.ArrayList;
 
-/**
- * Encapsulates solution behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates solution behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class Solution {
-	/**
- * Performs the solution operation required by the represented example.
- */
+	
+	/** Purpose: Performs the solution operation. */
 	public int[] solution(int[] A, int F, int M) {
 		int val = 0;
 		int sum = 0;

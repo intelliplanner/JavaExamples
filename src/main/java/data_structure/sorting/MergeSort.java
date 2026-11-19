@@ -1,9 +1,8 @@
 package data_structure.sorting;
 
-/**
- * Encapsulates merge sort behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates merge sort behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class MergeSort {
+		
 		public static void main(String args[]) {
 		int[] arr = {6,3,9,5,2,8 };
 //		printArr(arr);
@@ -15,9 +14,7 @@ public class MergeSort {
 
 	}
 
-	/**
- * Performs the devide operation required by the represented example.
- */
+	/** Purpose: Performs the devide operation. */
 	private static void devide(int[] arr, int si, int ei) {
 		if (si >= ei)
 			return;
@@ -27,9 +24,7 @@ public class MergeSort {
 		conquer(arr, si, ei, mid);
 	}
 
-	/**
- * Performs the conquer operation required by the represented example.
- */
+	/** Purpose: Performs the conquer operation. */
 	private static void conquer(int[] arr, int si, int ei, int mid) {
 		int idx1 = si;
 		int idx2 = mid + 1;
@@ -54,9 +49,7 @@ public class MergeSort {
 
 	}
 
-	/**
- * Performs the print arr operation required by the represented example.
- */
+	/** Purpose: Performs the print arr operation. */
 	private static void printArr(int[] a) {
 		for (int m : a) {
 			System.out.print(m + " ");

@@ -11,9 +11,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
 
-/**
- * Encapsulates http post test behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates http post test behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class HttpPostTest {
 	// httpPost.setHeader("Accept", "application/json");
 	// httpPost.setHeader("Content-type", "application/json");

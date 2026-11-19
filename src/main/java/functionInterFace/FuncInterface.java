@@ -5,22 +5,14 @@
  */
 package functionInterFace;
 
-/**
- *
- * @author IPSSI
- */
-
 @FunctionalInterface
 interface Test {
-    /**
- * Performs the abs operation required by the represented example.
- */
+    
+    /** Purpose: Performs the abs operation. */
     public void abs(int i);
 }
 
-/**
- * Encapsulates func interface behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates func interface behavior; it supports the represented example workflow. Owner: Virendra Gupta. */
 public class FuncInterface {
 
         public static void main(String s[]) {

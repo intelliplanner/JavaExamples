@@ -1,23 +1,16 @@
 package abstractAndInterface;
 
 public interface ServiceProvider {
-	/**
- * Performs the a operation required by the represented example.
- */
+	
+	/** Purpose: Performs the a operation. */
 	void a();
 
-	/**
- * Performs the b operation required by the represented example.
- */
+	/** Purpose: Performs the b operation. */
 	void b();
 
-	/**
- * Performs the c operation required by the represented example.
- */
+	/** Purpose: Performs the c operation. */
 	void c();
 
-	/**
- * Performs the d operation required by the represented example.
- */
+	/** Purpose: Performs the d operation. */
 	void d();
 }

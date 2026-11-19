@@ -1,19 +1,14 @@
 package data_structure.binary_tree.example1;
 
-/**
- * Encapsulates binary tree behavior for efficient data organization and processing.
- */
+/** Purpose: Encapsulates binary tree behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 public class BinaryTree {
-	/**
- * Encapsulates node behavior for efficient data organization and processing.
- */
+	
+	/** Purpose: Encapsulates node behavior; it supports data-structure processing. Owner: Virendra Gupta. */
 	static class Node {
 		int value;
 		Node left, right;
 
-		/**
- * Creates a configured node instance for the represented workflow.
- */
+		/** Purpose: Creates a node instance. */
 		Node(int value) {
 			this.value = value;
 			left = null;
@@ -21,9 +16,7 @@ public class BinaryTree {
 		}
 	}
 
-	/**
- * Adds insert information required by the workflow.
- */
+	/** Purpose: Adds insert data. */
 	public void insert(Node node, int value) {
 		if (value < node.value) {
 			if (node.left != null) {
@@ -42,9 +35,7 @@ public class BinaryTree {
 		}
 	}
 
-	/**
- * Performs the traverse in order operation required by the represented example.
- */
+	/** Purpose: Performs the traverse in order operation. */
 	public void traverseInOrder(Node node) {
 		if (node != null) {
 			traverseInOrder(node.left);

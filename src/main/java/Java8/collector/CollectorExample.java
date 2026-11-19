@@ -4,14 +4,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * Encapsulates collector example behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates collector example behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class CollectorExample {
 
-	/**
- * Performs the averaging double operation required by the represented example.
- */
+	/** Purpose: Performs the averaging double operation. */
 	public static void averagingDouble() {
 		Stream<String> s = Stream.of("3", "4", "5");
 		// using Collectors averagingDouble(ToDoubleFunction mapper)
@@ -20,9 +16,7 @@ public class CollectorExample {
 		System.out.println(ans);
 	}
 
-	/**
- * Performs the to set operation required by the represented example.
- */
+	/** Purpose: Performs the to set operation. */
 	public static void toSet() {
 		// creating a Stream of strings
 		Stream<String> s = Stream.of("1", "2", "3", "4");
@@ -32,9 +26,7 @@ public class CollectorExample {
 		System.out.println(mySet);
 	}
 
-	/**
- * Performs the all match operation required by the represented example.
- */
+	/** Purpose: Performs the all match operation. */
 	public static void allMatch() {
 		List<Integer> list = Arrays.asList(3, 4, 6, 12, 20);
 
@@ -55,9 +47,6 @@ public class CollectorExample {
 
 	}
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		-- averagingDouble();

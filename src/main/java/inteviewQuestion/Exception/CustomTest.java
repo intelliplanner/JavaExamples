@@ -2,10 +2,9 @@ package inteviewQuestion.Exception;
 
 import java.sql.SQLException;
 
-/**
- * Encapsulates custom test behavior for the represented coding problem.
- */
+/** Purpose: Encapsulates custom test behavior; it solves the represented coding problem. Owner: Virendra Gupta. */
 public class CustomTest {
+		
 		public static void main(String[] args) {
 		try {
 			validate(16);
@@ -15,9 +14,7 @@ public class CustomTest {
 
 	}
 
-	/**
- * Verifies validate conditions before processing continues.
- */
+	/** Purpose: Validates validate conditions. */
 	static void validate(int age) throws SQLException {
 		if (age < 18) {
 			throw new SQLException("age is not valid to vote");

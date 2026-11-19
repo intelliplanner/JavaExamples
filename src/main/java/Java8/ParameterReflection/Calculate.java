@@ -1,12 +1,9 @@
 package Java8.ParameterReflection;
 
-/**
- * Encapsulates calculate behavior for the represented example workflow.
- */
+/** Purpose: Encapsulates calculate behavior; it demonstrates Java 8 behavior. Owner: Virendra Gupta. */
 public class Calculate {
-	 /**
- * Performs the test operation required by the represented example.
- */
+	 
+	 /** Purpose: Performs the test operation. */
 	 void test(int abc,String tests) {
 		 System.out.println("Calculate Test");
 	 }

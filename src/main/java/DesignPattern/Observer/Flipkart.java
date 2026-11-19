@@ -1,17 +1,14 @@
 package DesignPattern.Observer;
 
 public interface Flipkart {// Subject that contains or manage observerlist
-	/**
- * Adds add observer information required by the workflow.
- */
+	
+	/** Purpose: Adds add observer data. */
 	void addObserver(Observer observer);
-	/**
- * Removes remove observer data so only valid workflow entries remain.
- */
+	
+	/** Purpose: Removes remove observer data. */
 	void removeObserver(Observer observer);
-	/**
- * Performs the notify observer operation required by the represented example.
- */
+	
+	/** Purpose: Performs the notify observer operation. */
 	void notifyObserver();
 	
 }

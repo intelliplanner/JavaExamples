@@ -5,15 +5,11 @@
  */
 package collection.list;
 
-/**
- *
- * @author Vicky
- */
 import java.util.*;    
-/**
- * Encapsulates array list example behavior for collection data management and lookup.
- */
+
+/** Purpose: Encapsulates array list example behavior; it manages collection data reliably. Owner: Virendra Gupta. */
 class ArrayListExample{    
+  
   public static void main(String args[]){    
      
   ArrayList<String> al=new ArrayList<String>();//creating arraylist    
@@ -21,8 +17,7 @@ class ArrayListExample{
   al.add("Vijay");    
   al.add("Ravi");    
   al.add("Ajay");    
-    
-  
+
   LinkedList<String> al2=new LinkedList<String>();//creating linkedlist    
   al2.add("James");//adding object in linkedlist    
   al2.add("Serena");    
@@ -31,7 +26,6 @@ class ArrayListExample{
     
   System.out.println("arraylist: "+al);  
   System.out.println("linkedlist: "+al2);  
-  
-  
+
  }   
 }    
