@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+/**
+ * Encapsulates heap exception out of memory behavior for the represented example workflow.
+ */
 public class HeapExceptionOutOfMemory {
 
 	/**
@@ -30,6 +33,9 @@ public class HeapExceptionOutOfMemory {
 		}
 	}
 
+	/**
+ * Performs the generate oom operation required by the represented example.
+ */
 	public void generateOOM() throws Exception {
 		int iteratorValue = 20;
 		System.out.println("\n=================> OOM test started..\n");

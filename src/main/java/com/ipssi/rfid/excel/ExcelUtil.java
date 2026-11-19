@@ -1,7 +1,13 @@
 package com.ipssi.rfid.excel;
 
+/**
+ * Encapsulates excel util behavior for the represented example workflow.
+ */
 public final class ExcelUtil {
 
+	/**
+ * Creates a configured excel util instance for the represented workflow.
+ */
 	private ExcelUtil() {
 	}
 

@@ -5,12 +5,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * Encapsulates stream example behavior for the represented example workflow.
+ */
 public class StreamExample {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		 getArrayListNthValue();
 //		EveryNth();
 	}
 
+	/**
+ * Retrieves or locates get array list nth value data needed for decision-making.
+ */
 	private static void getArrayListNthValue() {
 		int nth = 2;
 		List<Integer> arr = Arrays.asList(10, 21, 32, 43, 54, 64, 74);
@@ -29,6 +35,9 @@ public class StreamExample {
 		System.out.println(evenIndexedNames);
 	}
 
+	/**
+ * Performs the every nth operation required by the represented example.
+ */
 	private static void EveryNth() {
 		int nth = 2;
 		List<Integer> lists = Arrays.asList(1, 2, 3, 4, 5, 6, 7);

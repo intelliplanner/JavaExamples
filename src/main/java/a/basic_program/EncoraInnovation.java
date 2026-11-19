@@ -5,7 +5,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public interface EncoraInnovation {
-    public static  void main(String[] args){
+        public static  void main(String[] args){
         String data = "raja is java developer, java is a programming language, ravi is engineer";
         data = data.replace(",","");
 //        data = data.replace(",","");

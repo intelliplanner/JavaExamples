@@ -23,21 +23,36 @@ class Person{
   
   
 
+/**
+ * Creates a configured person instance for the represented workflow.
+ */
 public Person(String name, Date birthday, List hobbies){
     this.name = name;
     this.birthday = birthday;
     this.hobbies = hobbies;
   }
+  /**
+ * Retrieves or locates get name data needed for decision-making.
+ */
   public String getName() {
     return name;
   }
+  /**
+ * Retrieves or locates get birthday data needed for decision-making.
+ */
   public Date getBirthday() {
     return (Date)birthday.clone();
   }
+  /**
+ * Retrieves or locates get hobbies data needed for decision-making.
+ */
   public List getHobbies() {
     return Collections.unmodifiableList(hobbies);
   }
   @Override
+  /**
+ * Provides a readable representation for reporting or diagnostics.
+ */
   public String toString() {
     return "Person [name=" + name + ", birthday=" + birthday + ", hobbies="
         + hobbies + "]";

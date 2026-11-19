@@ -1,6 +1,12 @@
 package InterviewQuestions.hcl;
 
+/**
+ * Encapsulates b behavior for the represented coding problem.
+ */
 public class B extends A {
+	/**
+ * Creates a configured b instance for the represented workflow.
+ */
 	B() {
 		System.out.println("Call B");
 	}

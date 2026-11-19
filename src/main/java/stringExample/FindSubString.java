@@ -1,11 +1,17 @@
 package stringExample;
 
+/**
+ * Encapsulates find sub string behavior for the represented example workflow.
+ */
 public class FindSubString {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		int i = subString("aabcbc","abc"); 
 		System.out.println(i);
 	}
 	
+	/**
+ * Performs the sub string operation required by the represented example.
+ */
 	public static int subString(String s1,String s2) {
 		int count = 0;
 		

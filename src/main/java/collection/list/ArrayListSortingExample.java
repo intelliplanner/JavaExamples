@@ -4,10 +4,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Encapsulates product behavior for collection data management and lookup.
+ */
 class Product{  
     int id;  
     String name;  
     float price;  
+    /**
+ * Creates a configured product instance for the represented workflow.
+ */
     public Product(int id, String name, float price) {  
         super();  
         this.id = id;  
@@ -15,8 +21,11 @@ class Product{
         this.price = price;  
     }  
 }  
+/**
+ * Encapsulates array list sorting example behavior for collection data management and lookup.
+ */
 public class ArrayListSortingExample{  
-    public static void main(String[] args) {  
+        public static void main(String[] args) {  
         List<Product> list=new ArrayList<Product>();  
           
         //Adding Products  

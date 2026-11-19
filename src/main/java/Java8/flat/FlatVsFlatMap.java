@@ -5,8 +5,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Encapsulates flat vs flat map behavior for the represented example workflow.
+ */
 public class FlatVsFlatMap {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		map1();
 		map2();
 		map3();
@@ -15,6 +18,9 @@ public class FlatVsFlatMap {
 		flatMap3();
 	}
 
+	/**
+ * Performs the map3 operation required by the represented example.
+ */
 	private static void map3() {
 		System.out.println("The stream after applying " + "the function is : ");
 
@@ -26,6 +32,9 @@ public class FlatVsFlatMap {
 		list.stream().map(number -> number * 3).forEach(System.out::println);
 	}
 
+	/**
+ * Performs the map2 operation required by the represented example.
+ */
 	private static void map2() {
 		System.out.println("The stream after applying " + "the function is : ");
 
@@ -41,6 +50,9 @@ public class FlatVsFlatMap {
 		System.out.println(answer);
 	}
 
+	/**
+ * Performs the map1 operation required by the represented example.
+ */
 	private static void map1() {
 		System.out.println("The stream after applying " + "the function is : ");
 
@@ -52,6 +64,9 @@ public class FlatVsFlatMap {
 		list.stream().map(str -> str.length()).forEach(System.out::println);
 	}
 
+	/**
+ * Performs the flat map3 operation required by the represented example.
+ */
 	private static void flatMap3() {
 
 		List<Integer> PrimeNumbers = Arrays.asList(5, 7, 11, 13);
@@ -73,6 +88,9 @@ public class FlatVsFlatMap {
 		System.out.println("The Structure after flattening is : " + listofInts);
 	}
 
+	/**
+ * Performs the flat map operation required by the represented example.
+ */
 	private static void flatMap() {
 		List<String> list = Arrays.asList("5.6", "7.4", "4", "1", "2.3");
 
@@ -80,6 +98,9 @@ public class FlatVsFlatMap {
 		list.stream().flatMap(num -> Stream.of(num)).forEach(System.out::println);
 	}
 
+	/**
+ * Performs the flat map2 operation required by the represented example.
+ */
 	private static void flatMap2() {
 
 		// Creating a List of Strings

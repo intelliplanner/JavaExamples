@@ -1,7 +1,10 @@
 package data_structure.sorting;
 
+/**
+ * Encapsulates sorting part2 behavior for efficient data organization and processing.
+ */
 public class SortingPart2 {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		// int[] a = { 2, 7, 3, 1, 5, 4 };
 		// int[] a = { 2, 7, 4, 1, 5, 3 };
 		int[] a = { 7, 2, 4, 1, 5 };
@@ -17,6 +20,9 @@ public class SortingPart2 {
 		// mergeSort(a);
 	}
 
+	/**
+ * Adds insertion sort information required by the workflow.
+ */
 	private static void insertionSort(int[] arr) {
 
 		for (int i = 1; i < arr.length; i++) {
@@ -33,6 +39,9 @@ public class SortingPart2 {
 		printArr(arr);
 	}
 
+	/**
+ * Performs the selection sorting operation required by the represented example.
+ */
 	private static void SelectionSorting(int[] a) {
 		// int[] a = { 2, 7, 3, 1, 5, 4 };
 		// In Each Iteration Small element is first
@@ -48,6 +57,9 @@ public class SortingPart2 {
 		printArr(a);
 	}
 
+	/**
+ * Performs the print arr operation required by the represented example.
+ */
 	private static void printArr(int[] a) {
 		for (int m : a) {
 			System.out.print(m + " ");
@@ -55,6 +67,9 @@ public class SortingPart2 {
 		System.out.println();
 	}
 
+	/**
+ * Performs the bubblesort operation required by the represented example.
+ */
 	private static void Bubblesort(int[] a) { // In Each Iteration highest Element in Last
 		for (int i = 0; i < a.length - 1; i++) {
 			for (int j = 0; j < a.length - i - 1; j++) {

@@ -12,7 +12,7 @@ import java.util.Date;
 class TestImmutable2 {
 	
 	
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		MutableClass2 mc2 = new MutableClass2();
 		mc2.setName("Vicky");
 		ImmutbleClass2 im =new  ImmutbleClass2(mc2);
@@ -22,6 +22,9 @@ class TestImmutable2 {
 		
 	}
 
+	/**
+ * Performs the try modification operation required by the represented example.
+ */
 	private static void tryModification(Integer immutableField1, String immutableField2, Date mutableField) {
 		immutableField1 = 10000;
 		immutableField2 = "test changed";

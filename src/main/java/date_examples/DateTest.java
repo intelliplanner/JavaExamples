@@ -5,11 +5,14 @@ import java.time.LocalDate;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Date;
 
+/**
+ * Encapsulates date test behavior for the represented example workflow.
+ */
 public class DateTest {
 	private static final long MILLIS_IN_A_DAY = 1000 * 60 * 60 * 24;
 
 	
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		Date today = new Date();
 
 		System.out.println("Today     :: " + today(today));
@@ -28,22 +31,37 @@ public class DateTest {
 		System.out.println("Next Tuesday date = " + date);
 	}
 
+	/**
+ * Performs the today operation required by the represented example.
+ */
 	private static Date today(Date today) {
 		return today;
 	}
 
+	/**
+ * Retrieves or locates find next day data needed for decision-making.
+ */
 	private static Date findNextDay(Date date) {
 		return new Date(date.getTime() + MILLIS_IN_A_DAY);
 	}
 
+	/**
+ * Retrieves or locates find prev day data needed for decision-making.
+ */
 	private static Date findPrevDay(Date date) {
 		return new Date(date.getTime() - MILLIS_IN_A_DAY);
 	}
 
+	/**
+ * Retrieves or locates find next day data needed for decision-making.
+ */
 	private static LocalDate findNextDay(LocalDate localdate) {
 		return localdate.plusDays(1);
 	}
 
+	/**
+ * Retrieves or locates find prev day data needed for decision-making.
+ */
 	private static LocalDate findPrevDay(LocalDate localdate) {
 		return localdate.minusDays(1);
 	}

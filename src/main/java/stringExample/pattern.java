@@ -11,6 +11,9 @@ package stringExample;
  */
 public class pattern {
     
+    /**
+ * Performs the pritn triangle operation required by the represented example.
+ */
     private static void pritnTriangle(int size){
         for (int i=0;i<size;i++) {
         for (int j=0;j<i;j++) {
@@ -19,6 +22,9 @@ public class pattern {
             System.out.println("");
         }
     }
+    /**
+ * Performs the pritn triangle up operation required by the represented example.
+ */
     private static void pritnTriangleUp(int size){
         for (int i=1;i<size;i++) {
         for (int j=size;j>i;j--) {
@@ -27,6 +33,9 @@ public class pattern {
             System.out.println("");
         }
     }
+     /**
+ * Performs the pritn triangledown operation required by the represented example.
+ */
      private static void pritnTriangledown(int size){
         for (int i=0;i<size;i++) {
         for (int j=0;j<size-i;j++) {
@@ -35,7 +44,7 @@ public class pattern {
             System.out.println("");
         }
     }
-    public static void main(String arg[]){
+        public static void main(String arg[]){
         pritnTriangle(10);
 //        pritnTriangledown(10);
 //        pritnTriangleUp(7);

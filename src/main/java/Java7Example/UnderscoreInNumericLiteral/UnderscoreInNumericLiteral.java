@@ -10,7 +10,7 @@ package Java7Example.UnderscoreInNumericLiteral;
  * @author IPSSI
  */
 public class UnderscoreInNumericLiteral {
-    public static void main(String[] args) {  
+        public static void main(String[] args) {  
         // Underscore in integral literal  
         int a = 10_00000;  
         System.out.println("a = "+a);  

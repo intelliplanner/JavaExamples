@@ -5,8 +5,11 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * Encapsulates json examples behavior for the represented example workflow.
+ */
 public class JsonExamples {
-	public static void main(String s[]) {
+		public static void main(String s[]) {
 		 String jsonString = "{\n" +
 		            "        \"libraryname\":\"My Library\",\n" +
 		            "                \"mymusic\":[{\"ArtistName\":\"Aaron\",\"Song Name\":\"Beautiful\"},\n" +

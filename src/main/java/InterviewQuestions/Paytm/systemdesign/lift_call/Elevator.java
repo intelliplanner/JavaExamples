@@ -2,6 +2,9 @@ package InterviewQuestions.Paytm.systemdesign.lift_call;
 
 import java.util.TreeSet;
 
+/**
+ * Encapsulates elevator behavior for the represented coding problem.
+ */
 class Elevator {
 	private Direction currentDirection = Direction.UP;
 	private State currentState = State.IDLE;
@@ -20,6 +23,9 @@ class Elevator {
 	 */
 	private TreeSet<Request> downPendingJobs = new TreeSet<>();
 
+	/**
+ * Executes start elevator processing and coordinates the required workflow.
+ */
 	public void startElevator() {
 		while (true) {
 
@@ -45,6 +51,9 @@ class Elevator {
 		}
 	}
 
+	/**
+ * Verifies check if job conditions before processing continues.
+ */
 	public boolean checkIfJob() {
 		if (currentJobs.isEmpty()) {
 			return false;
@@ -53,6 +62,9 @@ class Elevator {
 
 	}
 
+	/**
+ * Executes process up request processing and coordinates the required workflow.
+ */
 	private void processUpRequest(Request request) {
 		// The elevator is not on the floor where the person has requested it i.e.
 		// source floor. So first bring it there.
@@ -91,6 +103,9 @@ class Elevator {
 
 	}
 
+	/**
+ * Executes process down request processing and coordinates the required workflow.
+ */
 	private void processDownRequest(Request request) {
 
 		int startFloor = currentFloor;
@@ -127,6 +142,9 @@ class Elevator {
 
 	}
 
+	/**
+ * Verifies check if new job can be processed conditions before processing continues.
+ */
 	private boolean checkIfNewJobCanBeProcessed(Request currentRequest) {
 		if (checkIfJob()) {
 			if (currentDirection == Direction.UP) {
@@ -158,6 +176,9 @@ class Elevator {
 
 	}
 
+	/**
+ * Adds add pending down jobs to current jobs information required by the workflow.
+ */
 	private void addPendingDownJobsToCurrentJobs() {
 		if (!downPendingJobs.isEmpty()) {
 			currentJobs = downPendingJobs;
@@ -168,6 +189,9 @@ class Elevator {
 
 	}
 
+	/**
+ * Adds add pending up jobs to current jobs information required by the workflow.
+ */
 	private void addPendingUpJobsToCurrentJobs() {
 		if (!upPendingJobs.isEmpty()) {
 			currentJobs = upPendingJobs;

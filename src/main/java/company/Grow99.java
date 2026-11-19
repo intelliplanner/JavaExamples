@@ -4,6 +4,9 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates grow99 behavior for the represented company or real-world workflow.
+ */
 public class Grow99 {
 
 public static void main(String[] str)

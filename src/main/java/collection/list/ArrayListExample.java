@@ -10,8 +10,11 @@ package collection.list;
  * @author Vicky
  */
 import java.util.*;    
+/**
+ * Encapsulates array list example behavior for collection data management and lookup.
+ */
 class ArrayListExample{    
- public static void main(String args[]){    
+  public static void main(String args[]){    
      
   ArrayList<String> al=new ArrayList<String>();//creating arraylist    
   al.add("Ravi");//adding object in arraylist    

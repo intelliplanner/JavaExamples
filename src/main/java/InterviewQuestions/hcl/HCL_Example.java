@@ -4,12 +4,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Encapsulates employee behavior for the represented coding problem.
+ */
 class Employee implements Comparable<Employee> {
 	int age;
 	String name;
 	int departmentId;
 	int salary;
 
+	/**
+ * Creates a configured employee instance for the represented workflow.
+ */
 	public Employee(int age, String name, int departmentId, int salary) {
 		super();
 		this.age = age;
@@ -18,39 +24,66 @@ class Employee implements Comparable<Employee> {
 		this.salary = salary;
 	}
 
+	/**
+ * Retrieves or locates get age data needed for decision-making.
+ */
 	public int getAge() {
 		return age;
 	}
 
+	/**
+ * Updates set age while keeping domain data consistent.
+ */
 	public void setAge(int age) {
 		this.age = age;
 	}
 
+	/**
+ * Retrieves or locates get name data needed for decision-making.
+ */
 	public String getName() {
 		return name;
 	}
 
+	/**
+ * Updates set name while keeping domain data consistent.
+ */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+ * Retrieves or locates get department id data needed for decision-making.
+ */
 	public int getDepartmentId() {
 		return departmentId;
 	}
 
+	/**
+ * Updates set department id while keeping domain data consistent.
+ */
 	public void setDepartmentId(int departmentId) {
 		this.departmentId = departmentId;
 	}
 
+	/**
+ * Retrieves or locates get salary data needed for decision-making.
+ */
 	public int getSalary() {
 		return salary;
 	}
 
+	/**
+ * Updates set salary while keeping domain data consistent.
+ */
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 
 	@Override
+	/**
+ * Performs the compare to operation required by the represented example.
+ */
 	public int compareTo(Employee o) {
 		if (this.salary > o.salary) {
 			return 1;
@@ -64,9 +97,12 @@ class Employee implements Comparable<Employee> {
 
 }
 
+/**
+ * Encapsulates hcl_example behavior for the represented coding problem.
+ */
 public class HCL_Example {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		List<Employee> empList = new ArrayList<Employee>();
 		empList.add(new Employee(25, "vir", 1, 10000));
 		empList.add(new Employee(22, "oiu", 4, 30000));

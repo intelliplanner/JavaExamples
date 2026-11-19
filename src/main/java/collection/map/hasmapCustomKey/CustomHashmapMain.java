@@ -2,8 +2,11 @@ package collection.map.hasmapCustomKey;
 
 import java.util.HashMap;
 
+/**
+ * Encapsulates custom hashmap main behavior for collection data management and lookup.
+ */
 public class CustomHashmapMain {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		HashMap<CustomHashmapKey, String> obj = new HashMap<CustomHashmapKey, String>();
 		CustomHashmapKey obj1 = new CustomHashmapKey(1, "Virendra");
 		CustomHashmapKey obj2 = new CustomHashmapKey(2, "Aicky");

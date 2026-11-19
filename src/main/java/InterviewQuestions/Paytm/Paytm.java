@@ -3,9 +3,12 @@ package InterviewQuestions.Paytm;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Encapsulates paytm behavior for the represented coding problem.
+ */
 public class Paytm {
 	
-	public static void main(String s[] ) {
+		public static void main(String s[] ) {
 			ArrayList<ParkingInfo> parkTwoWheelerObj = new ArrayList<ParkingInfo>();
 			parkTwoWheelerObj.add(new ParkingInfo(1, "TwoWheeler", 1, 1, false));
 			parkTwoWheelerObj.add(new ParkingInfo(2, "TwoWheeler", 2, 2, false));

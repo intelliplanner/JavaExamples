@@ -1,8 +1,11 @@
 package a.basic_program;
 
+/**
+ * Encapsulates reverse no behavior for the represented example workflow.
+ */
 public class ReverseNo {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		int n=233;
 		int reverse=0;
 		int last_digit=0;

@@ -14,6 +14,9 @@ import java.io.FileOutputStream;
  */
 public class TryWithResources {
 
+    /**
+ * Performs the test exception operation required by the represented example.
+ */
     public static void testException() {
         File fs = new File("");
 
@@ -27,7 +30,7 @@ public class TryWithResources {
         }
     }
 
-    public static void main(String s[]) {
+        public static void main(String s[]) {
         testException();
     }
 }

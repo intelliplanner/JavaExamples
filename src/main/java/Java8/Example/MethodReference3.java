@@ -2,8 +2,11 @@ package Java8.Example;
 
 import java.util.function.BiFunction;
 
+/**
+ * Encapsulates method reference3 behavior for the represented example workflow.
+ */
 public class MethodReference3 {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		BiFunction<Integer, Integer, Integer> adder = Arithmetic::add;
 		int result = adder.apply(10, 20);
 		System.out.println(result);

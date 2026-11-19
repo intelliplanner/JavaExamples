@@ -1,10 +1,13 @@
 package Java13.Text_Blocks_JEP_355;
 
+/**
+ * Encapsulates textblock example behavior for the represented example workflow.
+ */
 public class TextblockExample  
 {  
     /* Driver Code */  
     @SuppressWarnings("preview")  
-    public static void main(String ar[])   
+        public static void main(String ar[])   
     {  
         String stringtextBlock ="";
 //                "Hi

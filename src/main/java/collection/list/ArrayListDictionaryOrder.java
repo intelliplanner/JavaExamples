@@ -4,8 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * Encapsulates array list dictionary order behavior for collection data management and lookup.
+ */
 public class ArrayListDictionaryOrder { // lexographically
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		// Initializing String array.
 //		dictionarySortedString();
 
@@ -62,6 +65,9 @@ public class ArrayListDictionaryOrder { // lexographically
 		printArray(stringArray);
 	}
 
+	/**
+ * Orders the relevant records for predictable downstream processing.
+ */
 	public static void sortLexicographically(String strArr[]) {
 		for (int i = 0; i < strArr.length; i++) {
 			for (int j = i + 1; j < strArr.length; j++) {

@@ -5,8 +5,11 @@ import InterviewQuestions.Paytm.systemdesign.lift_call.ExternalRequest;
 import InterviewQuestions.Paytm.systemdesign.lift_call.InternalRequest;
 import InterviewQuestions.Paytm.systemdesign.lift_call.Request;
 
+/**
+ * Encapsulates test elevator behavior for the represented coding problem.
+ */
 public class TestElevator {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 
 		ElevatorNew elevator = new ElevatorNew();
 

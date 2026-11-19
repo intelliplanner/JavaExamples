@@ -2,9 +2,12 @@ package InteviewQuestions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+/**
+ * Encapsulates missing element array behavior for the represented coding problem.
+ */
 public class MissingElementArray {
 	static double colTotalObj;
-	public static void main(String arhgs[]) {
+		public static void main(String arhgs[]) {
 		int arr[]= {1,2,3,5,6,7,9};
 		
 		printMissingElement(arr);
@@ -16,6 +19,9 @@ public class MissingElementArray {
 		
 	}
 
+	/**
+ * Verifies check decimal conditions before processing continues.
+ */
 	private static void checkDecimal() {
 		Long i = 749249L;
 		int k = 17622;
@@ -24,6 +30,9 @@ public class MissingElementArray {
 		System.out.println(colTotalObj);
 	}
 
+	/**
+ * Performs the print missing element operation required by the represented example.
+ */
 	public static void printMissingElement(int arr[]) {
 		if (arr == null )
 			return;

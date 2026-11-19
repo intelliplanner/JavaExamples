@@ -7,6 +7,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Encapsulates sudoku validate behavior for the represented example workflow.
+ */
 public class SudokuValidate {
 	static int N = 9;
 
@@ -117,6 +120,9 @@ public class SudokuValidate {
 		return true;		// If all conditions satisfied
 	}
 
+	/**
+ * Performs the parse array from list operation required by the represented example.
+ */
 	static int[][] parseArrayFromList(ArrayList<ArrayList<Integer>> mainList) {
 		int arr[][] = new int[mainList.size()][mainList.get(0).size()];
 		for (int i = 0; i < mainList.size(); i++) {
@@ -128,7 +134,7 @@ public class SudokuValidate {
 		return arr;
 	}
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 
 		File file = new File(
 				"E:\\IntelliPlanner Workspaces\\WorkSpaceCGPLOxygen\\JavaExamples\\src\\Sudoku\\input.txt");

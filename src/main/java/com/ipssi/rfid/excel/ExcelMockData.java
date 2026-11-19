@@ -11,13 +11,22 @@ import com.ipssi.beans.ExcelBean;
 
 
 
+/**
+ * Encapsulates excel mock data behavior for the represented example workflow.
+ */
 public class ExcelMockData {
 
 	private List<ExcelBean> excelData;
 
+	/**
+ * Creates a configured excel mock data instance for the represented workflow.
+ */
 	public ExcelMockData() {
 	}
 
+	/**
+ * Retrieves or locates get excel data data needed for decision-making.
+ */
 	public List<ExcelBean> getExcelData() {
 		if (excelData == null) {
 			populateExcelData();
@@ -25,10 +34,16 @@ public class ExcelMockData {
 		return excelData;
 	}
 
+	/**
+ * Updates set excel data while keeping domain data consistent.
+ */
 	public void setExcelData(List<ExcelBean> excelData) {
 		this.excelData = excelData;
 	}
 
+	/**
+ * Performs the populate excel data operation required by the represented example.
+ */
 	private void populateExcelData() {
 		excelData = new ArrayList<ExcelBean>();
 		Class<ExcelBean> classz = (Class<ExcelBean>) ExcelBean.class;
@@ -49,6 +64,9 @@ public class ExcelMockData {
 		}
 	}
 
+	/**
+ * Retrieves or locates get random string data needed for decision-making.
+ */
 	private String getRandomString() {
 		SecureRandom random = new SecureRandom();
 		return new BigInteger(130, random).toString(32);

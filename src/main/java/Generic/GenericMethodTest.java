@@ -10,6 +10,9 @@ package Generic;
  * @author IPSSI
  */
 public class GenericMethodTest {
+    /**
+ * Performs the print array operation required by the represented example.
+ */
     public static <E> void printArray(E[] inputArray){
     	int i = 1;
         for(E e:inputArray){
@@ -19,7 +22,7 @@ public class GenericMethodTest {
             i++;
         }
     }
-    public static void main(String[] args) {
+        public static void main(String[] args) {
       Integer[] intArray = { 1, 2, 3, 4, 5 };
       Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
       Character[] charArray = { 'H', 'E', 'L', 'L', 'o' };

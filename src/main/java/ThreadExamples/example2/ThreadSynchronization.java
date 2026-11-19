@@ -1,5 +1,8 @@
 package ThreadExamples.example2;
 
+/**
+ * Encapsulates thread synchronization behavior for safe concurrent execution and shared-state coordination.
+ */
 public class ThreadSynchronization implements Runnable {
 	 int totalcount = 10;
 	 int noOfThreads = 3;
@@ -7,11 +10,17 @@ public class ThreadSynchronization implements Runnable {
 	static Object lock = new Object();
 	int rem = 0;
 
+	/**
+ * Creates a configured thread synchronization instance for the represented workflow.
+ */
 	ThreadSynchronization(int rem) {
 		this.rem = rem;
 	}
 
 	@Override
+	/**
+ * Executes run processing and coordinates the required workflow.
+ */
 	public void run() {
 		synchronized (lock) {
 			while (number < totalcount-1) {
@@ -32,7 +41,7 @@ public class ThreadSynchronization implements Runnable {
 		}
 	}
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		ThreadSynchronization r1 = new ThreadSynchronization(1);
 		ThreadSynchronization r2 = new ThreadSynchronization(2);
 		ThreadSynchronization r3 = new ThreadSynchronization(0);

@@ -1,16 +1,25 @@
 package ThreadInterview;
 
+/**
+ * Encapsulates print sequence behavior for safe concurrent execution and shared-state coordination.
+ */
 class PrintSequence implements Runnable {
 	public int PRINT_NUMBERS_UPTO = 10;
 	static int number = 1;
 	int remainder;
 	static Object lock = new Object();
 
+	/**
+ * Creates a configured print sequence instance for the represented workflow.
+ */
 	public PrintSequence(int remainder) {
 		this.remainder = remainder;
 	}
 
 	@Override
+	/**
+ * Executes run processing and coordinates the required workflow.
+ */
 	public void run() {
 		while (number < PRINT_NUMBERS_UPTO) {
 			synchronized (lock) {
@@ -29,8 +38,11 @@ class PrintSequence implements Runnable {
 	}
 }
 
+/**
+ * Encapsulates thread interview1 behavior for safe concurrent execution and shared-state coordination.
+ */
 public class ThreadInterview1 {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		 PrintSequence r1 = new PrintSequence(1);
 		 PrintSequence r2 = new PrintSequence(2);
 		 PrintSequence r3 = new PrintSequence(3);

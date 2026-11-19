@@ -3,6 +3,9 @@ package collection.Comparable;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Encapsulates student main behavior for collection data management and lookup.
+ */
 public class StudentMain {
 	// Creating a test class to sort the elements
 		public static void main(String args[]) {

@@ -2,6 +2,9 @@ package company.Madlibs;
 import java.util.*;
 import java.io.*;
 
+/**
+ * Encapsulates madlibs behavior for the represented company or real-world workflow.
+ */
 public class Madlibs {
 
 	/**
@@ -14,7 +17,7 @@ public class Madlibs {
 		System.out.println("The result will be written to an output file.");
 	}
 
-	public static void main(String[] args) throws FileNotFoundException {
+		public static void main(String[] args) throws FileNotFoundException {
 		Scanner input = new Scanner(System.in);
 		String choice = "";
 		intro();

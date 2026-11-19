@@ -10,7 +10,7 @@ import java.util.Date;
  */
 
 class TestMain {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		ImmutableClass im = ImmutableClass.createNewInstance(100, "test", new Date());
 		System.out.println(im);
 		Integer immutableField1 = im.getImmutableField1();
@@ -28,6 +28,9 @@ class TestMain {
 		
 	}
 
+	/**
+ * Performs the try modification operation required by the represented example.
+ */
 	private static void tryModification(Integer immutableField1, String immutableField2, Date mutableField) {
 		immutableField1 = 10000;
 		immutableField2 = "test changed";

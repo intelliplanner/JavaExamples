@@ -2,12 +2,18 @@ package inteviewQuestion.GlobalLogic;
 
 import java.util.Arrays;
 
+/**
+ * Encapsulates find valuesof sum equals behavior for the represented coding problem.
+ */
 public class FindValuesofSumEquals {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		int total = 5;// 6  9  ,7
 		FindValuesofSumEqualss(total);
 	}
 
+	/**
+ * Retrieves or locates find valuesof sum equalss data needed for decision-making.
+ */
 	private static void FindValuesofSumEqualss(int total) {
 		int[] arr = { 9, 2, 3, 7, -1,6, 3, 1, 4 };
 //		int[] arr =  {1, 5, 7, -1};

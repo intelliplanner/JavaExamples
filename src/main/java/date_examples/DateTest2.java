@@ -6,6 +6,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 
+/**
+ * Encapsulates date test2 behavior for the represented example workflow.
+ */
 public class DateTest2 {
 
 	/**
@@ -16,18 +19,24 @@ public class DateTest2 {
 
 	}
 	
+	/**
+ * Performs the yesterday operation required by the represented example.
+ */
 	private Date yesterday() {
 	    final Calendar cal = Calendar.getInstance();
 	    cal.add(Calendar.DATE, -1);
 	    return cal.getTime();
 	}
 	
+	/**
+ * Retrieves or locates get yesterday date string data needed for decision-making.
+ */
 	private static String getYesterdayDateString() {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd 00:00:00");
 		String currentDate = dateFormat.format(new Date());
         return currentDate;
 	}
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	//	String str = "image_blink.png";
 		
@@ -41,6 +50,9 @@ public class DateTest2 {
 //		String  
 	}
 
+	/**
+ * Performs the print date into long operation required by the represented example.
+ */
 	public static void printDateIntoLong() {
 		String dt = "2019-09-14";
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

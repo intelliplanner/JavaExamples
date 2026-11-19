@@ -2,12 +2,18 @@ package a_example;
 
 import java.util.Arrays;
 
+/**
+ * Encapsulates feb16 behavior for the represented example workflow.
+ */
 public class Feb16 {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		 findSum();
 	}
 
+	/**
+ * Retrieves or locates find sum data needed for decision-making.
+ */
 	private static void findSum() {
 		int [] arr = {2,7,6,3,5,4,1,8};//{2,7,11,15};
 		Arrays.sort(arr);

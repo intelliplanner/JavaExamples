@@ -1,5 +1,8 @@
 package ThreadInterview;
 
+/**
+ * Encapsulates thread countinuous behavior for safe concurrent execution and shared-state coordination.
+ */
 public class ThreadCountinuous implements Runnable {
 
 	// int noOfThreads = 3;
@@ -8,6 +11,9 @@ public class ThreadCountinuous implements Runnable {
 	static Object obj = new Object();
 
 	@Override
+	/**
+ * Executes run processing and coordinates the required workflow.
+ */
 	public void run() {
 		synchronized (obj) {
 			while (no <= PRINT_NUMBERS_UPTO) {
@@ -18,7 +24,7 @@ public class ThreadCountinuous implements Runnable {
 		}
 	}
 
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 //		PrintSequence r1 = new PrintSequence(1);
 //		PrintSequence r2 = new PrintSequence(2);
 //		PrintSequence r3 = new PrintSequence(3);

@@ -8,14 +8,20 @@ import java.util.stream.IntStream;
 
 import org.apache.poi.util.SystemOutLogger;
 
+/**
+ * Encapsulates capgemini test2 behavior for the represented coding problem.
+ */
 public class CapgeminiTest2 {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 //		test();
 //		convertStringToInt("12345");
 		convertStringToInt2("6789");
 	}
 	
+	/**
+ * Performs the convert string to int2 operation required by the represented example.
+ */
 	private static void convertStringToInt2(String str) {
 		char[] ch = str.toCharArray();
 		int n = 0;
@@ -29,11 +35,17 @@ public class CapgeminiTest2 {
 		 System.out.println(i);
 	}
 
+	/**
+ * Performs the test operation required by the represented example.
+ */
 	private static void test() {
 		List<Integer> arr = Arrays.asList(230,345,123,245,543);
 		arr.stream().filter(s -> s.toString().charAt(0) - '0' == 2).collect(Collectors.toList()).forEach(System.out::println);
 	}
 
+	/**
+ * Performs the convert string to int operation required by the represented example.
+ */
 	public static void convertStringToInt(String s) 
 	{ 
 	      

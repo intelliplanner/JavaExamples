@@ -3,35 +3,59 @@ package Generic;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Encapsulates shape behavior for the represented example workflow.
+ */
 abstract class Shape{
+	/**
+ * Performs the draw operation required by the represented example.
+ */
 	abstract void draw();
 }
 
+/**
+ * Encapsulates rectangle behavior for the represented example workflow.
+ */
 class Rectangle extends Shape{
 
 	@Override
+	/**
+ * Performs the draw operation required by the represented example.
+ */
 	void draw() {
 		System.out.println("Rectangle");
 	}
 }
 
+/**
+ * Encapsulates circle behavior for the represented example workflow.
+ */
 class Circle extends Shape{
 
 	@Override
+	/**
+ * Performs the draw operation required by the represented example.
+ */
 	void draw() {
 		System.out.println("Circle");
 	}
 }
 
+/**
+ * Encapsulates generic test class behavior for the represented example workflow.
+ */
 public class GenericTestClass {
 
+	/**
+ * Performs the draw shapes operation required by the represented example.
+ */
 	public void drawShapes(List<? extends Shape> lists) {
 		for(Shape s: lists) {
 			System.out.println(s);
 		}
 	}
 	
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		List<Integer> list1 = new ArrayList<Integer>();
 		list1.add(10);
 		list1.add(20);

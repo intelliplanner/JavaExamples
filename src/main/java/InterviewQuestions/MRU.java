@@ -1,7 +1,10 @@
 package InterviewQuestions;
 
+/**
+ * Encapsulates mru behavior for the represented coding problem.
+ */
 public class MRU {
- public static void main(String args[]) {
+  public static void main(String args[]) {
 	 int[] arr2 = {3,5,2,4,1};
 	 int k=3;
 	 
@@ -11,6 +14,9 @@ public class MRU {
 	 int j = 10;
 	 pringMRU(j,arr);
  }
+ /**
+ * Performs the pring mru operation required by the represented example.
+ */
  public static void pringMRU(int k,int[] arr2) {
 	 
 	 for(int i :arr2) {

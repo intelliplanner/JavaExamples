@@ -16,7 +16,7 @@ import java.util.Random;
  */
 public class RandomNo {
 
-    public static void main(String a[]) {
+        public static void main(String a[]) {
         int no1 = getRandomNumber(9);
         System.out.println(" Number1: " + no1);
         int no2 = getRandomNumber(122);
@@ -34,11 +34,17 @@ public class RandomNo {
         insertRandomNumber(generateRandomNo);
     }
 
+    /**
+ * Retrieves or locates get random number data needed for decision-making.
+ */
     public static int getRandomNumber(int val) {
         Random t = new Random();
         return t.nextInt(val);
     }
 
+    /**
+ * Retrieves or locates get random charactor data needed for decision-making.
+ */
     public static String getRandomCharactor(int Ascii_Val) {
         if (Ascii_Val < 65) {
             int i = 65 - Ascii_Val;
@@ -53,6 +59,9 @@ public class RandomNo {
         return aChar;
     }
 
+    /**
+ * Adds insert random number information required by the workflow.
+ */
     public static void insertRandomNumber(String generateRandomNo) {
         Connection conn = null;
         boolean destroyIt = false;
@@ -83,6 +92,9 @@ public class RandomNo {
         }
     }
     
+     /**
+ * Performs the verify random number operation required by the represented example.
+ */
      public static void verifyRandomNumber(String generateRandomNo) {
         Connection conn = null;
         boolean destroyIt = false;

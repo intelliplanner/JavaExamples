@@ -4,10 +4,16 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Encapsulates atomic variable behavior for safe concurrent execution and shared-state coordination.
+ */
 public class AtomicVariable {
 	Counter counter = new Counter();
 	ExecutorService execute;
 
+	/**
+ * Performs the service operation required by the represented example.
+ */
 	public void service() {
 		try {
 			execute = Executors.newFixedThreadPool(2);
@@ -35,7 +41,7 @@ public class AtomicVariable {
 		}
 	}
 
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		AtomicVariable av = new AtomicVariable();
 		av.service();
 	}

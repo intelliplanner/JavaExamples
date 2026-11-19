@@ -6,6 +6,9 @@ import InterviewQuestions.Paytm.systemdesign.lift_call.Direction;
 import InterviewQuestions.Paytm.systemdesign.lift_call.Request;
 import InterviewQuestions.Paytm.systemdesign.lift_call.State;
 
+/**
+ * Encapsulates elevator new behavior for the represented coding problem.
+ */
 public class ElevatorNew {
 	private Direction currentDirection = Direction.UP;
 	private State currentState = State.IDLE;
@@ -24,6 +27,9 @@ public class ElevatorNew {
 	 */
 	private TreeSet<Request> downPendingJobs = new TreeSet<>();
 
+	/**
+ * Executes start elevator processing and coordinates the required workflow.
+ */
 	public void startElevator() {
 		System.out.println("The Elevator has started functioning");
 		while (true) {
@@ -51,6 +57,9 @@ public class ElevatorNew {
 		}
 	}
 
+	/**
+ * Verifies check if job conditions before processing continues.
+ */
 	public boolean checkIfJob() {
 
 		if (currentJobs.isEmpty()) {
@@ -60,6 +69,9 @@ public class ElevatorNew {
 
 	}
 
+	/**
+ * Executes process up request processing and coordinates the required workflow.
+ */
 	private void processUpRequest(Request request) {
 
 		int startFloor = currentFloor;
@@ -99,6 +111,9 @@ public class ElevatorNew {
 
 	}
 
+	/**
+ * Executes process down request processing and coordinates the required workflow.
+ */
 	private void processDownRequest(Request request) {
 
 		int startFloor = currentFloor;
@@ -135,6 +150,9 @@ public class ElevatorNew {
 
 	}
 
+	/**
+ * Verifies check if new job can be processed conditions before processing continues.
+ */
 	private boolean checkIfNewJobCanBeProcessed(Request currentRequest) {
 		if (checkIfJob()) {
 			if (currentDirection == Direction.UP) {
@@ -166,6 +184,9 @@ public class ElevatorNew {
 
 	}
 
+	/**
+ * Adds add pending down jobs to current jobs information required by the workflow.
+ */
 	private void addPendingDownJobsToCurrentJobs() {
 		if (!downPendingJobs.isEmpty()) {
 			System.out.println("Pick a pending down job and execute it by putting in current job");
@@ -178,6 +199,9 @@ public class ElevatorNew {
 
 	}
 
+	/**
+ * Adds add pending up jobs to current jobs information required by the workflow.
+ */
 	private void addPendingUpJobsToCurrentJobs() {
 		if (!upPendingJobs.isEmpty()) {
 			System.out.println("Pick a pending up job and execute it by putting in current job");
@@ -192,6 +216,9 @@ public class ElevatorNew {
 
 	}
 
+	/**
+ * Adds add job information required by the workflow.
+ */
 	public void addJob(Request request) {
 		if (currentState == State.IDLE) {
 			currentState = State.MOVING;
@@ -218,6 +245,9 @@ public class ElevatorNew {
 
 	}
 
+	/**
+ * Adds addto pending jobs information required by the workflow.
+ */
 	public void addtoPendingJobs(Request request) {
 		if (request.getExternalRequest().getDirectionToGo() == Direction.UP) {
 			System.out.println("Add to pending up jobs");

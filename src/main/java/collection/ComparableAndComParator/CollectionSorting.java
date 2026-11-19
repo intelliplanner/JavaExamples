@@ -13,6 +13,9 @@ import java.util.Collections;
  * @author IPSSI
  */
 public class CollectionSorting {
+    /**
+ * Orders the relevant records for predictable downstream processing.
+ */
     static void sortArrayList1(){
         ArrayList<String> al = new ArrayList<String>(); 
         al.add("Geeks For Geeks"); 
@@ -32,6 +35,9 @@ public class CollectionSorting {
         System.out.println("List after the use of" + 
                            " Collection.sort() :\n" + al); 
     }
+        /**
+ * Orders the relevant records for predictable downstream processing.
+ */
         static void sortArrayList2(){
         ArrayList<String> al = new ArrayList<String>(); 
         al.add("Geeks For Geeks"); 
@@ -55,7 +61,7 @@ public class CollectionSorting {
     
     
     
-    public static void main(String[] args) 
+        public static void main(String[] args) 
     { 
        sortArrayList1();
        sortArrayList2();

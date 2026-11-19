@@ -3,11 +3,17 @@ package Java8.Example;
 import java.util.ArrayList;
 
 interface Test3 {
+	/**
+ * Adds add information required by the workflow.
+ */
 	int add(int a, int b);
 }
 
+/**
+ * Encapsulates lambda expression3 behavior for the represented example workflow.
+ */
 public class LambdaExpression3 {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		Test3 t = (a, b) -> {
 			return (a + b);
 		};

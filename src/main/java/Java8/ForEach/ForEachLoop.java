@@ -3,9 +3,12 @@ package Java8.ForEach;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Encapsulates for each loop behavior for the represented example workflow.
+ */
 public class ForEachLoop {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		 List<String> gamesList = new ArrayList<String>();  
 	        gamesList.add("Football");  
 	        gamesList.add("Cricket");  

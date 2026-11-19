@@ -1,10 +1,19 @@
 package data_structure.binary_tree.example1;
 
+/**
+ * Encapsulates binary tree behavior for efficient data organization and processing.
+ */
 public class BinaryTree {
+	/**
+ * Encapsulates node behavior for efficient data organization and processing.
+ */
 	static class Node {
 		int value;
 		Node left, right;
 
+		/**
+ * Creates a configured node instance for the represented workflow.
+ */
 		Node(int value) {
 			this.value = value;
 			left = null;
@@ -12,6 +21,9 @@ public class BinaryTree {
 		}
 	}
 
+	/**
+ * Adds insert information required by the workflow.
+ */
 	public void insert(Node node, int value) {
 		if (value < node.value) {
 			if (node.left != null) {
@@ -30,6 +42,9 @@ public class BinaryTree {
 		}
 	}
 
+	/**
+ * Performs the traverse in order operation required by the represented example.
+ */
 	public void traverseInOrder(Node node) {
 		if (node != null) {
 			traverseInOrder(node.left);
@@ -38,7 +53,7 @@ public class BinaryTree {
 		}
 	}
 
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		BinaryTree tree = new BinaryTree();
 		Node root = new Node(5);
 		System.out.println("Binary Tree Example");

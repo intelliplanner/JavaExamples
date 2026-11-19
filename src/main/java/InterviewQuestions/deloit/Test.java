@@ -3,9 +3,12 @@ package InterviewQuestions.deloit;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Encapsulates test behavior for the represented coding problem.
+ */
 public class Test {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		String str = "Great great responsibility";
 		HashMap<String,Integer> map = new HashMap<>();
 		int i=0;

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Encapsulates comparotor student behavior for collection data management and lookup.
+ */
 public class ComparotorStudent {
 
 public static void main(String args[]){  

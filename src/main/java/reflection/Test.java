@@ -10,6 +10,9 @@ package reflection;
  * @author Vicky
  */
 public class Test {
+    /**
+ * Performs the print val operation required by the represented example.
+ */
     public int printVal(){
         int val = 2;
         return val;

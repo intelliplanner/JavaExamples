@@ -1,7 +1,10 @@
 package functionInterFace;
 
+/**
+ * Encapsulates functional interface example2 behavior for the represented example workflow.
+ */
 public class FunctionalInterfaceExample2 {
-	public static void main(String s[]) {
+		public static void main(String s[]) {
 		Controller c = (a,b) -> System.out.println(a+b);
 		c.ShowMsg(10, 20);
 		

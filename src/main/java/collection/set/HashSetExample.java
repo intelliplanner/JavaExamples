@@ -11,10 +11,16 @@ package collection.set;
  */
 import java.util.*;
 
+/**
+ * Encapsulates employee behavior for collection data management and lookup.
+ */
 class Employee {
 	int id;
 	String name;
 
+	/**
+ * Creates a configured employee instance for the represented workflow.
+ */
 	public Employee(int id, String name) {
 		this.id = id;
 		this.name = name;
@@ -22,9 +28,12 @@ class Employee {
 
 }
 
+/**
+ * Encapsulates hash set example behavior for collection data management and lookup.
+ */
 class HashSetExample {
 
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 
 		HashSet<String> al = new HashSet<String>();
 		al.add("Ravi");

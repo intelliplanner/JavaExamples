@@ -1,19 +1,31 @@
 package data_structure.LinkedList;
 
+/**
+ * Encapsulates linked list data behavior for efficient data organization and processing.
+ */
 public class LinkedListData {
 
 	Node head;
 
+	/**
+ * Encapsulates node behavior for efficient data organization and processing.
+ */
 	static class Node {
 		int data;
 		Node next;
 
+		/**
+ * Creates a configured node instance for the represented workflow.
+ */
 		Node(int data) {
 			this.data = data;
 			this.next = null;
 		}
 	}
 
+	/**
+ * Adds insert node at position information required by the workflow.
+ */
 	public static LinkedListData insertNodeAtPosition(LinkedListData list, int newData, int index) {
 		Node currNode = list.head;
 		Node prev = null;
@@ -38,6 +50,9 @@ public class LinkedListData {
 		
 		return list;
 	}
+	/**
+ * Adds insert node information required by the workflow.
+ */
 	public LinkedListData insertNode(LinkedListData list, int newData) {
 		Node newNode = new Node(newData);
 		newNode.next = null; 		
@@ -55,6 +70,9 @@ public class LinkedListData {
 		return list;
 	}
 
+	/**
+ * Performs the print list operation required by the represented example.
+ */
 	static void printList(LinkedListData list) {
 		
 		if(list!=null) {
@@ -68,6 +86,9 @@ public class LinkedListData {
 		}
 	}
 	
+	/**
+ * Removes delete data so only valid workflow entries remain.
+ */
 	public static LinkedListData delete(LinkedListData list , int key) {
 			Node currNode = list.head; 
 			Node prev = null;
@@ -102,12 +123,18 @@ public class LinkedListData {
 			return list;	
 	}
 	
+	/**
+ * Removes delete by index data so only valid workflow entries remain.
+ */
 	public static LinkedListData deleteByIndex(LinkedListData list,int index) {
 		int key  = getElementByIndex(list,index);
 		list = delete(list, key);
 		return list;
 	}
 
+	/**
+ * Retrieves or locates get element by index data needed for decision-making.
+ */
 	public static int getElementByIndex(LinkedListData list,int index) {
 		System.out.println("");
 		int key = -1; 
@@ -128,7 +155,7 @@ public class LinkedListData {
 		return key;
 	}
 	
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		LinkedListData list = new LinkedListData();
 		list = list.insertNode(list, 3);
 		list = list.insertNode(list, 2);

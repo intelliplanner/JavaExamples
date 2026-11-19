@@ -6,10 +6,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates date finder behavior for the represented coding problem.
+ */
 public class DateFinder {
 	static SimpleDateFormat dateFormatter = new SimpleDateFormat("DD-MM-YYYY");
 
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		String paragraph = "On Document this, 2-12-2019 and 12-11-2018  and  02-10-2019.";
 		int cunt = 0;
 		// 1st way
@@ -21,6 +24,9 @@ public class DateFinder {
 		System.out.println(cunt);
 	}
 
+	/**
+ * Retrieves or locates get date count by java8 data needed for decision-making.
+ */
 	private static int getDateCountByJava8(String paragraph) {
 		paragraph = paragraph.substring(0, paragraph.length() - 1);
 		List<String> li = Arrays.asList(paragraph.split(" "));
@@ -29,6 +35,9 @@ public class DateFinder {
 		return list.size();
 	}
 
+	/**
+ * Retrieves or locates get date count data needed for decision-making.
+ */
 	public static int getDateCount(String paragraph) {
 		int count = 0;
 
@@ -44,6 +53,9 @@ public class DateFinder {
 
 	}
 
+	/**
+ * Verifies is valid conditions before processing continues.
+ */
 	public static boolean isValid(String dateStr) {
 		boolean isTrue = false;
 		try {

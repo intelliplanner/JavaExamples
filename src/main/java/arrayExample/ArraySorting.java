@@ -2,16 +2,22 @@ package arrayExample;
 
 import java.util.Arrays;
 
+/**
+ * Encapsulates array sorting behavior for the represented example workflow.
+ */
 public class ArraySorting {
 	static int arr1[] = { 1, 0, 0, 0, 1, 1, 1 };
 	static int arr2[] = new int[7];
 
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 
 		example1();
 		ArraySorting();
 	}
 
+	/**
+ * Performs the example1 operation required by the represented example.
+ */
 	private static void example1() {
 		int j = 0;
 		for (int i = 0; i < arr1.length; i++) {
@@ -40,6 +46,9 @@ public class ArraySorting {
 		}
 	}
 
+	/**
+ * Performs the array sorting operation required by the represented example.
+ */
 	static void ArraySorting() {
 		int[] arr = { 5, 3, 1, 6, 4, 2 };
 		Arrays.sort(arr);

@@ -14,6 +14,9 @@ import java.util.logging.Logger;
  */
 public class UIBank {
     int amt=1000;
+    /**
+ * Performs the with drawal operation required by the represented example.
+ */
     synchronized void withDrawal(int amt){
         System.out.println("Withdraw Amt Started");
         if(this.amt<amt){
@@ -26,6 +29,9 @@ public class UIBank {
             System.out.println("Withdraw Amt Completed:"+amt);
         }
     }
+    /**
+ * Performs the deposit operation required by the represented example.
+ */
     synchronized void deposit(int amt){
         System.out.println("Deposit Amt");
         this.amt += amt;

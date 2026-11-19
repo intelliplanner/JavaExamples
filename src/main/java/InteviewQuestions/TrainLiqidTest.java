@@ -2,9 +2,12 @@ package InteviewQuestions;
 
 import java.util.Arrays;
 
+/**
+ * Encapsulates train liqid test behavior for the represented coding problem.
+ */
 public class TrainLiqidTest {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 	
 		int arr[] = { 900, 940, 950, 1100, 1500, 1800 };
 		int dep[] = { 910, 1200, 1120, 1130, 1900, 2000 };
@@ -20,6 +23,9 @@ public class TrainLiqidTest {
 	
 	}
 
+	/**
+ * Retrieves or locates find platform data needed for decision-making.
+ */
 	public static int findPlatform(int arr[], int dep[], int n) {
 
 		// plat_needed indicates number of platforms
@@ -44,6 +50,9 @@ public class TrainLiqidTest {
 		return result;
 	}
 
+	/**
+ * Retrieves or locates find min platforms data needed for decision-making.
+ */
 	public static int findMinPlatforms(double[] arrival, double[] departure) {
 		// sort arrival time of trains
 		Arrays.sort(arrival);

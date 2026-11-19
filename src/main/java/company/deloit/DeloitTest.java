@@ -7,9 +7,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
+/**
+ * Encapsulates deloit test behavior for the represented company or real-world workflow.
+ */
 public class DeloitTest {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		List<Employee> li = new ArrayList<>();
 		li.add(new Employee(1, 14, "D", "A"));
 		li.add(new Employee(2, 14, "A", "B"));

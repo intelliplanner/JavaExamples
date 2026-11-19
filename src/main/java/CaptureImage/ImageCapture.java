@@ -40,7 +40,7 @@ public class ImageCapture {
 		}
 	}
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		try {
 			ImageCapture app = new ImageCapture();
 			// Address can be different. Check your cameras manual. :554 a standard RTSP
@@ -57,6 +57,9 @@ public class ImageCapture {
 		}
 	}
 
+	/**
+ * Performs the open rtsp operation required by the represented example.
+ */
 	public byte[] openRTSP(boolean isOpened, VideoCapture capturedVideo, Mat cameraMat) throws Exception {
 		InputStream is = null;
 		byte[] data = null;
@@ -88,6 +91,9 @@ public class ImageCapture {
 		return data;
 	}
 
+	/**
+ * Adds insert image db information required by the workflow.
+ */
 	private void insertImageDB(int i, byte[] data) {
 		Connection conn = null;
 		PreparedStatement ps=null;
@@ -117,6 +123,9 @@ public class ImageCapture {
 		}
 	}
 	
+	/**
+ * Performs the safe long to int operation required by the represented example.
+ */
 	public int safeLongToInt(long l) {
 	    if (l < Integer.MIN_VALUE || l > Integer.MAX_VALUE) {
 	        throw new IllegalArgumentException

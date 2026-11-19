@@ -3,9 +3,12 @@ package collection.ConsumerProducerProb;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
+/**
+ * Encapsulates producer consumer service behavior for collection data management and lookup.
+ */
 public class ProducerConsumerService {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		BlockingQueue<Message> queue = new ArrayBlockingQueue<>(5);
 		
 		Producer p = new Producer(queue);

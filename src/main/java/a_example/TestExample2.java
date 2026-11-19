@@ -6,8 +6,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Encapsulates test example2 behavior for the represented example workflow.
+ */
 class TestExample2 {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		// 1st
 //		List<String> lst = new ArrayList<String>(Arrays.asList("a", "b", "c"));
 //		for (String value : lst) {

@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates li tmindtree behavior for the represented example workflow.
+ */
 public class LITmindtree {
-    public static void main(String[] arg){
+        public static void main(String[] arg){
         String str = "Virendra Pallavi";
 
 //        ArrayList l = Arrays.asList(str;

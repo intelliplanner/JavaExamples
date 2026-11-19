@@ -12,9 +12,12 @@ package database;
 //import com.ipssi.gen.utils.DBConnectionPool;
 import java.sql.*;
 
+/**
+ * Encapsulates db test behavior for the represented example workflow.
+ */
 class DBTest {
 
-    public static void main(String args[]) {
+        public static void main(String args[]) {
 //        try {
 //Class.forName("oracle.jdbc.driver.OracleDriver");  
 //  

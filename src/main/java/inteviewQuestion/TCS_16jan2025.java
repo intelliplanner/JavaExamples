@@ -1,8 +1,11 @@
 package inteviewQuestion;
 
+/**
+ * Encapsulates tcs_16jan2025 behavior for the represented coding problem.
+ */
 public class TCS_16jan2025 {
 
-    public static void main(String[] at) {
+        public static void main(String[] at) {
 //          A
 //        B  B
 //        C  C

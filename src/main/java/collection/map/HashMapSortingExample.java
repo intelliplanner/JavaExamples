@@ -8,8 +8,15 @@ import java.util.Map.Entry;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
+/**
+ * Demonstrates sorting hash-map data by keys and values for collection reporting.
+ * It addresses the need to present map records in predictable business order.
+ */
 public class HashMapSortingExample {
 
+	/**
+	 * Starts the map-sorting examples and coordinates the demonstrated workflow.
+	 */
 	public static void main(String[] args) {
 		HashMap<String, Integer> map = new HashMap<>();
 		map.put("C", 4000);
@@ -28,10 +35,16 @@ public class HashMapSortingExample {
 
 	}
 
+	/**
+	 * Demonstrates sorting map objects by value for data-driven reporting.
+	 */
 	private static void HashMapObjectSortingByValue() {
 
 	}
 
+	/**
+	 * Sorts map entries by key so collection results follow a predictable order.
+	 */
 	private static void HashMapSortingByKey(HashMap<String, Integer> map) {
 		TreeMap<String, Integer> tree = new TreeMap(map);
 		System.out.println("HashMapSortingByKey: " + map);
@@ -40,6 +53,9 @@ public class HashMapSortingExample {
 		}
 	}
 
+	/**
+	 * Sorts object-based map entries by key for consistent employee lookup.
+	 */
 	private static void HashMapObjectSortingByTreeMapUsingKey() {
 //		Example1
 //		
@@ -79,6 +95,9 @@ public class HashMapSortingExample {
 
 	}
 
+	/**
+	 * Sorts map entries by value so higher-priority records can be reported first.
+	 */
 	private static void HashMapSortingByValue() {
 		Map<String, Employee> map = new HashMap<>();
 

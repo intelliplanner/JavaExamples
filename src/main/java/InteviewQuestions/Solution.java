@@ -2,7 +2,13 @@ package InteviewQuestions;
 
 import java.util.ArrayList;
 
+/**
+ * Encapsulates solution behavior for the represented coding problem.
+ */
 public class Solution {
+	/**
+ * Performs the solution operation required by the represented example.
+ */
 	public int[] solution(int[] A, int F, int M) {
 		int val = 0;
 		int sum = 0;
@@ -33,7 +39,7 @@ public class Solution {
 		return m;
 	}
 
-	public static void main(String a[]) {
+		public static void main(String a[]) {
 		int[] A = { 3, 2, 4, 3 };
 		int F = 2;
 		int M = 4;

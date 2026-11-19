@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author IPSSI
  */
 public class ArrayRotation {
-    public static void main(String []args){
+        public static void main(String []args){
           int val=1;
           int [][] arr = new int[4][4];
           
@@ -37,6 +37,9 @@ System.out.println("====================================================== \n\n"
           
     }
 
+    /**
+ * Performs the rotate array operation required by the represented example.
+ */
     private static void rotateArray(String rotationDirection, int[][] arr) {
         if(rotationDirection.equalsIgnoreCase("LEFT")){
 

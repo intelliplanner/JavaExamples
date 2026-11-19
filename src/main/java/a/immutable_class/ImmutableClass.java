@@ -2,6 +2,9 @@ package a.immutable_class;
 
 import java.util.Date;
 
+/**
+ * Encapsulates immutable class behavior for the represented example workflow.
+ */
 public final class ImmutableClass {
 	private final Integer immutableField1;
 
@@ -16,12 +19,18 @@ public final class ImmutableClass {
 	 */
 	private final Date mutableField;
 
+	/**
+ * Creates a configured immutable class instance for the represented workflow.
+ */
 	private ImmutableClass(Integer fld1, String fld2, Date date) {
 		this.immutableField1 = fld1;
 		this.immutableField2 = fld2;
 		this.mutableField = new Date(date.getTime());
 	}
 
+	/**
+ * Performs the create new instance operation required by the represented example.
+ */
 	public static ImmutableClass createNewInstance(Integer fld1, String fld2, Date date) {
 		return new ImmutableClass(fld1, fld2, date);
 	}
@@ -59,6 +68,9 @@ public final class ImmutableClass {
 
 
 	@Override
+	/**
+ * Provides a readable representation for reporting or diagnostics.
+ */
 	public String toString() {
 		return "ImmutableClass{" +
 				"immutableField1=" + immutableField1 +

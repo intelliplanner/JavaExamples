@@ -14,7 +14,7 @@ package InterviewQuestions;
 
 
 public class StringReverse {
-    public static void main(String s[]){
+        public static void main(String s[]){
 //       reverseStringWithPreFunction();
 //       reverseStringWithoutFunction();
        newReverse();
@@ -22,6 +22,9 @@ public class StringReverse {
 
  
 
+	/**
+ * Performs the reverse string with pre function operation required by the represented example.
+ */
 	private static void reverseStringWithPreFunction() {
         String str = "Reverse";
         StringBuilder str2 = new StringBuilder();
@@ -30,6 +33,9 @@ public class StringReverse {
         System.out.println("str2:   "+str2);
     }
 
+    /**
+ * Performs the reverse string without function operation required by the represented example.
+ */
     private static void reverseStringWithoutFunction() {
         String str = "Hello";
         char[] ch = str.toCharArray();
@@ -40,6 +46,9 @@ public class StringReverse {
         System.out.println();
     }
     
+    /**
+ * Performs the new reverse operation required by the represented example.
+ */
     private static void newReverse() {
     	String str = "Reverse";
     	for (int i = str.length()-1; i >= 0; i--) {

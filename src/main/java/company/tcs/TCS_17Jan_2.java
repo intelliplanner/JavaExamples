@@ -2,8 +2,11 @@ package company.tcs;
 
 import java.util.Scanner;
 
+/**
+ * Encapsulates tcs_17 jan_2 behavior for the represented company or real-world workflow.
+ */
 public class TCS_17Jan_2 {
-    public static void main(String[] at) {
+        public static void main(String[] at) {
         System.out.println("Please Enter Number: ");
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();

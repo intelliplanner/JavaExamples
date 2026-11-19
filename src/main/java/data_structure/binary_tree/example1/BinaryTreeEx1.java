@@ -1,12 +1,21 @@
 package data_structure.binary_tree.example1;
 
+/**
+ * Encapsulates binary tree ex1 behavior for efficient data organization and processing.
+ */
 public class BinaryTreeEx1 {
 	Node root;
+	/**
+ * Encapsulates node behavior for efficient data organization and processing.
+ */
 	class Node {
 		int key;
 		Node left;
 		Node right;
 
+		/**
+ * Creates a configured node instance for the represented workflow.
+ */
 		public Node(int key) {
 			this.key = key;
 			left = null;
@@ -16,14 +25,23 @@ public class BinaryTreeEx1 {
 
 
 
+	/**
+ * Creates a configured binary tree ex1 instance for the represented workflow.
+ */
 	BinaryTreeEx1() {
 		root = null;
 	}
 
+	/**
+ * Adds insert information required by the workflow.
+ */
 	void insert(int key) {
 		root = insert(root, key);
 	}
 
+	/**
+ * Adds insert information required by the workflow.
+ */
 	Node insert(Node root, int key) {
 		if (root == null) {
 			root = new Node(key);
@@ -37,6 +55,9 @@ public class BinaryTreeEx1 {
 		return root;
 	}
 
+	/**
+ * Performs the in order operation required by the represented example.
+ */
 	void inOrder() {
 		System.out.println("---------------In-Order-----------");
 		inOrderRec(root);
@@ -52,12 +73,18 @@ public class BinaryTreeEx1 {
 		}
 	}
 
+	/**
+ * Performs the pre order operation required by the represented example.
+ */
 	void preOrder() {
 		System.out.println("---------------Pre Order-----------");
 		preOrder(root);
 		System.out.println("");
 	}
 
+	/**
+ * Performs the pre order operation required by the represented example.
+ */
 	void preOrder(Node root) {
 		if(root!=null) {
 			System.out.print(root.key+" ");
@@ -66,11 +93,17 @@ public class BinaryTreeEx1 {
 		}
 	}
 
+	/**
+ * Performs the post order operation required by the represented example.
+ */
 	void postOrder() {
 		System.out.println("---------------Post Order-----------");
 		postOrder(root);
 		System.out.println("");
 	}
+	/**
+ * Performs the post order operation required by the represented example.
+ */
 	void postOrder(Node root) {
 		if(root!=null) {
 			postOrder(root.left);
@@ -79,11 +112,17 @@ public class BinaryTreeEx1 {
 		}
 	}
 
+	/**
+ * Performs the search keyin bst operation required by the represented example.
+ */
 	boolean searchKeyinBST(int key) {
 		boolean s =  searchKeyinBST(root,key);
 		return s;
 	}
 	
+	/**
+ * Performs the search keyin bst operation required by the represented example.
+ */
 	boolean searchKeyinBST(Node root,int key) {
 		if(root == null) {
 			return false;
@@ -100,7 +139,7 @@ public class BinaryTreeEx1 {
 	
 	
 	
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		BinaryTreeEx1 tree = new BinaryTreeEx1();
 
 		/*

@@ -6,8 +6,11 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * Encapsulates reduce stream behavior for the represented example workflow.
+ */
 public class ReduceStream {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 //		test1();
 //		test2();
 //		test4();
@@ -16,11 +19,17 @@ public class ReduceStream {
 
 	}
 
+	/**
+ * Performs the test6 operation required by the represented example.
+ */
 	private static void test6() {
 		// TODO Auto-generated method stub
 
 	}
 
+	/**
+ * Performs the test5 operation required by the represented example.
+ */
 	private static void test5() {
 		
 		
@@ -30,6 +39,9 @@ public class ReduceStream {
 		System.out.println("Test 5 The product is : " + product);
 	}
 
+	/**
+ * Performs the test4 operation required by the represented example.
+ */
 	private static void test4() {
 		List<Integer> array = Arrays.asList(-2, 0, 4, 6, 8);
 
@@ -40,6 +52,9 @@ public class ReduceStream {
 		System.out.println("The sum of all elements is " + sum);
 	}
 
+	/**
+ * Performs the test1 operation required by the represented example.
+ */
 	private static void test1() {
 		String[] array = { "Geeks", "for", "Geeks" };
 		Optional<String> String_combine = Arrays.stream(array).reduce((str1, str2) -> str1 + "-" + str2);
@@ -48,6 +63,9 @@ public class ReduceStream {
 		}
 	}
 
+	/**
+ * Performs the test2 operation required by the represented example.
+ */
 	private static void test2() {
 		List<String> words = Arrays.asList("GFG", "Geeks", "for", "GeeksQuiz", "GeeksforGeeks");
 

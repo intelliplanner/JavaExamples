@@ -10,6 +10,9 @@ package Java7Example.MultipleExceptionExample;
  * @author IPSSI
  */
 public class MultipleExceptionExample {
+    /**
+ * Performs the test exception operation required by the represented example.
+ */
     public static void testException(){
         try{
             int arr[]= new int[10];
@@ -19,7 +22,7 @@ public class MultipleExceptionExample {
         }   
     }
     
-    public static void main(String s[]){
+        public static void main(String s[]){
     testException();
     }
 }

@@ -16,7 +16,7 @@ public class ProductDetails {
 
 	private static final DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 //		Connection conn = null;
 //		boolean destroyIt = false;
 //		int count = 1;

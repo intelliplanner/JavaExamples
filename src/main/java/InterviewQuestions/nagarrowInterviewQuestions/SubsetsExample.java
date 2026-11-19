@@ -9,13 +9,16 @@ public class SubsetsExample {
 	static int[] subset1 = new int[5];
 	static int[] subset2 = new int[5];
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 //		int[] set = { 1, 2, 3, 4, 2 };
 		int[] set = {1,1,3,3,2,8};
 //		int[] set = {1,3,4,7};
 		getSubsets(set);
 	}
 
+	/**
+ * Retrieves or locates get subsets data needed for decision-making.
+ */
 	private static void getSubsets(int[] set) {
 		int arrTotalSize = 0;
 		for (int i = 0; i < set.length; i++) {

@@ -18,6 +18,9 @@ import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 
 
+/**
+ * Encapsulates excel examples behavior for the represented example workflow.
+ */
 public class ExcelExamples {
 	static String firstHeading =  "Intelliplanner Software System India Pvt. Ltd.";
 	static String secondHeading = "D-83, 2nd  Floor Seoctor-6, Noida-201301 (U.P.)";
@@ -26,9 +29,15 @@ public class ExcelExamples {
 	WritableFont secondheadingFont = new WritableFont(WritableFont.ARIAL,16,WritableFont.NO_BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK );
 	
 	
+	/**
+ * Performs the initialize operation required by the represented example.
+ */
 	private void initialize(){
 	}
 	
+	/**
+ * Retrieves or locates get first heading format data needed for decision-making.
+ */
 	private static WritableCellFormat getFirstHeadingFormat() throws WriteException {
 		WritableFont headingFont = new WritableFont(WritableFont.ARIAL, 20,WritableFont.BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK);
 		WritableCellFormat headingFormat = new WritableCellFormat(headingFont);
@@ -39,6 +48,9 @@ public class ExcelExamples {
 		headingFormat.setBackground(Colour.BLUE_GREY);  
 		return 	headingFormat;
 	}
+	/**
+ * Retrieves or locates get normal format data needed for decision-making.
+ */
 	private static WritableCellFormat getNormalFormat() throws WriteException {
 		WritableFont headingFont = new WritableFont(WritableFont.ARIAL, 12,WritableFont.BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK);
 		WritableCellFormat headingFormat = new WritableCellFormat(headingFont);
@@ -49,6 +61,9 @@ public class ExcelExamples {
 		headingFormat.setBackground(Colour.BLUE_GREY);  
 		return 	headingFormat;
 	}
+	/**
+ * Retrieves or locates get second heading format data needed for decision-making.
+ */
 	private static WritableCellFormat getSecondHeadingFormat() throws WriteException {
 		WritableFont headingFont = new WritableFont(WritableFont.ARIAL, 16,WritableFont.NO_BOLD,  false,UnderlineStyle.NO_UNDERLINE,Colour.BLACK);
 		WritableCellFormat headingFormat = new WritableCellFormat(headingFont);
@@ -60,6 +75,9 @@ public class ExcelExamples {
 		return 	headingFormat;
 	}
 	
+	/**
+ * Performs the export excel table operation required by the represented example.
+ */
 	public static void exportExcelTable(JTable jTable1,File file) throws IOException{
 		WorkbookSettings ws = new WorkbookSettings();
 		try{
@@ -94,7 +112,7 @@ public class ExcelExamples {
 	}
 	
 	
-	public static void main(String s[]) {
+		public static void main(String s[]) {
 		//create WorkbookSettings object
 		WorkbookSettings ws = new WorkbookSettings();
 

@@ -1,8 +1,11 @@
 package company.tcs;
 
+/**
+ * Encapsulates tcs_17 jan behavior for the represented company or real-world workflow.
+ */
 public class TCS_17Jan {
 
-    public static void main(String[] at) {
+        public static void main(String[] at) {
 
         String str = "Today is Java interview"; //reverse
         String[] arr = str.split(" ");

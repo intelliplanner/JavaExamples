@@ -3,8 +3,11 @@ package collection;
 import java.util.Iterator;
 import java.util.TreeSet;
 
+/**
+ * Encapsulates obejct class service behavior for collection data management and lookup.
+ */
 public class ObejctClassService {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		TreeSet<String> al = new TreeSet<String>();
 		al.add("Ravi");
 		al.add("Vijay");

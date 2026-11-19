@@ -1,13 +1,19 @@
 package InterviewQuestions;
 
+/**
+ * Encapsulates f ind missing behavior for the represented coding problem.
+ */
 public class FIndMissing {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = { 5, 6, 8, 9, 11 };
 		findMissing(arr);
 	}
 
+	/**
+ * Retrieves or locates find missing data needed for decision-making.
+ */
 	private static void findMissing(int[] arr) {
 		int i = 0;
 		int lastDiff = 0;

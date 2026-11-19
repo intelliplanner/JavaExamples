@@ -3,9 +3,12 @@ package InterviewQuestions;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
+/**
+ * Encapsulates string test behavior for the represented coding problem.
+ */
 public class StringTest {
 	
-	public static void main(String argrs[]) {
+		public static void main(String argrs[]) {
 		String s1="Hello";
 		String s2= new String("Hello");
 		//String a1="Vicky";

@@ -6,6 +6,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
+/**
+ * Encapsulates email received from collection behavior for collection data management and lookup.
+ */
 public class EmailReceivedFromCollection {
 
     // Gmail IMAP settings
@@ -15,10 +18,13 @@ public class EmailReceivedFromCollection {
 //    private static final String APP_PASSWORD = "vchglpspnefmvvcu"; // App password, not normal password
    private static final String USERNAME = "";
     private static final String APP_PASSWORD = "";
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         searchEmail(HOST, PORT, USERNAME, APP_PASSWORD);
     }
 
+    /**
+ * Performs the search email operation required by the represented example.
+ */
     public static void searchEmail(String host, String port, String userName, String password) {
         Properties properties = new Properties();
         properties.put("mail.imap.host", host);

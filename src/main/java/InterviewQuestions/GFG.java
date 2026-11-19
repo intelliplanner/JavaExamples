@@ -4,6 +4,9 @@ package InterviewQuestions;
 //positive missing number 
 import java.util.*; 
 
+/**
+ * Encapsulates gfg behavior for the represented coding problem.
+ */
 class GFG 
 { 
 

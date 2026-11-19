@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates cap behavior for the represented company or real-world workflow.
+ */
 public class Cap {
-    public static void main(String[] str) {
+        public static void main(String[] str) {
         List<String> li =Arrays.asList("AA","BB","CC","AA");
         li.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet().forEach(System.out::println);
 

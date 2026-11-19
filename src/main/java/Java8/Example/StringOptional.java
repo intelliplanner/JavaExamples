@@ -2,9 +2,12 @@ package Java8.Example;
 
 import java.util.Optional;
 
+/**
+ * Encapsulates string optional behavior for the represented example workflow.
+ */
 public class StringOptional {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		String[] str = new String[5];
 		str[0]="";
 		str[1]="";

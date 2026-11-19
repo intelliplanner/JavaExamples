@@ -4,9 +4,12 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Stack;
 
+/**
+ * Encapsulates stack example cloud angles behavior for collection data management and lookup.
+ */
 public class StackExampleCloudAngles {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 //		System.out.println(check("([])"));    //true
 //        System.out.println(check("()[]"));    //true
 //        System.out.println(check("([)]"));    //false
@@ -34,6 +37,9 @@ public class StackExampleCloudAngles {
         
 	}
 	
+	/**
+ * Verifies check by queue conditions before processing continues.
+ */
 	public static boolean checkByQueue(String str) {
 	    if (null == str || str.isEmpty()) {
 	        return true;
@@ -59,6 +65,9 @@ public class StackExampleCloudAngles {
 	    return stack.isEmpty();
 	}
 
+	/**
+ * Verifies check conditions before processing continues.
+ */
 	public static boolean check(String v) {
 	        if (v == null || v.isEmpty()) return true;
 	        Stack<Character> stack = new Stack<>();

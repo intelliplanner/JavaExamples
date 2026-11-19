@@ -12,12 +12,18 @@ import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 @Command(name = "sudoku", mixinStandardHelpOptions = true, version = "checksum 4.0", description = "validates Sudoku numbers")
+/**
+ * Encapsulates sudoku behavior for the represented example workflow.
+ */
 public class Sudoku implements Runnable {
 
 	@Option(names = { "-f", "--file" }, required = true, description = "Filename")
 	File file;
 
 	@Override
+	/**
+ * Executes run processing and coordinates the required workflow.
+ */
 	public void run() {
 		// File file = new File("src/main/java/input.txt");
 		Scanner scan = null;
@@ -71,7 +77,7 @@ public class Sudoku implements Runnable {
 		}
 	}
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		CommandLine.run(new Sudoku(), System.err, args);
 	}
 

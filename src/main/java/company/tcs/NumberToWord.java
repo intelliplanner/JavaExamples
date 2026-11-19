@@ -1,5 +1,8 @@
 package company.tcs;
 
+/**
+ * Encapsulates number to word behavior for the represented company or real-world workflow.
+ */
 public class NumberToWord {
 
     //user-defined static method that converts a number into words

@@ -5,7 +5,7 @@ import java.io.*;
 // DO NOT change the class name
 public class Solution
 {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
         System.out.println("Hello Java!");
         ListNode ln1 = new ListNode(1);
@@ -27,6 +27,9 @@ public class Solution
 
     }
 
+    /**
+ * Performs the reverse operation required by the represented example.
+ */
     public static ListNode reverse(ListNode head) {
 //        ListNode next= null;
         ListNode currNode = head;
@@ -44,9 +47,15 @@ public class Solution
     }
 }
 
+/**
+ * Encapsulates list node behavior for the represented example workflow.
+ */
 class ListNode {
     int val;
     ListNode next;
+    /**
+ * Creates a configured list node instance for the represented workflow.
+ */
     ListNode(int val) {
         this.val = val;
     }

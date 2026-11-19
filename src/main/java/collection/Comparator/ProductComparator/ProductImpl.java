@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.Set;
 
 
+/**
+ * Encapsulates product impl behavior for collection data management and lookup.
+ */
 public class ProductImpl {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		List<Product> prodList=new ArrayList<Product>();
 		prodList.add(new Product(1, "Samsung", 20));
 		prodList.add(new Product(2, "Apple", 10));

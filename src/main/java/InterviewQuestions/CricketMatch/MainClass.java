@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.Map;
 
 
+/**
+ * Encapsulates main class behavior for the represented coding problem.
+ */
 public class MainClass {
-	public static void main(String s[]) {
+		public static void main(String s[]) {
 		List<Match> matchList = new ArrayList<Match>();
 
 		List<PlayerDetails> pl1 = new ArrayList<PlayerDetails>();

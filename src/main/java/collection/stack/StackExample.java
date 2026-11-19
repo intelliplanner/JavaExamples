@@ -2,8 +2,11 @@ package collection.stack;
 
 import java.util.*;
 
+/**
+ * Encapsulates stack example behavior for collection data management and lookup.
+ */
 public class StackExample {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		
 //		checkByQueue("[]()[]"); //FIFO
 		QueueTest();
@@ -11,6 +14,9 @@ public class StackExample {
 
 	
 
+	/**
+ * Performs the stack test operation required by the represented example.
+ */
 	private static void stackTest() {
 		Stack<String> stack = new Stack<String>();
 		stack.push("Ayush");
@@ -39,6 +45,9 @@ public class StackExample {
 	}
 	
 	
+	/**
+ * Performs the queue test operation required by the represented example.
+ */
 	private static void QueueTest() {
 		String str = "[][]()";
 		Deque<Character> stack = new ArrayDeque<>();

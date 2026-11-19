@@ -5,9 +5,12 @@ interface Test {
 	 public String say(String name);  
 }
 
+/**
+ * Encapsulates lamda expression behavior for the represented example workflow.
+ */
 public class LamdaExpression {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		Test d = ()->{
 //			System.out.println("Test Successfully");

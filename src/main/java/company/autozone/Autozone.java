@@ -10,6 +10,9 @@ import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates autozone behavior for the represented company or real-world workflow.
+ */
 public class Autozone {
 //	Given an integer array nums, return the number of 
 //			subarrays
@@ -50,6 +53,9 @@ public class Autozone {
 		
 	}
 
+/**
+ * Performs the test operation required by the represented example.
+ */
 private static void test() {
 	List<String> li = Arrays.asList("Virendra","Vicky","Virendra","Sanu");
 	

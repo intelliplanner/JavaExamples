@@ -1,8 +1,11 @@
 package ThreadExamples.synchronization;
 
+/**
+ * Encapsulates thread main1 behavior for safe concurrent execution and shared-state coordination.
+ */
 public class ThreadMain1 {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		Table t = new Table();
 		MyThread1 m1 = new MyThread1(t);
 		m1.setName("m1");

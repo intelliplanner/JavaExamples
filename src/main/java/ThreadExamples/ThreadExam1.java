@@ -11,17 +11,26 @@ package ThreadExamples;
  */
 public class ThreadExam1{
     TrheadService th = null;
+    /**
+ * Performs the test operation required by the represented example.
+ */
     void test(){
         if(th == null){
             th = new TrheadService();
             th.setHandler(new ClassInterface() {
 
                 @Override
+                /**
+ * Performs the print operation required by the represented example.
+ */
                 public void print(int val) {
                     System.out.println("Print Method "+val);
                 }
 
                 @Override
+                /**
+ * Performs the change text operation required by the represented example.
+ */
                 public void changeText(String str) {
                     System.out.println("changeText Method " +str );
                 }
@@ -30,7 +39,7 @@ public class ThreadExam1{
         }
     }
     
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         ThreadExam1 t1 = new ThreadExam1();
         t1.test();
     }

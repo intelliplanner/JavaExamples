@@ -6,12 +6,18 @@ import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates array list data sum behavior for collection data management and lookup.
+ */
 public class ArrayListDataSum {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		test1();
 		test2();
 	}
 
+	/**
+ * Performs the test2 operation required by the represented example.
+ */
 	private static void test2() {
 		List<Product> productsList = new ArrayList<Product>();
 		// Adding Products
@@ -26,6 +32,9 @@ public class ArrayListDataSum {
 
 	}
 
+	/**
+ * Performs the test1 operation required by the represented example.
+ */
 	private static void test1() {
 		List<Integer> productsList = Arrays.asList(10, 20, 30, 40);// new ArrayList<Integer>() ;
 		Integer i = productsList.stream().collect(Collectors.summingInt(p -> p));

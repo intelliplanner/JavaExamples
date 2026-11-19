@@ -1,7 +1,10 @@
 package DesignPattern.Observer2;
 
+/**
+ * Encapsulates weather app behavior for a reusable object-interaction design.
+ */
 public class WeatherApp {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         WeatherStation weatherStation = new WeatherStation();
 
         Observer phoneDisplay = new PhoneDisplay();

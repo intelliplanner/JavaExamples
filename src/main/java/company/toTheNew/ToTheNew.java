@@ -10,20 +10,29 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates to the new behavior for the represented company or real-world workflow.
+ */
 public class ToTheNew {
 
+    /**
+ * Encapsulates country behavior for the represented company or real-world workflow.
+ */
     public static class Country{
         public String countryName;
         public List<State> states;
     }
 
 
+    /**
+ * Encapsulates state behavior for the represented company or real-world workflow.
+ */
     public static class State{
         public String stateName;
         public int population;
     }
     
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Country country1 = new Country();
         country1.countryName = "India";
         State state1 = new State();

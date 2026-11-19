@@ -8,9 +8,12 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 
+/**
+ * Encapsulates capgemini_11 jan2025 behavior for the represented company or real-world workflow.
+ */
 public class Capgemini_11Jan2025  {
 
-    public static void main(String[] str) {
+        public static void main(String[] str) {
         String name = "Virendra Gupta";
 //        countCharFirstWay(name);
         charCountJava8(name);
@@ -18,6 +21,9 @@ public class Capgemini_11Jan2025  {
 
     }
 
+    /**
+ * Performs the char count java8 operation required by the represented example.
+ */
     private static void charCountJava8(String name) {
         char[] ch = name.toCharArray();
         List<String> arr = new ArrayList();
@@ -38,6 +44,9 @@ public class Capgemini_11Jan2025  {
 //        HashMap<String,Integer> =
     }
 
+    /**
+ * Performs the count char first way operation required by the represented example.
+ */
     private static void countCharFirstWay(String name) {
         HashMap<String, Integer> map = new HashMap<>();
         char[] ch = name.trim().toCharArray();

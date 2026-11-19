@@ -7,7 +7,7 @@ package inteviewQuestion.Wipro;
 // 7 8 9 10
 public class PatternA {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 
 		int n = 10;
 		int k = 1;

@@ -8,12 +8,15 @@ import java.util.Set;
 //java 9
 public class ImmutableCollection {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		ImmutableCollectionList();
 		ImmutableCollectionSet();
 		ImmutableCollectionMap();
 	}
 
+	/**
+ * Performs the immutable collection map operation required by the represented example.
+ */
 	private static void ImmutableCollectionMap() {
 //		Map<String, String> names = Map.ofEntries(
 //                Map.entry("1", "Lokesh"),
@@ -26,6 +29,9 @@ public class ImmutableCollection {
         //names.put("2", "Ravi");
 	}
 
+	/**
+ * Performs the immutable collection set operation required by the represented example.
+ */
 	private static void ImmutableCollectionSet() {
 
 //        Set<String> names = Set.of("Lokesh", "Amit", "John");
@@ -42,6 +48,9 @@ public class ImmutableCollection {
         //Set<String> names3 = Set.of("Lokesh", "Amit", "John", "Amit");
 	}
 
+	/**
+ * Performs the immutable collection list operation required by the represented example.
+ */
 	private static void ImmutableCollectionList() {
 //		List<String> names = List.of("Lokesh", "Amit", "John");
 //        

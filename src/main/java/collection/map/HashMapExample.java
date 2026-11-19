@@ -3,6 +3,9 @@ package collection.map;
 import java.util.*;
 import java.util.Map.Entry;
 
+/**
+ * Encapsulates hash map example behavior for collection data management and lookup.
+ */
 public class HashMapExample {
 
 	/*

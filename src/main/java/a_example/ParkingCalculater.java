@@ -2,9 +2,12 @@ package a_example;
 
 import java.util.Scanner;
 
+/**
+ * Encapsulates parking calculater behavior for the represented example workflow.
+ */
 public class ParkingCalculater {
 
-	public static void main(String str[]) {
+		public static void main(String str[]) {
 
 		System.out.println("============= Welcome to Parking System ==============");
 

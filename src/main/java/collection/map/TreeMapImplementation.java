@@ -3,6 +3,9 @@ package collection.map;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * Encapsulates tree map implementation behavior for collection data management and lookup.
+ */
 public class TreeMapImplementation { 
 	  
     // Declaring a TreeMap 

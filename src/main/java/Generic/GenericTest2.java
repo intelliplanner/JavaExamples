@@ -10,6 +10,9 @@ package Generic;
  * @author IPSSI
  */
 public class GenericTest2 {
+    /**
+ * Adds add information required by the workflow.
+ */
     public static <E> E[] add(E[] inputArray){
         for(E e:inputArray){
             System.out.printf("%s",e);
@@ -17,7 +20,7 @@ public class GenericTest2 {
         System.out.println();
         return inputArray;
     }
-    public static void main(String[] args) {
+        public static void main(String[] args) {
          Integer[] intArray = { 1, 2, 3, 4, 5 };
       Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
       Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };

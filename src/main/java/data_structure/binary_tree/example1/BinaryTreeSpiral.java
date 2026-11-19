@@ -1,5 +1,8 @@
 package data_structure.binary_tree.example1;
 
+/**
+ * Encapsulates binary tree spiral behavior for efficient data organization and processing.
+ */
 class BinaryTreeSpiral { 
     Node root; 
   

@@ -2,6 +2,9 @@ package collection.map;
 import java.util.HashMap;
 
 
+/**
+ * Encapsulates test hashmap behavior for collection data management and lookup.
+ */
 public class TestHashmap {
 
 	/**
@@ -80,7 +83,7 @@ public class TestHashmap {
         seclDOReleaseTypeMap.put("X AUCTION", 8);
         seclDOReleaseTypeMap.put("XAUCTION", 8);
     }
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //	System.out.println(seclDOReleaseTypeMap.get("XAUCTION"));
 //	String doNo = "201701/4909/08035";

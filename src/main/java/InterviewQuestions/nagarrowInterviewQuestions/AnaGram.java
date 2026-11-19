@@ -9,10 +9,13 @@ import java.util.List;
 //For example, abcd and dabc are anagram of each other.
 public class AnaGram {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		isss("TRIANGLE","INTEGRAL");
 	}
 
+	/**
+ * Verifies isss conditions before processing continues.
+ */
 	private static void isss(String string1, String string2) {
 		char[] ch1=string1.toCharArray();
 		char[] ch2=string2.toCharArray();

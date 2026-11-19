@@ -5,9 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Encapsulates key counts behavior for collection data management and lookup.
+ */
 public class KeyCounts {
 
-	public static void main(String args[]){
+		public static void main(String args[]){
 		List<String> list = Arrays.asList("a", "a", "a", "b", "b", "c", "d", "e", "a","d");
 		HashMap<String,Integer> pairVal = new HashMap<>();
 

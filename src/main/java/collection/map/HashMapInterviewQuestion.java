@@ -3,6 +3,9 @@ package collection.map;
 import java.util.*;
 import java.util.Map.Entry;
 
+/**
+ * Encapsulates hash map interview question behavior for collection data management and lookup.
+ */
 public class HashMapInterviewQuestion {
 
 	/*
@@ -30,6 +33,9 @@ public class HashMapInterviewQuestion {
 	
 	}
 
+	/**
+ * Performs the print operation required by the represented example.
+ */
 	private static void print(String str) {
 		HashMap<Integer, Integer> hm = new HashMap<>();
 		String [] str1 = str.split(" ");

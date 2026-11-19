@@ -4,9 +4,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates capgemini behavior for the represented company or real-world workflow.
+ */
 public class Capgemini {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 //        Employee e1 = new Employee();
 //        List<Employee> li = new ArrayList<>() ;
 //        Map <String,Employee> map = new LinkedHashMap<>(li.)

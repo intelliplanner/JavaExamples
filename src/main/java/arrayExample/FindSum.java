@@ -2,8 +2,11 @@ package arrayExample;
 
 import java.util.Arrays;
 
+/**
+ * Encapsulates find sum behavior for the represented example workflow.
+ */
 public class FindSum {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		int[] arr = {9,3,5,7,8,6,1};
 		
 		FindSumEqualToGivenInput(arr);

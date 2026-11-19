@@ -1,5 +1,8 @@
 package exception;
 
+/**
+ * Encapsulates test custom exception1 behavior for the represented example workflow.
+ */
 public class TestCustomException1  
 {  
   

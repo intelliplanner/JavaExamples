@@ -3,8 +3,11 @@ package CaptureImage;
 import java.io.IOException;
 import java.net.ServerSocket;
 
+/**
+ * Encapsulates capture service behavior for the represented example workflow.
+ */
 public class captureService {
-		   public static void main(String[] args) {
+		   		   public static void main(String[] args) {
 		      try {
 		         int i = 1;
 		         ServerSocket s = new ServerSocket(8189);

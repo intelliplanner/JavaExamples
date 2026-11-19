@@ -1,7 +1,10 @@
 package InterviewQuestions.Paytm.systemdesign.lift_call;
 
+/**
+ * Encapsulates test elevator behavior for the represented coding problem.
+ */
 public class TestElevator {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		Elevator elevator = new Elevator();
 		
 		//person wants to go in up direction from source floor 0

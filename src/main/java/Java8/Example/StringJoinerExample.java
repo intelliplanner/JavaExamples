@@ -2,9 +2,12 @@ package Java8.Example;
 
 import java.util.StringJoiner;
 
+/**
+ * Encapsulates string joiner example behavior for the represented example workflow.
+ */
 public class StringJoinerExample {
 
-	    public static void main(String[] args) {  
+	    	    public static void main(String[] args) {  
 	        StringJoiner joinNames = new StringJoiner(","); // passing comma(,) as delimiter   
 	          
 	        // Prints nothing because it is empty  

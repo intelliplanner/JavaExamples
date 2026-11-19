@@ -1,9 +1,12 @@
 package inteviewQuestion.Legeto;
 
+/**
+ * Encapsulates legeto behavior for the represented coding problem.
+ */
 public class Legeto {
 	static int size = 2;
 	static int[] arr = new int[size];
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		insertDataintoArray(2);
 		insertDataintoArray(22);
 		insertDataintoArray(23);
@@ -15,6 +18,9 @@ public class Legeto {
 		insertDataintoArray(29);
 	}
 
+	/**
+ * Adds insert datainto array information required by the workflow.
+ */
 	private static void insertDataintoArray(int n ) {
 			if(size > arr.length) {
 				size++;

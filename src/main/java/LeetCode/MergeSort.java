@@ -1,6 +1,12 @@
 package LeetCode;
 
+/**
+ * Encapsulates merge sort behavior for the represented example workflow.
+ */
 public class MergeSort {
+    /**
+ * Performs the merge operation required by the represented example.
+ */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = 0;
         int j = 0;
@@ -31,7 +37,7 @@ public class MergeSort {
 
     }
 
-    public static void main(String[] str) {
+        public static void main(String[] str) {
         int[] nums1 = { 1, 2, 3};
         int m = nums1.length;
         int[] nums2 = { 2, 5, 6 };

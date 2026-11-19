@@ -3,8 +3,11 @@ package collection.map;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 
+/**
+ * Encapsulates hash map test behavior for collection data management and lookup.
+ */
 public class HashMapTest {
-	public static void main(String s[]) {
+		public static void main(String s[]) {
 		// HashMap<Integer,String> map = new HashMap<>();
 		// map.put(1, "1");
 		// map.put(2, "2");
@@ -18,6 +21,9 @@ public class HashMapTest {
 		checkHashMapCapcity();
 	}
 
+	/**
+ * Verifies check hash map capcity conditions before processing continues.
+ */
 	private static void checkHashMapCapcity() {
 		try {
 			HashMap m = new HashMap();

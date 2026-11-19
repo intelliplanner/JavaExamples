@@ -10,7 +10,7 @@ import java.util.List;
  LinkedList class inherit AbstractSequencialList class and List implements List and Deque interface	    
  */
 public class LinkedListExample {
-	public static void main(String a[]) {
+		public static void main(String a[]) {
 		LinkedList<String> lst1 = new	LinkedList<String>();
 		lst1.add("a");
 		lst1.add("w");

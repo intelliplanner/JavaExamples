@@ -8,6 +8,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates find sum behavior for the represented coding problem.
+ */
 public class FindSum {
 //	Given an array of integers and a sum, find the number of pairs whose sum is equal to the given sum. Example: 
 //	Input: array = {1, 5, 7, -1}, sum = 6 Output: 2

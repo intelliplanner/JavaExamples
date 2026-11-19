@@ -1,11 +1,17 @@
 package functionInterFace;
 
+/**
+ * Encapsulates functional example2 behavior for the represented example workflow.
+ */
 public class FunctionalExample2 {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		FunctionInter f1 = new FunctionInter() {
 
 			@Override
+			/**
+ * Performs the functional interface operation required by the represented example.
+ */
 			public void functionalInterface() {
 				System.out.println("1. Functional Interface Call");
 			}
@@ -26,6 +32,9 @@ public class FunctionalExample2 {
 		Runnable r = new Runnable() {
 			
 			@Override
+			/**
+ * Executes run processing and coordinates the required workflow.
+ */
 			public void run() {
 				System.out.println("Runnable...r1");
 			}

@@ -1,8 +1,11 @@
 package DesignPattern.Observer;
 
+/**
+ * Encapsulates main observer behavior for a reusable object-interaction design.
+ */
 public class MainObserver {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		GrabInformation obj = new GrabInformation();
 		InformationObserver info = new InformationObserver(obj);
 		obj.setAvailable(true);

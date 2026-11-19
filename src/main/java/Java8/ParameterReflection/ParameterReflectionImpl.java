@@ -3,9 +3,12 @@ package Java8.ParameterReflection;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
+/**
+ * Encapsulates parameter reflection impl behavior for the represented example workflow.
+ */
 public class ParameterReflectionImpl {
 
-	public static void main(String str[]) {
+		public static void main(String str[]) {
 
 		try {
 			Calculate c = new Calculate();

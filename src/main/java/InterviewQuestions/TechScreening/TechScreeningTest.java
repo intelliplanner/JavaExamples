@@ -2,18 +2,27 @@ package InterviewQuestions.TechScreening;
 
 import java.util.*;  
 import java.util.stream.Collectors;  
+/**
+ * Encapsulates product behavior for the represented coding problem.
+ */
 class Product{  
     int id;  
     String name;  
     Integer price;  
+    /**
+ * Creates a configured product instance for the represented workflow.
+ */
     public Product(int id, String name, Integer price) {  
         this.id = id;  
         this.name = name;  
         this.price = price;  
     }  
 }  
+/**
+ * Encapsulates tech screening test behavior for the represented coding problem.
+ */
 public class TechScreeningTest {  
-    public static void main(String[] args) {  
+        public static void main(String[] args) {  
         List<Product> productsList = new ArrayList<Product>();  
         //Adding Products  
         productsList.add(new Product(1,"HP Laptop",25000));  

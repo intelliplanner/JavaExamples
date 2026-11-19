@@ -7,9 +7,12 @@ import java.util.concurrent.TimeUnit;
 import com.ipssi.beans.ExcelBean;
 
 
+/**
+ * Encapsulates excel write test behavior for the represented example workflow.
+ */
 public class ExcelWriteTest {
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 
 		ExcelMockData mockData = new ExcelMockData();
 		List<ExcelBean> excelData = mockData.getExcelData();

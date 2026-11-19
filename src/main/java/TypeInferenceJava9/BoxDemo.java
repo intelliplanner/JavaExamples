@@ -1,5 +1,8 @@
 package TypeInferenceJava9;
 
+/**
+ * Encapsulates box demo behavior for the represented example workflow.
+ */
 public class BoxDemo {
 	/** This class is a user-defined class that contains one methods cube.*/  
 	public static <U> void addBox(U u, java.util.List<Box<U>> boxes) {
@@ -8,6 +11,9 @@ public class BoxDemo {
 		boxes.add(box);
 	}
 
+	/**
+ * Performs the output boxes operation required by the represented example.
+ */
 	public static <U> void outputBoxes(java.util.List<Box<U>> boxes) {
 		int counter = 0;
 		for (Box<U> box : boxes) {
@@ -17,7 +23,7 @@ public class BoxDemo {
 		}
 	}
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		java.util.ArrayList<Box<Integer>> listOfIntegerBoxes = new java.util.ArrayList<>();
 		BoxDemo.<Integer>addBox(Integer.valueOf(10), listOfIntegerBoxes);
 		BoxDemo.addBox(Integer.valueOf(20), listOfIntegerBoxes);

@@ -10,8 +10,11 @@ import java.util.TreeMap;
 
 import org.apache.poi.xssf.model.MapInfo;
 
+/**
+ * Encapsulates hashmap sorting behavior for collection data management and lookup.
+ */
 public class HashmapSorting {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		// sortedComparingByKey();
 		// sortedInReverseComparingByKey();// Java Map Example: comparingByKey() in
 		// Descending Order
@@ -22,6 +25,9 @@ public class HashmapSorting {
 //		HashMapOrderTest2();
 	}
 
+	/**
+ * Verifies hash map order test2 conditions before processing continues.
+ */
 	private static void HashMapOrderTest2() {
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		map.put("Jayant", 80);
@@ -48,6 +54,9 @@ public class HashmapSorting {
 		
 	}
 
+	/**
+ * Verifies hash map order test conditions before processing continues.
+ */
 	private static void HashMapOrderTest() {
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		map.put("Jayant", 80);
@@ -81,6 +90,9 @@ public class HashmapSorting {
 		
 	}
 
+	/**
+ * Orders the relevant records for predictable downstream processing.
+ */
 	private static void sortedInReverseComparingByValue() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(100, "Amit");
@@ -91,6 +103,9 @@ public class HashmapSorting {
 				.forEach(System.out::println);
 	}
 
+	/**
+ * Orders the relevant records for predictable downstream processing.
+ */
 	private static void sortedComparingByValue() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(100, "Amit");
@@ -100,6 +115,9 @@ public class HashmapSorting {
 		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
 	}
 
+	/**
+ * Orders the relevant records for predictable downstream processing.
+ */
 	private static void sortedInReverseComparingByKey() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(100, "Amit");
@@ -115,6 +133,9 @@ public class HashmapSorting {
 				.forEach(System.out::println);
 	}
 
+	/**
+ * Orders the relevant records for predictable downstream processing.
+ */
 	private static void sortedComparingByKey() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(100, "Amit");

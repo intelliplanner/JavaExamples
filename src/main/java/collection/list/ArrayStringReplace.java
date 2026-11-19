@@ -1,6 +1,12 @@
 package collection.list;
 
+/**
+ * Encapsulates array string replace behavior for collection data management and lookup.
+ */
 public class ArrayStringReplace {
+	/**
+ * Performs the replace string operation required by the represented example.
+ */
 	private static void replaceString(String paragraph, String replaceStr) {
 		char[] ch = paragraph.toCharArray();
 		StringBuilder sb = new StringBuilder();
@@ -17,7 +23,7 @@ public class ArrayStringReplace {
 		System.out.println(sb.toString());
 	}
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		String paragraph = "This is";
 		String replaceWith = "is";
 		String replaceStr = "Vicky";

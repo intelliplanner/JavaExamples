@@ -1,7 +1,10 @@
 package InteviewQuestions;
 
+/**
+ * Encapsulates string compares behavior for the represented coding problem.
+ */
 public class StringCompares {
-	public static void main(String args1[])
+		public static void main(String args1[])
 	    {
 		   System.out.println("===========Integer============");
 		    Integer i1=new Integer(10);

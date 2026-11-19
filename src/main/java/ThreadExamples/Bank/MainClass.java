@@ -11,15 +11,21 @@ package ThreadExamples.Bank;
  */
 public class MainClass {
 
-    public static void main(String s[]) {
+        public static void main(String s[]) {
         final UIBank c = new UIBank();
         new Thread() {
             @Override
+            /**
+ * Executes run processing and coordinates the required workflow.
+ */
             public void run() {
                 c.withDrawal(15000);
             }
         }.start();
         new Thread() {
+            /**
+ * Executes run processing and coordinates the required workflow.
+ */
             public void run() {
                 c.deposit(10000);
             }

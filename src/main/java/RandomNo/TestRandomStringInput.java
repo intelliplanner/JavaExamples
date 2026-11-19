@@ -63,6 +63,9 @@ public class TestRandomStringInput extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton1.setText("Clear");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
+            /**
+ * Performs the action performed operation required by the represented example.
+ */
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
@@ -71,6 +74,9 @@ public class TestRandomStringInput extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton2.setText("Match");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
+            /**
+ * Performs the action performed operation required by the represented example.
+ */
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
@@ -82,6 +88,9 @@ public class TestRandomStringInput extends javax.swing.JFrame {
         next.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         next.setText("Change");
         next.addActionListener(new java.awt.event.ActionListener() {
+            /**
+ * Performs the action performed operation required by the represented example.
+ */
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nextActionPerformed(evt);
             }
@@ -167,6 +176,9 @@ public class TestRandomStringInput extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+ * Performs the j button1 action performed operation required by the represented example.
+ */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         display1.setText("");
         display2.setText("");
@@ -176,11 +188,17 @@ public class TestRandomStringInput extends javax.swing.JFrame {
         random.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    /**
+ * Performs the next action performed operation required by the represented example.
+ */
     private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
         callRandomNumber();
         random.setText("");
     }//GEN-LAST:event_nextActionPerformed
 
+    /**
+ * Performs the j button2 action performed operation required by the represented example.
+ */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
            String str = random.getText();
         if (str.equals(null)) {
@@ -225,6 +243,9 @@ public class TestRandomStringInput extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            /**
+ * Executes run processing and coordinates the required workflow.
+ */
             public void run() {
                 new TestRandomStringInput().setVisible(true);
             }

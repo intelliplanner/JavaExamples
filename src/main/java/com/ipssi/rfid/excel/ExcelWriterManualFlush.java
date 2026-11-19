@@ -16,6 +16,9 @@ import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import com.ipssi.beans.ExcelBean;
 
 
+/**
+ * Encapsulates excel writer manual flush behavior for the represented example workflow.
+ */
 public class ExcelWriterManualFlush {
 
 	// using manual flush and default window size 100

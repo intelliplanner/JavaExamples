@@ -1,19 +1,31 @@
 package data_structure.LinkedList;
 
 
+/**
+ * Encapsulates linked list reverse behavior for efficient data organization and processing.
+ */
 public class LinkedListReverse {
 
 	Node head;
 
+	/**
+ * Encapsulates node behavior for efficient data organization and processing.
+ */
 	static class Node {
 		int data;
 		Node next;
 
+		/**
+ * Creates a configured node instance for the represented workflow.
+ */
 		Node(int data) {
 			this.data = data;
 			this.next = null;
 		}
 	}
+	/**
+ * Adds insert node information required by the workflow.
+ */
 	public LinkedListReverse insertNode(LinkedListReverse list, int newData) {
 		Node newNode = new Node(newData);
 		newNode.next = null; 		
@@ -32,6 +44,9 @@ public class LinkedListReverse {
 		return list;
 	}
 
+	/**
+ * Performs the print list operation required by the represented example.
+ */
 	static void printList(LinkedListReverse list) {
 		
 		if(list!=null) {
@@ -46,12 +61,18 @@ public class LinkedListReverse {
 	}
 	
 
+	/**
+ * Performs the print reverse list operation required by the represented example.
+ */
 	static void printReverseList(LinkedListReverse list) {
 		if(list!=null) {
 			printReverseList(list.head);
 		}
 	}
 	
+	/**
+ * Performs the print reverse list operation required by the represented example.
+ */
 	private static void printReverseList(Node node) {
 		if(node !=null) {
 			printReverseList(node.next);
@@ -59,7 +80,7 @@ public class LinkedListReverse {
 		}
 	}
 
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		LinkedListReverse list = new LinkedListReverse();
 		list = list.insertNode(list, 3);
 		list = list.insertNode(list, 2);
@@ -82,6 +103,9 @@ public class LinkedListReverse {
 	}
 	
 	
+	/**
+ * Performs the print reverse list new operation required by the represented example.
+ */
 	static void printReverseListNew(LinkedListReverse list, int countIndex) {
 		if(list!=null) {
 			Node node = printReverseListNew(list.head, countIndex);
@@ -94,6 +118,9 @@ public class LinkedListReverse {
 	}
 	
 	static int index=1;
+	/**
+ * Performs the print reverse list new operation required by the represented example.
+ */
 	private static Node printReverseListNew(Node node,int countIndex) {
 		if(node !=null) {
 			if(index!=countIndex) {
@@ -106,6 +133,9 @@ public class LinkedListReverse {
 	}
 	
 	
+	/**
+ * Performs the reverse linked list into chunks operation required by the represented example.
+ */
 	private static Node reverseLinkedListIntoChunks(Node head, int k) {
 		Node current = head; 
 	       Node next = null; 
@@ -132,6 +162,9 @@ public class LinkedListReverse {
 	       return prev; 
 
 	}
+	/**
+ * Performs the reverse linked list into chunks operation required by the represented example.
+ */
 	private static void reverseLinkedListIntoChunks(LinkedListReverse list) {
 		Node node = list.head; 
 		reverseLinkedListIntoChunks(node,2);

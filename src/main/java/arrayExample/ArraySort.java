@@ -3,13 +3,19 @@ package arrayExample;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Encapsulates array sort behavior for the represented example workflow.
+ */
 public class ArraySort {
 	
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		int[] arr = {-8,-5,-3,-1,3,6,9};
 		sortArray(arr);
 	}
 
+	/**
+ * Orders the relevant records for predictable downstream processing.
+ */
 	private static void sortArray(int[] arr) {
 		int secondArrLenth = arr.length/2;
 		int firstArrLenth =  arr.length - secondArrLenth;

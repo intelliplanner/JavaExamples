@@ -64,6 +64,9 @@ public final class ImmutableClass {
 	}
 
 	@Override
+	/**
+ * Provides a readable representation for reporting or diagnostics.
+ */
 	public String toString() {
 		return immutableField1 + " - " + immutableField2 + " - " + mutableField;
 	}

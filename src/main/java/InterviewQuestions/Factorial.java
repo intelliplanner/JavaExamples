@@ -11,11 +11,14 @@ package InterviewQuestions;
  */
 public class Factorial {
    
-    public static void main(String str[]){
+        public static void main(String str[]){
         Factorial obj = new Factorial();
         obj.getFactorial(5);
     } 
 
+    /**
+ * Retrieves or locates get factorial data needed for decision-making.
+ */
     private void getFactorial(int i) {
         int fact = 1 ; 
         for (int j = 1; j <= i; j++) {

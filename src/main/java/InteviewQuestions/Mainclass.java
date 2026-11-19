@@ -1,7 +1,10 @@
 package InteviewQuestions;
 
+/**
+ * Encapsulates mainclass behavior for the represented coding problem.
+ */
 public class Mainclass {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		Employee e1=new Employee("virendra");
 //		Employee e2=new Employee("virendra");
 		Employee e2=new Employee("virendra");

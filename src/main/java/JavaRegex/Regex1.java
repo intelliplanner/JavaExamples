@@ -5,9 +5,12 @@ import java.util.regex.Pattern;
 
 import stringExample.pattern;
 
+/**
+ * Encapsulates regex1 behavior for the represented example workflow.
+ */
 public class Regex1 {
 	
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 		System.out.println(Pattern.matches(".s", "mst")); // 2 char and 2nd must be s
 		System.out.println(Pattern.matches(".st", "msg")); // 3 char and 2nd must be s and last must be t
 

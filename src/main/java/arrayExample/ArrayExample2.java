@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+/**
+ * Encapsulates array example2 behavior for the represented example workflow.
+ */
 public class ArrayExample2 {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		  ArrayList<String> al=new ArrayList<String>();//creating arraylist    
 		  al.add("A");//adding object in arraylist    
 		  al.add("B");    

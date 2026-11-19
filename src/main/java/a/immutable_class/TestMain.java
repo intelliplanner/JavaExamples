@@ -2,9 +2,12 @@ package a.immutable_class;
 
 import java.util.Date;
 
+/**
+ * Encapsulates test main behavior for the represented example workflow.
+ */
 class TestMain
 {
-    public static void main(String[] args)
+        public static void main(String[] args)
     {
         ImmutableClass im = ImmutableClass.createNewInstance(100,"test", new Date());
         System.out.println(im);
@@ -30,6 +33,9 @@ class TestMain
 
     }
  
+    /**
+ * Performs the try modification operation required by the represented example.
+ */
     private static void tryModification(Integer immutableField1, String immutableField2, Date mutableField)
     {
         immutableField1 = 10000;

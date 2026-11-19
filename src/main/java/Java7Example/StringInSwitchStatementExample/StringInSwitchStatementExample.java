@@ -10,6 +10,9 @@ package Java7Example.StringInSwitchStatementExample;
  * @author IPSSI
  */
 public class StringInSwitchStatementExample {  
+    /**
+ * Performs the first test operation required by the represented example.
+ */
     public static void firstTest(){
     String game = null;  //Exception in thread "main" java.lang.NullPointerException
         switch(game){  
@@ -23,6 +26,9 @@ public class StringInSwitchStatementExample {
             System.out.println("Let's play Football");  
         }  
     }
+    /**
+ * Performs the second test operation required by the represented example.
+ */
     public static void secondTest(){
     String game = "Hockey";  
         switch(game){  
@@ -36,7 +42,7 @@ public class StringInSwitchStatementExample {
             System.out.println("What game it is?");  
         }  
     }
-    public static void main(String[] args) {  
+        public static void main(String[] args) {  
         secondTest();
     	//firstTest();
     }  

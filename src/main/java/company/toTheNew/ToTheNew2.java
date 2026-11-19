@@ -2,8 +2,11 @@ package company.toTheNew;
 
 
 
+	/**
+ * Encapsulates to the new2 behavior for the represented company or real-world workflow.
+ */
 	public class ToTheNew2 {
-	    public static void main(String[] args) {
+	    	    public static void main(String[] args) {
 	        Thread t1 = new Thread(new Task());
 	        Thread t2 = new Thread(new Task());
 	        t1.setName("Thread1");
@@ -13,7 +16,13 @@ package company.toTheNew;
 	    }
 	}
 
+	/**
+ * Encapsulates task behavior for the represented company or real-world workflow.
+ */
 	class Task implements Runnable{
+	    /**
+ * Executes run processing and coordinates the required workflow.
+ */
 	    public void run(){
 	        synchronized (this)
 	        {

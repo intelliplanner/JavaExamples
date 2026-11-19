@@ -1,7 +1,10 @@
 package InterviewQuestions.Paytm.systemdesign.lift_call;
 
+/**
+ * Encapsulates test elevator2 behavior for the represented coding problem.
+ */
 public class TestElevator2 {
-	public static void main(String args[]) {
+		public static void main(String args[]) {
 
 		Elevator elevator = new Elevator();
 

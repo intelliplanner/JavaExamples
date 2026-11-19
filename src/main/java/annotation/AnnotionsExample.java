@@ -6,6 +6,9 @@ package annotation;
  int value3() default 3;
 }
 
+/**
+ * Encapsulates annotions example behavior for the represented example workflow.
+ */
 public class AnnotionsExample {
 public static void main(String s[]) {
 }
